@@ -11,7 +11,7 @@
     max-width: 1200px;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px;
     margin: auto;
 }
 .container .logo{
@@ -66,3 +66,51 @@
 }
 
 /* ------------------------------------------------------- */
+
+/* banner Galaxy s22 Ultra */
+.banner{
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.s22-content{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.s22-content-text{
+    padding: 0 0 0 30px;
+}
+.s22-content-text h1{
+    font-size: 32px;
+}
+.s22-content-text p{
+    font-size: 28px;
+}
+.s22-content-product img{
+    width: 170px;
+}
+.order-learn button{
+    background-color: #3c3c3c;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: .3s;
+}
+.order-learn button:hover{
+    background-color: rgb(140, 140, 140);
+}
+.order-learn button a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.order-learn .order{
+    margin-left: 10px;
+}
+.s22-product-picture{
+    display: flex;
+}
