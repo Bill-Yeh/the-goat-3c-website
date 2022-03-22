@@ -7,18 +7,18 @@
 .main-header{
     background-color: #363636;
 }
-.container{
-    max-width: 1400px;
+.main-header .main-header-container{
+    width: 1200px;
     display: flex;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
     margin: auto;
 }
-.container .logo{
-    width: 100px;
-    padding-top: 9px;
+.main-header-container .logo{
+    width: 80px;
+    /* padding-top: 12px; */
 }
-.container .logo img{
+.main-header .main-header-container .logo img{
     width: 100%;
 }
 .main-header .main-nav{
@@ -74,8 +74,8 @@
     overflow: hidden;
 }
 .s22-content{
-    max-width: 1400px;
-    height: 470px;
+    width: 1200px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,16 +93,41 @@
 .s22-content-product img{
     width: 170px;
 }
-.order-learn button{
-    background-color: #3c3c3c;
+.order-learn .learn-s22{
+    text-decoration: none;
+    color: #3c3c3c;
+    position: relative;
+}
+.order-learn .learn-s22::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-bottom: 1px solid #3c3c3c;
+    width: 0;
+    height: 1px;
+    transition: .3s;
+}
+.order-learn .learn-s22:hover:after{
+    width: 80px;
+    left:0;
+}
+.order-learn .learn-s22 i{
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    color: #3c3c3c;
+}
+.order-learn .order{
+    background-color: #3681FF;
     border: none;
     border-radius: 30px;
     padding: 10px 20px;
     transition: .3s;
     cursor: pointer;
 }
-.order-learn button:hover{
-    background-color: rgb(140, 140, 140);
+.order-learn .order:hover{
+    background-color: rgb(5, 61, 216);
 }
 .order-learn button a{
     font-size: 14px;
@@ -122,15 +147,14 @@
 }
 .s22-product-1{
     position: relative;
-    top: 200px;
+    top: 230px;
 }
 .s22-product-2{
     position: relative;
-    top: 100px;
+    top: 120px;
 }
 .s22-product-3{
     position: relative;
-    top: 10px;
 }
 
 /* ------------------------------------------------ */
@@ -139,11 +163,11 @@
 .ipad-air{
     width: 100%;
     /* background: linear-gradient(90deg,black,grey); */
-    background-color: black;
+    background-color: #363636;
 }
 .ipad-air-content{
-    max-width: 1400px;
-    height: 470px;
+    width: 1200px;
+    height: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -172,6 +196,34 @@
 .ipad-air-content .ipad-air-text p{
     font-size: 28px;
 }
+.order-learn .learn-ipad{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.order-learn .learn-ipad span{
+    text-align: start;
+}
+.order-learn .learn-ipad::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-bottom: 1px solid white;
+    width: 0;
+    height: 1px;
+    transition: .3s;
+}
+.order-learn .learn-ipad:hover:after{
+    width: 80px;
+    left:0;
+}
+.order-learn .learn-ipad i{
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    color: white;
+}
 
 /* ------------------------------------------------- */
 
@@ -181,7 +233,8 @@
     background-color: #f6f6f6;
 }
 .proart-content{
-    max-width: 1400px;
+    width: 1200px;
+    margin: auto;
 }
 .proart-content .proart-text{
     text-align: center;
@@ -189,8 +242,39 @@
 .proart-content .proart-text h2{
     font-size: 56px;
 }
+.order-learn .learn-proart{
+    text-decoration: none;
+    color: #3c3c3c;
+    position: relative;
+}
+.order-learn .learn-proart span{
+    text-align: start;
+}
+.order-learn .learn-proart::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-bottom: 1px solid #3c3c3c;
+    width: 0;
+    height: 1px;
+    transition: .3s;
+}
+.order-learn .learn-proart:hover:after{
+    width: 80px;
+    left:0;
+}
+.order-learn .learn-proart i{
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    color: #3c3c3c;
+}
+.order-learn button:hover{
+    background-color: rgb(140, 140, 140);
+}
 .proart-picture-group1,.proart-picture-group2{
-    width: 400px;
+    width: 420px;
     display: flex;
     justify-content:space-around ;
     align-items: center;
@@ -207,4 +291,114 @@
 }
 .proart-picture-group2 img{
     margin: 0 60px;
+}
+
+/* ------------------------------------------------- */
+
+/* banner 零組件專區 */
+.component{
+    width: 100%;
+    padding: 15px 0;
+    background-color: #363636;
+}
+.component h2{
+    margin-left: 80px;
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+}
+.component .component-content{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.component-content .case{
+    padding: 0 50px;
+}
+.component-content .motherboard,.radiator{
+    padding-bottom: 30px;
+}
+.component-content img{
+    transition: .8s;
+}
+.component-content img:hover{
+    transform: scale(0.85);
+}
+
+/* -------------------------------------------------- */
+
+/* 活動專區 */
+.activity{
+    width: 100%;
+    padding: 15px 0;
+    background-color: #f6f6f6;
+}
+.activity h2{
+    margin-left: 80px;
+    font-size: 48px;
+    font-weight: 500;
+}
+.activity .activity-content{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.activity .activity-content .activit-card{
+    width: 340px;
+    margin: 0 15px;
+}
+.activity .activity-content .activit-card .avtivity-picture{
+    width: 340px;
+}
+.activity .activity-content .activit-card .avtivity-picture img{
+    width: 100%;
+    vertical-align: middle;
+}
+.activity .activity-content .activit-card .activity-descpription{
+    height: 80px;
+    padding: 12px 15px 12px 15px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #e7e7e7;
+}
+.activity .activity-content .activit-card .activity-descpription p{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.all-activity-link{
+    text-align: end;
+    padding-top: 30px;
+}
+.all-activity{
+    padding: 0 80px 0 0;
+    text-align: right;
+    text-decoration: none;
+    color: #3681FF;
+    font-size: 16px;
+    position: relative;
+}
+.all-activity::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px;
+    border-bottom: 1px solid #3681FF;
+    transition: .3s;
+}
+.all-activity:hover:after{
+    width: 110px;
+    left: 0;
+}
+.all-activity span{
+    text-align: start;
+}
+.all-activity i{
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
 }

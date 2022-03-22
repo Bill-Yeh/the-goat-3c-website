@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="grid.css">
 </head>
 <body>
     <!-- 導覽列 -->
     <header class="main-header">
-        <div class="container">
+        <div class="main-header-container">
             <a href="#" class="logo">
-                <img src="the-g.o.a.t.png" alt="THE G.O.A.T">
+                <img src="the-g.o.a.t-2.png" alt="THE G.O.A.T">
             </a>
             <nav class="main-nav">
                 <a href="#">行動裝置</a>
@@ -44,9 +45,11 @@
                 <h1>Galaxy S22 Ultra</h1>
                 <p>了解你的喜好，<br>再造精彩</p>
                 <div class="order-learn">
-                    <button class="learn">
-                        <a href="#">了解更多</a>
-                    </button>
+                    <a class="learn-s22" href="#">了解更多 
+                        <span>
+                            <i class="fa-regular fa-chevron-right"></i>
+                        </span>
+                    </a>
                     <button class="order">
                         <a href="#">立即購買</a>
                     </button>
@@ -73,9 +76,10 @@
                 <p class="ipadp-air-slogan">輕，<span>炫</span>，種實力</p>
                 <p class="ipadp-air-date">推出日期，敬請期待</p>
                 <div class="order-learn">
-                    <button class="learn">
-                        <a href="#">了解更多</a>
-                    </button>
+                    <a class="learn-ipad" href="#">了解更多  <span>
+                            <i class="fa-regular fa-chevron-right"></i>
+                        </span>
+                    </a>
                     <button class="order">
                         <a href="#">立即購買</a>
                     </button>
@@ -88,24 +92,102 @@
     <section class="proart">
         <div class="proart-content">
             <div class="proart-picture-group1">
-                <img class="proart-product01" src="proart-product01.png" width="400" alt="ProArt Studiobook Pro 16">
-                <img class="proart-application01" src="proart-application01.jpg" width="400" height="300" alt="ProArt Studiobook Pro 16 application">
+                <img class="proart-product01" src="proart-product01.png" width="420" alt="ProArt Studiobook Pro 16">
+                <img class="proart-application01" src="proart-application01.jpg" width="420" height="300" alt="ProArt Studiobook Pro 16 application">
             </div>
             <div class="proart-text">
                 <h2>ProArt Studiobook Pro 16</h2>
                 <div class="order-learn">
-                    <button class="learn">
-                        <a href="#">了解更多</a>
-                    </button>
+                    <a class="learn-proart" href="#">了解更多 
+                        <span>
+                            <i class="fa-regular fa-chevron-right"></i>
+                        </span>
+                    </a>
                     <button class="order">
                         <a href="#">立即購買</a>
                     </button>
                 </div>
             </div>
             <div class="proart-picture-group2">
-                <img class="proart-application02" src="proart-appliction02.jpg" alt="ProArt Studiobook Pro 16">
-                <img class="proart-product02" src="proart-product02.png" alt="ProArt Studiobook Pro 16 application">
+                <img class="proart-application02"   src="proart-appliction02.jpg" alt="ProArt Studiobook Pro 16">
+                <img class="proart-product02"  src="proart-product02.png" alt="ProArt Studiobook Pro 16 application">
             </div>
+        </div>
+    </section>
+
+    <!-- banner 零組件專區 -->
+    <section class="component">
+        <h2>零組件專區</h2>
+        <div class="component-content">
+            <div class="motherboard-graphics-card">
+                <div class="motherboard">
+                    <a href="">
+                        <img src="motherboard.png" width="280" alt="ROG STRIX Z690-A GAMING 主機板">
+                    </a>
+                </div>
+                <div class="graphics-card">
+                    <a href="">
+                        <img src="graphics-card.png" width="280" alt="ASUS Dual GeForce RTX 3060 Ti V2 MINI OC 顯示卡">
+                    </a>
+                </div>
+            </div>
+            <div class="case">
+                <div class="case-picture">
+                    <a href="">
+                        <img src="case-2.png" alt="TUF Gaming GT501 軍戎白 電競機殼">
+                    </a>
+                </div>
+            </div>
+            <div class="radiator-edge">
+                <div class="radiator">
+                    <a href="">
+                        <img src="radiator.png" width="280" alt="ROG Strix LC II 360 ARGB 一體式CPU水冷散熱器">
+                    </a>
+                </div>
+                <div class="edge">
+                    <a href="">
+                        <img src="edge.png" width="280" alt="智慧邊緣電腦">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--活動專區 -->
+    <section class="activity">
+        <h2>活動專區</h2>
+        <div class="activity-content">
+            <div class="activit-card">
+                <div class="avtivity-picture">
+                    <img src="recycle.png" alt="線上舊機回收">
+                </div>
+                <div class="activity-descpription">
+                    <p>線上舊機回收，不限品牌舊機，THE G.O.A.T幫您換成購物金!</p>   
+                </div>
+            </div>
+            <div class="activit-card">
+                <div class="avtivity-picture">
+                    <img src="rog-phone-5.png" alt="ROG PHONE 5S">
+                </div>
+                <div class="activity-descpription">
+                    <p>【雙好禮登錄送！】ROG PHONE 5S全機種登錄送遊戲控制器3及延長保固半年，價值超過四千！</p>   
+                </div>
+            </div>
+            <div class="activit-card">
+                <div class="avtivity-picture">
+                    <img src="zenfone8.png" alt="zenfone 8">
+                </div>
+                <div class="activity-descpription">
+                    <p>【手機舊換新】買Zenfone 8 / 8 Flip ，舊機換新最高折 $10,000！</p>   
+                </div>
+            </div>
+        </div>
+        <div class="all-activity-link">
+            <a href="#" class="all-activity">查看更多活動
+                <span>
+                    <i class="fa-regular fa-chevron-right"></i>
+                </span>
+            </a>
         </div>
     </section>
 </body>
