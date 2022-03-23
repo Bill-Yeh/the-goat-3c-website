@@ -8,7 +8,7 @@
     background-color: #363636;
 }
 .main-header .main-header-container{
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -74,7 +74,7 @@
     overflow: hidden;
 }
 .s22-content{
-    width: 1200px;
+    max-width: 1200px;
     height: 500px;
     display: flex;
     justify-content: space-between;
@@ -156,6 +156,20 @@
 .s22-product-3{
     position: relative;
 }
+.banner-s22-right-arrow{
+    display: flex;
+    align-items: center;
+}
+.banner-s22-right-arrow i{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    color: #838383;
+    font-size: 40px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
 /* ------------------------------------------------ */
 
@@ -166,7 +180,7 @@
     background-color: #363636;
 }
 .ipad-air-content{
-    width: 1200px;
+    max-width: 1200px;
     height: 500px;
     display: flex;
     justify-content: space-around;
@@ -233,7 +247,7 @@
     background-color: #f6f6f6;
 }
 .proart-content{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
 .proart-content .proart-text{
@@ -303,12 +317,12 @@
 }
 .component h2{
     margin-left: 80px;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 500;
     color: white;
 }
 .component .component-content{
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -336,25 +350,36 @@
 }
 .activity h2{
     margin-left: 80px;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 500;
 }
 .activity .activity-content{
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     margin: auto;
 }
 .activity .activity-content .activit-card{
-    width: 340px;
-    margin: 0 15px;
+    width: 350px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .8s;
+}
+.activity .activity-content .activit-card:hover{
+    box-shadow: 0px 0px 18px rgba(168, 168, 168, 0.8);
+}
+.activity .activity-content .activit-card:hover img{
+    transform: scale(1.1);
 }
 .activity .activity-content .activit-card .avtivity-picture{
-    width: 340px;
+    width: 350px;
+    overflow: hidden;
 }
 .activity .activity-content .activit-card .avtivity-picture img{
     width: 100%;
     vertical-align: middle;
+    object-fit: cover;
+    transition: .8s;
 }
 .activity .activity-content .activit-card .activity-descpription{
     height: 80px;
@@ -370,7 +395,21 @@
 }
 .all-activity-link{
     text-align: end;
-    padding-top: 30px;
+    padding: 25px 0;
+}
+.activity .activity-content .right-arrow{
+    display: flex;
+    align-items: center;
+}
+.activity .activity-content .right-arrow i{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    color: #838383;
+    font-size: 40px;
+    font-weight: 600;
+    cursor: pointer;
 }
 .all-activity{
     padding: 0 80px 0 0;
@@ -401,4 +440,81 @@
     width: 25px;
     height: 25px;
     font-weight: 600;
+}
+
+/* -------------------------------------------------- */
+
+/* footer*/
+.footer{
+    width: 100%;
+    padding: 5px 0;
+    background-color: #363636;
+}
+.footer .footer-content{
+    max-width: 1200px;
+    margin: auto;
+}
+.footer .footer-content .main-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer .footer-content .main-footer h3{
+    font-weight: 400;
+    color: #f6f6f6;
+}
+.footer .footer-content .main-footer ul{
+    padding: 0;
+}
+.footer .footer-content .main-footer li{
+    list-style: none;
+    line-height: 2;
+}
+.footer .footer-content .main-footer ul li .footer-link{
+    text-decoration: none;
+    color: #f6f6f6;
+    font-size: 13px;
+    position: relative;
+}
+.footer .footer-content .main-footer ul li .footer-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: -3px;
+    border-bottom: 1px solid #f6f6f6;
+    transition: .3s;
+
+}
+.footer .footer-content .main-footer ul li .footer-link:hover:after{
+    width: 100%;
+    left: 0;
+}
+.footer .footer-content .main-footer .social ul {
+    display: flex;
+    display: grid;
+    grid-template-columns: 35px 35px;
+    gap: 5px;
+}
+.footer .footer-content .main-footer .social img{
+    width: 30px;
+}
+.copyright{
+    border-top: 1px solid #838383;
+    text-align: center;
+    font-size: 12px;
+    color: #838383;
+    padding-top: 8px;
+}
+.copyright p{
+    margin: 0;
+    padding-bottom: 8px;
+}
+.copyright a{
+    text-decoration: none;
+    color: #838383;
+    transition: .3s;
+}
+.copyright a:hover{
+    color: #f6f6f6;
 }
