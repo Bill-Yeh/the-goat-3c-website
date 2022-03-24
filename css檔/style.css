@@ -3,7 +3,7 @@
             font-family: 'Noto Sans TC',sans-serif;
         }
 
-/* 導覽列 */
+/* 導覽列(共用區塊) */ 
 .main-header{
     background-color: #363636;
 }
@@ -32,7 +32,7 @@
     position: relative;
     transform: translateY(0px);
     transition: .3s;
-    font-size: 18px;
+    font-size: 16px;
 }
 .main-header .main-nav a:hover{
     transform: translateY(-5px);
@@ -58,7 +58,7 @@
 .nav-icon{
     width: 20px;
     height: 20px;
-    padding: 0 20px;
+    padding: 0 10px;
     cursor: pointer;
 }
 .nav-icon img{
@@ -67,22 +67,30 @@
 
 /* ------------------------------------------------------- */
 
+/* Home page */
+
 /* banner Galaxy s22 Ultra */
 .galaxy-s22-ultra{
     width: 100%;
+    padding: 50px 0;
     background-color: #f6f6f6;
     overflow: hidden;
 }
 .s22-content{
     max-width: 1200px;
-    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
 }
 .s22-content-text{
-    padding: 0 0 0 50px;
+    width: 40%;
+    /* width: 38.333333%; */
+    padding: 0 0 0 30px;
+}
+.s22-content-product{
+    width: 60%;
+    /* width: 61.666666%; */
 }
 .s22-content-text h1{
     font-size: 56px;
@@ -95,6 +103,7 @@
 }
 .order-learn .learn-s22{
     text-decoration: none;
+    font-size: 16px;
     color: #3c3c3c;
     position: relative;
 }
@@ -130,7 +139,7 @@
     background-color: rgb(5, 61, 216);
 }
 .order-learn button a{
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     color: white;
     display: flex;
@@ -141,9 +150,10 @@
 }
 .s22-product-picture{
     display: flex;
+    justify-content: flex-end;
 }
 .s22-product-1,.s22-product-2,.s22-product-3{
-    margin: 20px 30px;
+    margin-right: 30px;
 }
 .s22-product-1{
     position: relative;
@@ -176,12 +186,12 @@
 /* banner iPad air */
 .ipad-air{
     width: 100%;
+    padding: 50px 0;
     /* background: linear-gradient(90deg,black,grey); */
     background-color: #363636;
 }
 .ipad-air-content{
     max-width: 1200px;
-    height: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -212,6 +222,7 @@
 }
 .order-learn .learn-ipad{
     text-decoration: none;
+    font-size: 16px;
     color: white;
     position: relative;
 }
@@ -258,6 +269,7 @@
 }
 .order-learn .learn-proart{
     text-decoration: none;
+    font-size: 16px;
     color: #3c3c3c;
     position: relative;
 }
@@ -316,16 +328,18 @@
     background-color: #363636;
 }
 .component h2{
-    margin-left: 80px;
-    font-size: 40px;
+    margin-left: 30px;
+    font-size: 36px;
     font-weight: 500;
     color: white;
 }
 .component .component-content{
     max-width: 1200px;
+    margin: auto;
+}
+.component .component-content .product-type{
     display: flex;
     justify-content: center;
-    margin: auto;
 }
 .component-content .case{
     padding: 0 50px;
@@ -349,15 +363,17 @@
     background-color: #f6f6f6;
 }
 .activity h2{
-    margin-left: 80px;
-    font-size: 40px;
+    margin-left: 30px;
+    font-size: 36px;
     font-weight: 500;
 }
 .activity .activity-content{
     max-width: 1200px;
+    margin: auto;
+}
+.activity .activity-content .activity-card-section{
     display: flex;
     justify-content: center;
-    margin: auto;
 }
 .activity .activity-content .activit-card{
     width: 350px;
@@ -450,11 +466,9 @@
     padding: 5px 0;
     background-color: #363636;
 }
-.footer .footer-content{
+.footer .footer-content .main-footer{
     max-width: 1200px;
     margin: auto;
-}
-.footer .footer-content .main-footer{
     display: flex;
     justify-content: space-around;
 }
@@ -517,4 +531,79 @@
 }
 .copyright a:hover{
     color: #f6f6f6;
+}
+
+/* -------------------------------------------------- */
+
+/* product-introduction */
+.main-header-product-introduction{
+    width: 100%;
+    position: relative;
+}
+.main-header-background-image{
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: 50% -30px;
+    background-image: url(../picture/background-imge-Ellipse-nav.png);
+}
+.main-header-product-introduction .main-header-container{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.main-header-product-introduction .main-header-container .logo{
+    width: 80px;
+    /* padding-top: 12px; */
+}
+.main-header-product-introduction .main-header-container .logo img{
+    width: 100%;
+}
+.main-header-product-introduction .main-nav{
+    margin: auto;
+    display: flex;
+}
+.main-header-product-introduction .main-nav a{
+    text-decoration: none;
+    color: #363636;
+    padding: 5px 30px;
+    position: relative;
+    transform: translateY(0px);
+    transition: .3s;
+    font-size: 16px;
+}
+.main-header-product-introduction .main-nav a:hover{
+    transform: translateY(-5px);
+}
+.main-header-product-introduction .main-nav a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 0;
+    border-bottom: 1px solid #363636;
+    transition: .3s;
+}
+.main-header-product-introduction .main-nav a:hover:after{
+    left: 0;
+    right: 0;
+}
+.main-header-product-introduction .search-cart-login{
+    display: flex;
+    align-items: center;
+}
+.main-header-product-introduction .nav-icon{
+    width: 20px;
+    height: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.main-header-product-introduction .nav-icon img{
+    width: 100%;
 }
