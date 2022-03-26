@@ -8,7 +8,7 @@
     background-color: #363636;
 }
 .main-header .main-header-container{
-    max-width: 1200px;
+    max-width: 95%;
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -72,7 +72,7 @@
 /* banner Galaxy s22 Ultra */
 .galaxy-s22-ultra{
     width: 100%;
-    padding: 50px 0;
+    padding: 70px 0;
     background-color: #f6f6f6;
     overflow: hidden;
 }
@@ -92,8 +92,8 @@
     width: 60%;
     /* width: 61.666666%; */
 }
-.s22-content-text h1{
-    font-size: 56px;
+.s22-content-text h2{
+    font-size: 48px;
 }
 .s22-content-text p{
     font-size: 28px;
@@ -198,7 +198,7 @@
     margin: auto;
 }
 .ipad-air-content .ipad-air-picture{
-    width: 450px;
+    width: 50%;
 }
 .ipad-air-content .ipad-air-picture .ipad-air-img{
     width: 100%
@@ -209,7 +209,7 @@
     /* margin-right: 100px; */
 }
 .ipad-air-content .ipad-air-text h2{
-    font-size: 56px;
+    font-size: 48px;
 }
 .ipad-air-content .ipad-air-text h2 span{
     color: rgb(210, 133, 255);
@@ -265,7 +265,7 @@
     text-align: center;
 }
 .proart-content .proart-text h2{
-    font-size: 56px;
+    font-size: 48px;
 }
 .order-learn .learn-proart{
     text-decoration: none;
@@ -605,5 +605,104 @@
     cursor: pointer;
 }
 .main-header-product-introduction .nav-icon img{
+    width: 100%;
+}
+
+/* ------------------------------------ */
+
+/* s22 ultra product feature */
+.s22-ultra-product-feature{
+    width: 100%;
+}
+.s22-ultra-product-feature .product-title-slogan{
+    text-align: center;
+    margin-top: -150px;
+}
+.s22-ultra-product-feature .product-title-slogan h1{
+    margin: 0;
+}
+.s22-ultra-product-feature .product-title-slogan h2{
+    margin-top: 10px;
+}
+
+/* -------------------------------------------- */
+/* s22 ultra product All your devices, working together. */
+.s22-ultra-device-connection{
+    width: 100%;
+}
+.s22-ultra-device-connection .device-connection-section{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.s22-ultra-device-connection .device-connection-section .s22-ultra-device-connection-background-image{
+    background-image: url(../切版圖片素材/產品詳細介紹頁面/yellow-ellipse.png);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 300vh;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    margin: auto;
+    z-index: -2;
+}
+.s22-ultra-device-picture{
+    width: 250px;
+    margin: auto;
+    margin-top: 150px;
+}
+.s22-ultra-device-picture .s22-photo{
+    width: 100%;
+}
+.cooling-75{
+    width: 165px;
+    position: absolute;
+    right: 10%;
+}
+.cooling-75 .cooling-75-circle{
+    width: 100%;
+}
+.smart-watch{
+    width: 148px;
+    position: absolute;
+    left:12%;
+    top: 50%;
+}
+.smart-watch .watch{
+    width: 100%;
+}
+.smart-tv{
+    width: 326px;
+    position: absolute;
+    bottom: -80%;
+}
+.smart-tv .tv{
+    width: 100%;
+}
+.smart-vehicle{
+    width: 230px;
+    position: absolute;
+    bottom:-150%;
+    right: 3%;
+}
+.smart-vehicle .vehicle{
+    width: 100%;
+}
+.android-laptop{
+    width: 320px;
+    position: absolute;
+    right: 10%;
+    bottom: -200%;
+}
+.android-laptop .laptop{
+    width: 100%;
+}
+.smart-tablet{
+    width: 300px;
+    position: absolute;
+    bottom: -180%;
+    left: 3%;
+}
+.smart-tablet .tablet{
     width: 100%;
 }
