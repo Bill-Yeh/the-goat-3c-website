@@ -539,6 +539,8 @@
 .main-header-product-introduction{
     width: 100%;
     position: relative;
+    /* position: sticky;
+    top: 0; */
 }
 .main-header-background-image{
     height: 320px;
@@ -638,18 +640,19 @@
 .s22-ultra-device-connection .device-connection-section .s22-ultra-device-connection-background-image{
     background-image: url(../切版圖片素材/產品詳細介紹頁面/yellow-ellipse.png);
     background-repeat: no-repeat;
-    width: 80%;
-    height: 300vh;
-    position: absolute;
-    top: 20%;
-    left: 10%;
+    width: 640px;
+    height: 1200px;
+    position: relative;
+    top: -80px;
     margin: auto;
-    z-index: -2;
+    z-index: -1;
 }
 .s22-ultra-device-picture{
     width: 250px;
     margin: auto;
     margin-top: 150px;
+    position: sticky;
+    top:0;
 }
 .s22-ultra-device-picture .s22-photo{
     width: 100%;
@@ -657,7 +660,8 @@
 .cooling-75{
     width: 165px;
     position: absolute;
-    right: 10%;
+    top:30%;
+    right: 18%;
 }
 .cooling-75 .cooling-75-circle{
     width: 100%;
@@ -665,8 +669,8 @@
 .smart-watch{
     width: 148px;
     position: absolute;
-    left:12%;
-    top: 50%;
+    left:18%;
+    top: 35%;
 }
 .smart-watch .watch{
     width: 100%;
@@ -674,7 +678,8 @@
 .smart-tv{
     width: 326px;
     position: absolute;
-    bottom: -80%;
+    bottom: 35%;
+    left: 10%;
 }
 .smart-tv .tv{
     width: 100%;
@@ -682,8 +687,8 @@
 .smart-vehicle{
     width: 230px;
     position: absolute;
-    bottom:-150%;
-    right: 3%;
+    bottom:35%;
+    right: 15%;
 }
 .smart-vehicle .vehicle{
     width: 100%;
@@ -691,8 +696,8 @@
 .android-laptop{
     width: 320px;
     position: absolute;
-    right: 10%;
-    bottom: -200%;
+    right: 12%;
+    bottom: 20%;
 }
 .android-laptop .laptop{
     width: 100%;
@@ -700,9 +705,102 @@
 .smart-tablet{
     width: 300px;
     position: absolute;
-    bottom: -180%;
-    left: 3%;
+    top: 75%;
+    left: 15%;
 }
 .smart-tablet .tablet{
     width: 100%;
+}
+.primary-fuction{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 5;
+}
+.primary-fuction .function-slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.primary-fuction .function-slogan h2{
+    margin: 0;
+}
+.primary-fuction .function-slogan p{
+    font-size: 1.4375rem;
+}
+.green-circle-background-image{
+    background-image: url(../切版圖片素材/產品詳細介紹頁面/green-circle.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    top: 35%;
+    z-index: -1;
+}
+.primary-fuction .four-feature{
+    display: flex;
+    justify-content: center;
+}
+.high-efficiency-cpu,.huge-battery,.ip68-water-proof,.wireless-power-share{
+    width: 240px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 4px 12px 47px 0 rgb(0 0 0 / 10%);
+    background-color: #fff;
+}
+.four-feature h3{
+    margin: 0
+}
+.four-feature p{
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* ------------------------------------- */
+/* 產品相機功能介紹 */
+.s22-camera-introduction{
+    width: 100%;
+    background-color: #F5FFBA;
+}
+.s22-camera-introduction .camera-content{
+    max-width: 1200px;
+    margin: auto;
+}
+.camera-content .camera-slogan{
+    font-size: 2.5rem;
+    margin-left: 50px;
+    padding-top: 100px;
+    position: relative;
+    z-index: 5;
+}
+.model-photo{
+    width: 550px;
+    margin: 10% 0 0 40%;
+    position: relative;
+    z-index: 5;
+}
+.model-photo img{
+    width: 100%;
+}
+.s22-camera{
+    width: 300px;
+}
+.s22-camera img{
+    width: 100%;
+}
+.camera-content .camera-description{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.camera-content .camera-description .s22-camera{
+    margin-top: -10%;
+}
+.camera-content .camera-description .product-description{
+    width: 40%;
+    font-size: 1.25rem;
+    line-height: 1.5;
 }
