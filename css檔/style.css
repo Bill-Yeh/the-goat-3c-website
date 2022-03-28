@@ -21,6 +21,9 @@
 .main-header .main-header-container .logo img{
     width: 100%;
 }
+.main-header .main-header-container h1{
+    display: none;
+}
 .main-header .main-nav{
     margin: auto;
     display: flex;
@@ -514,11 +517,12 @@
     width: 30px;
 }
 .copyright{
-    border-top: 1px solid #838383;
+    border-top: 1px solid #575757;
     text-align: center;
     font-size: 12px;
     color: #838383;
     padding-top: 8px;
+    margin: 0 20px;
 }
 .copyright p{
     margin: 0;
@@ -648,7 +652,8 @@
     z-index: -1;
 }
 .s22-ultra-device-picture{
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     margin: auto;
     margin-top: 150px;
     position: sticky;
@@ -777,7 +782,9 @@
     z-index: 5;
 }
 .model-photo{
-    width: 550px;
+    /* max-width: 550px; */
+    /* width: 100%; */
+    max-width: 100%;
     margin: 10% 0 0 40%;
     position: relative;
     z-index: 5;
@@ -786,7 +793,8 @@
     width: 100%;
 }
 .s22-camera{
-    width: 300px;
+    /* max-width: 300px; */
+    max-width: 100%;
 }
 .s22-camera img{
     width: 100%;
@@ -803,4 +811,214 @@
     width: 40%;
     font-size: 1.25rem;
     line-height: 1.5;
+}
+
+/* --------------------------------------- */
+/* 產品方便性 */
+.s22-convenient-feature{
+    width: 100%;
+}
+.s22-convenient-feature .convenient-feature-content{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.s22-convenient-feature .blue-circle-background-image{
+    background-image: url(../切版圖片素材/產品詳細介紹頁面/blue-circle.png);
+    background-repeat: no-repeat;
+    width: 1400px;
+    height: 130vh;
+    position: absolute;
+    top: 18%;
+    left: -50%;
+    z-index: -1;
+}
+.s22-convenient-feature .convenient-feature-content .convenient-text{
+    display: flex;
+}
+.convenient-slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20% 0 0 7%;
+    width: 60%;
+}
+.advantage-description{
+    width: 40%;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 25% 3% 0 0;
+}
+.convenient-slogan .in-trip{
+    font-size: 1.125rem;
+}
+.convenient-slogan .advantage{
+    font-size: 5rem;
+    font-weight: 500;
+}
+.s22-convenient-feature .convenient-picture .convenient-picture-content .digital-car-key .car-key-pic{
+    width: 585px;
+}
+.s22-convenient-feature .convenient-picture .convenient-picture-content .digital-car-key .car-key-pic img{
+    width: 70%;
+}
+.s22-convenient-feature .convenient-picture .convenient-picture-content .map-navigation .map-navigation-pic{
+    width: 585px;
+}
+.s22-convenient-feature .convenient-picture .convenient-picture-content .map-navigation .map-navigation-pic img{
+    width: 70%;
+}
+.s22-convenient-feature .convenient-picture .convenient-picture-content .google-pay .google-pay-pic{
+    width: 585px;
+}
+.s22-convenient-feature .convenient-picture .convenient-picture-content .google-pay .google-pay-pic img{
+    width: 70%;
+}
+.convenient-picture{
+    margin-top: 8%;
+    overflow: hidden;
+}
+.convenient-picture .convenient-picture-content{
+    display: flex;
+    margin-left: 38%;
+}
+.digital-car-key,.map-navigation,.google-pay{
+    position: relative;
+}
+.car-key-txt,.map-navigation-txt,.google-pay-txt{
+    width: 320px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 4px 40px 48px 0 rgb(0 0 0 / 10%);
+    position: absolute;
+    bottom: -20%;
+    left: 40%;
+}
+.convenient-picture-content h3{
+    font-size: 1.875rem;
+    margin:0;
+}
+.convenient-picture-content p{
+    line-height: 2;
+    margin-top: 5px;
+}
+.convenient-picture-content a{
+    text-decoration: none;
+    color: #3681FF;
+    display: block;
+}
+.convenient-picture-content i{
+    margin-left: 5px;
+    transition: .3s;
+}
+.convenient-picture-content a:hover i{
+    transform: translate(20%, -20%);
+}
+.slideshow{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10%;
+}
+.carousel-control{
+    display: flex;
+    justify-content: center;
+}
+.slideshow .carousel-control span{
+    width: 40px;
+    height: 10px;
+    margin: 10% 1% 0 1%;
+}
+.control-icon-1{
+    background-color: #3c3c3c;
+}
+.control-icon-2, .control-icon-3{
+    background-color: #f6f6f6;
+}
+.slideshow .control-arrow{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    padding-top: 3%;
+}
+.slideshow .control-arrow i{
+    padding: 0 10px;
+    cursor: pointer;
+}
+.slideshow .control-arrow .fa-arrow-left{
+    color: #d3d3d3;
+}
+
+/* -------------------------------------------- */
+/* 產品詳細頁面footer */
+.product-introduction-footer{
+    width: 100%;
+    padding: 5px 0;
+    background-color: #f6f6f6;
+}
+.product-introduction-footer .footer-content .main-footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.product-introduction-footer .footer-content .main-footer h3{
+    font-weight: 400;
+    color: #363636;
+}
+.product-introduction-footer .footer-content .main-footer ul{
+    padding: 0;
+}
+.product-introduction-footer .footer-content .main-footer li{
+    list-style: none;
+    line-height: 2;
+}
+.product-introduction-footer .footer-content .main-footer ul li .footer-link{
+    text-decoration: none;
+    color: #363636;
+    font-size: 13px;
+    position: relative;
+}
+.product-introduction-footer .footer-content .main-footer ul li .footer-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: -3px;
+    border-bottom: 1px solid #363636;
+    transition: .3s;
+
+}
+.product-introduction-footer .footer-content .main-footer ul li .footer-link:hover:after{
+    width: 100%;
+    left: 0;
+}
+.product-introduction-footer .footer-content .main-footer .social ul {
+    display: flex;
+    display: grid;
+    grid-template-columns: 35px 35px;
+    gap: 5px;
+}
+.product-introduction-footer .footer-content .main-footer .social img{
+    width: 30px;
+}
+.product-introduction-footer .copyright{
+    border-top: 1px solid #d3d1d1;
+    text-align: center;
+    font-size: 12px;
+    color: #838383;
+    padding-top: 8px;
+    margin: 0 20px;
+}
+.product-introduction-footer .copyright p{
+    margin: 0;
+    padding-bottom: 8px;
+}
+.product-introduction-footer .copyright a{
+    text-decoration: none;
+    color: #838383;
+    transition: .3s;
+}
+.product-introduction-footer .copyright a:hover{
+    color: #f6f6f6;
 }
