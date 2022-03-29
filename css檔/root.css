@@ -13,6 +13,7 @@
     --primary-button-border-radius:30px;
     --primary-button-border:none;
     --primary-button-background:#3681FF;
+    --primary-button-hover: rgb(5, 61, 216);
 }
 
 /* 建立變數 */
@@ -31,4 +32,7 @@ h3{
     padding: var(--primary-button-padding);
     border-radius: var(--primary-button-border-radius);
     border: var(--primary-button-border);
+}
+.order:hover{
+    background-color: var(--primary-button-hover);
 }

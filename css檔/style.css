@@ -6,9 +6,12 @@
 /* 導覽列(共用區塊) */ 
 .main-header{
     background-color: #363636;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 .main-header .main-header-container{
-    max-width: 95%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -130,7 +133,7 @@
     font-weight: 600;
     color: #3c3c3c;
 }
-.order-learn .order{
+.order{
     background-color: #3681FF;
     border: none;
     border-radius: 30px;
@@ -138,10 +141,10 @@
     transition: .3s;
     cursor: pointer;
 }
-.order-learn .order:hover{
+.order:hover{
     background-color: rgb(5, 61, 216);
 }
-.order-learn button a{
+.order a{
     font-size: 16px;
     text-decoration: none;
     color: white;
@@ -298,9 +301,6 @@
     height: 25px;
     font-weight: 600;
     color: #3c3c3c;
-}
-.order-learn button:hover{
-    background-color: rgb(140, 140, 140);
 }
 .proart-picture-group1,.proart-picture-group2{
     width: 420px;
@@ -543,8 +543,6 @@
 .main-header-product-introduction{
     width: 100%;
     position: relative;
-    /* position: sticky;
-    top: 0; */
 }
 .main-header-background-image{
     height: 320px;
@@ -769,6 +767,7 @@
 .s22-camera-introduction{
     width: 100%;
     background-color: #F5FFBA;
+    padding-bottom: 10%;
 }
 .s22-camera-introduction .camera-content{
     max-width: 1200px;
@@ -947,6 +946,20 @@
 .slideshow .control-arrow .fa-arrow-left{
     color: #d3d3d3;
 }
+.return-top{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.return-top .top{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #3c3c3c;
+}
+.return-top a{
+    text-decoration: none;
+    color: #f6f6f6;
+}
 
 /* -------------------------------------------- */
 /* 產品詳細頁面footer */
@@ -1021,4 +1034,43 @@
 }
 .product-introduction-footer .copyright a:hover{
     color: #f6f6f6;
+}
+
+/* ------------------------------------------------------ */
+
+/* 行動裝置選型頁面 */
+.mobile-device-nav{
+    width: 100%;
+}
+.mobile-device-nav .device-nav-content{
+    max-width: 1200px;
+    margin: auto;
+}
+.device-nav-content .device-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-device-nav h1{
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.device-title .other-device .device-name{
+    display: flex;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.device-title .other-device .device-name li{
+    padding: 0 10px;
+}
+.device-title .other-device .device-name li a{
+    color: #363636;
+}
+.mobile-device-nav li{
+    list-style: none;
+}
+.mobile-device-nav a{
+    text-decoration: none;
 }
