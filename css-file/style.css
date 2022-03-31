@@ -6,7 +6,6 @@
 /* 導覽列(共用區塊) */ 
 .main-header{
     background-color: #363636;
-    opacity: .95;
     position: sticky;
     top: 0;
     z-index: 20;
