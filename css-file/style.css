@@ -1433,20 +1433,13 @@ a {
     font-size: 12px;
     color: #363636;
 }
-.sort-type{
+
+.sort-type {
     width: 60px;
     border: none;
     outline: none;
     background-color: #f6f6f6;
 }
-
-
-/* 產品選型頁下半部 */
-
-
-/* .pick-product-part{
-    background-color: #f6f6f6;
-} */
 
 
 /* 類型規格選型 左 */
@@ -1819,4 +1812,166 @@ background-color: pink;
 .product-title-price-hint .hint-product-name h1 {
     font-size: 20px;
     font-weight: 500;
+}
+
+
+/* 加入購物車_圖片+文字區塊 */
+
+.join-shopping-cart-section .shopping-cart-content {
+    padding-top: 50px;
+}
+
+
+/* 加入購物車_產品圖片部分 */
+
+.s22-ultra-product-real-photo {
+    width: 60%;
+    margin: auto;
+}
+
+.s22-ultra-product-real-photo img {
+    width: 100%;
+}
+
+
+/* 加入購物車_產品文字說明部分 */
+
+.s22-ulra-name-dicount-info {
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.s22-ulra-name-dicount-info ul {
+    padding-left: 20px;
+    color: #686868;
+}
+
+.s22-ulra-name-dicount-info .limited-time-offer span {
+    color: red;
+    font-weight: 500;
+}
+
+.select-storage-memory-color-group .select-product-specification-title h3 {
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+
+/* 選擇產品規格_儲存空間 */
+
+.space-256gb-512gb {
+    display: flex;
+}
+
+.control {
+    width: 132px;
+    height: 44px;
+    /* line-height: 44px; */
+    margin-right: 15px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.control input[type="radio"] {
+    opacity: 0;
+    appearance: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.control label {
+    width: 120px;
+    height: 40px;
+    line-height: 36px;
+    padding: 4px 6px;
+    background-color: #EFEFEF;
+    border-radius: 30px;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control input:checked+label {
+    background: #3681FF;
+    color: #FFFFFF;
+}
+
+
+/* 選擇產品規格_記憶體 */
+
+.select-memory,
+.select-product-color {
+    margin-top: 30px;
+}
+
+.memory-8gb-12gb-16gb {
+    display: flex;
+}
+
+
+/* 選擇產品規格_顏色 */
+
+.color-pink-purple-yellow {
+    display: flex;
+}
+
+.color-pink-purple-yellow .pink-icon {
+    color: rgb(254, 165, 165);
+    padding-right: 5px;
+}
+
+.color-pink-purple-yellow .purple-icon {
+    color: rgb(199, 159, 255);
+    padding-right: 5px;
+}
+
+.color-pink-purple-yellow .yellow-icon {
+    color: rgb(254, 196, 152);
+    padding-right: 5px;
+}
+
+
+/* 贈品區 */
+
+.giveaway,
+.additional-accessories {
+    margin-top: 50px;
+    padding: 30px 0;
+    border-top: 1px solid #838383;
+}
+
+.giveaway-title,
+.additional-accessories-title {
+    font-weight: 500;
+}
+
+.zenpower-duo,
+.port-charger,
+.protective-case,
+.bluetooth-earphone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.zenpower-duo,
+.port-charger,
+.protective-case,
+.bluetooth-earphone img {
+    width: 100%;
+}
+
+.giveaway a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: #686868;
+}
+
+.additional-accessories a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: #686868;
 }
