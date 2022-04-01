@@ -1433,9 +1433,11 @@ a {
     font-size: 12px;
     color: #363636;
 }
-
-.sort i {
-    padding-left: 5px;
+.sort-type{
+    width: 60px;
+    border: none;
+    outline: none;
+    background-color: #f6f6f6;
 }
 
 
