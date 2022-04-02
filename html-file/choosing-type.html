@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +13,9 @@
     <link rel="stylesheet" href="../css-file/grid-v2.css">
     <link rel="icon" href="../picture/the-g.o.a.t-black-version2.0.icon.png">
 </head>
+
 <body style="background-color: #f6f6f6;">
-    
+
     <!-- 導覽列 -->
     <header class="main-header">
         <div class="main-header-container">
@@ -140,8 +142,7 @@
                 <div class="filter-result-condition">
                     <div class="filter">
                         <a href="#">
-                            <i class="fa-solid fa-filter"></i>
-                            篩選
+                            <i class="fa-solid fa-filter"></i> 篩選
                         </a>
                     </div>
                     <div class="result">6個結果</div>
@@ -994,6 +995,115 @@
         </div>
     </section>
 
+
+    <!-- 尋找門市據點 -->
+    <div class="look-for-store-full-screen">
+        <div class="look-for-store">
+            <div class="store-content">
+                <div class="viewport-title-close-icon">
+                    <span class="viewport-title">尋找門市</span>
+                    <span class="close-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                          </svg>
+                    </span>
+                </div>
+                <div class="store-distance-google-map">
+                    <div class="store-distance-addresss">
+                        <ul class="distance-km">
+                            <li>
+                                <div class="select-km">
+                                    <input type="radio" name="distance" id="one-km" class="one-km-store">
+                                    <label for="one-km">
+                                        <span>1km</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="select-km">
+                                    <input type="radio" name="distance" id="two-km" class="two-km-store">
+                                    <label for="two-km">
+                                        <span>2km</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="select-km">
+                                    <input type="radio" name="distance" id="five-km" class="five-km-store">
+                                    <label for="five-km">
+                                        <span>5km</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="select-km">
+                                    <input type="radio" name="distance" id="ten-km" class="ten-km-store">
+                                    <label for="ten-km">
+                                        <span>10km</span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="display-store-quantity-distance-address">
+                            <span>顯示3間門市</span>
+                            <ul class="store-quantity">
+                                <li>
+                                    <div class="store-location-icon">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                              </svg>
+                                        </span>
+                                    </div>
+                                    <div class="address-txt-part">
+                                        <p>中壢店<br>桃園市中壢區復興路46號<br>3.5km</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="store-location-icon">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                            </svg> 
+                                        </span>
+                                    </div>
+                                    <div class="address-txt-part">
+                                        <p>平鎮店<br>桃園市平鎮區振興路46號<br>4.5km</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="store-location-icon">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                            </svg> 
+                                        </span>
+                                    </div>
+                                    <div class="address-txt-part">
+                                        <p>桃園店<br>桃園市桃園區經國路46號<br>5.5km</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="store-google-map">
+                        <div class="google-map-tool">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2491781960202!2d121.22283401744383!3d24.957635500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1648902037819!5m2!1szh-TW!2stw"
+                                width="500" height="520" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrde">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- footer -->
     <section class="footer">
         <div class="footer-content">
@@ -1073,5 +1183,26 @@
             </div>
         </div>
     </section>
+
+
+
+    <script src="../javascript/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+
+            $(".purchase-location").click(function() {
+                $(".look-for-store-full-screen").addClass("show");
+            })
+
+            $(".close-icon").click(function() {
+                $(".look-for-store-full-screen").removeClass("show");
+            })
+        })
+    </script>
+
+
 </body>
+
 </html>

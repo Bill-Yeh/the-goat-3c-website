@@ -1745,7 +1745,7 @@ background-color: pink;
 }
 
 .order-learn-btn .order-btn:hover {
-    background-color: rgb(5, 61, 216);
+    background-color: rgb(51, 108, 254);
 }
 
 .order-learn-btn .learn-btn {
@@ -1786,10 +1786,159 @@ background-color: pink;
 }
 
 
+/* 尋找門市據點視窗 */
+
+.look-for-store-full-screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 30px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.look-for-store-full-screen.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.look-for-store-full-screen .look-for-store {
+    width: 90%;
+    max-width: 960px;
+    height: 75%;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px 0 30px 30px;
+    position: relative;
+}
+
+
+/* 尋找門市標題和關閉icon */
+
+.store-content .viewport-title-close-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #838383;
+    padding-bottom: 15px;
+}
+
+.store-content .viewport-title-close-icon .viewport-title {
+    font-size: 1.5625rem;
+    font-weight: 500;
+}
+
+.store-content .viewport-title-close-icon .close-icon svg {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.store-distance-google-map .store-distance-addresss .distance-km {
+    display: flex;
+    padding-left: 0;
+}
+
+.store-distance-google-map .store-distance-addresss .distance-km li {
+    list-style: none;
+}
+
+.select-km {
+    width: 120px;
+    position: relative;
+    margin-right: -10px;
+}
+
+.select-km input[type="radio"] {
+    opacity: 0;
+    appearance: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.select-km label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    padding: 10px 6px;
+    background-color: #dedede;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.select-km span {
+    margin: auto;
+}
+
+.select-km input:checked+label {
+    background: #3681FF;
+    color: #FFFFFF;
+}
+
+
+/* 門市地點及公里數 */
+
+.display-store-quantity-distance-address {
+    margin-top: 60px;
+}
+
+.display-store-quantity-distance-address .store-quantity {
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.display-store-quantity-distance-address .store-quantity li {
+    width: 420px;
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid #838383;
+    cursor: pointer;
+    transition: .1s;
+    /* align-items: center; */
+}
+
+.display-store-quantity-distance-address .store-quantity li:hover {
+    background-color: #f6f6f6;
+}
+
+.store-location-icon {
+    margin-top: 27px;
+}
+
+.address-txt-part {
+    margin-left: 15px;
+}
+
+.address-txt-part p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/* google map */
+
+.google-map-tool iframe {
+    position: absolute;
+    top: 75px;
+    right: 2px;
+    border-radius: 0px 0px 30px 0;
+}
+
+
 /* ----------------------------------------- */
 
 
-/* 加入購物車 */
+/* 購買S22 Ultra */
 
 .product-title-price-hint {
     width: 100%;
@@ -1815,14 +1964,14 @@ background-color: pink;
 }
 
 
-/* 加入購物車_圖片+文字區塊 */
+/* 購買S22 Ultra_圖片+文字區塊 */
 
 .join-shopping-cart-section .shopping-cart-content {
     padding-top: 50px;
 }
 
 
-/* 加入購物車_產品圖片部分 */
+/* 購買S22 Ultra_產品圖片部分 */
 
 .product-real-photo-part {
     position: relative;
@@ -1840,7 +1989,7 @@ background-color: pink;
 }
 
 
-/* 加入購物車_產品文字說明部分 */
+/* 購買S22 Ultra_產品文字說明部分 */
 
 .s22-ulra-name-dicount-info {
     line-height: 1.5;
@@ -1983,11 +2132,12 @@ background-color: pink;
 }
 
 
-/* 加入購物車_價格和愛心收藏區塊 */
+/* 購買S22 Ultra_價格和愛心收藏區塊 */
 
 .shopping-cart-price-section {
     background-color: #fff;
     padding: 50px 80px;
+    border-radius: 30px;
 }
 
 .shopping-cart-price-section .final-price-zero-interest {
@@ -2130,6 +2280,7 @@ background-color: pink;
 
 .product-all-feature li strong {
     color: #000;
+    font-size: 1rem;
 }
 
 .product-all-feature li {
@@ -2137,6 +2288,7 @@ background-color: pink;
     padding-bottom: 20px;
     list-style: none;
     color: #686868;
+    font-size: 0.8125rem
 }
 
 
@@ -2166,10 +2318,16 @@ background-color: pink;
     list-style: none;
 }
 
+.shopping-faq h5 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
 .accont-problem,
 .payment-problem,
 .shipping-problem,
 .return-problem {
     line-height: 1.5;
     color: #686868;
+    font-size: 0.8125rem;
 }
