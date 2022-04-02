@@ -1793,7 +1793,7 @@ background-color: pink;
 
 .product-title-price-hint {
     width: 100%;
-    background-color: #f6f6f6;
+    background-color: #fff;
 }
 
 .product-title-price-hint .hint-content {
@@ -1824,9 +1824,15 @@ background-color: pink;
 
 /* 加入購物車_產品圖片部分 */
 
+.product-real-photo-part {
+    position: relative;
+}
+
 .s22-ultra-product-real-photo {
     width: 60%;
     margin: auto;
+    position: sticky;
+    top: 120px;
 }
 
 .s22-ultra-product-real-photo img {
@@ -1973,5 +1979,197 @@ background-color: pink;
 .additional-accessories a {
     text-decoration: none;
     font-size: 1.125rem;
+    color: #686868;
+}
+
+
+/* 加入購物車_價格和愛心收藏區塊 */
+
+.shopping-cart-price-section {
+    background-color: #fff;
+    padding: 50px 80px;
+}
+
+.shopping-cart-price-section .final-price-zero-interest {
+    border-bottom: 1px solid #838383;
+    padding-bottom: 30px;
+}
+
+.shopping-cart-price-section .final-price-zero-interest .nt-price {
+    padding-bottom: 10px;
+}
+
+.shopping-cart-price-section .final-price-zero-interest .nt-price span {
+    font-size: 2rem;
+    color: red;
+    font-weight: 500;
+}
+
+.shopping-cart-price-section .final-price-zero-interest .original-price .original {
+    text-decoration: line-through;
+    font-weight: 500;
+    color: #686868;
+    padding-right: 20px;
+}
+
+.shopping-cart-price-section .final-price-zero-interest .original-price .discount-price {
+    color: red;
+}
+
+.largest-purchase-condition {
+    padding: 30px 0;
+}
+
+.largest-purchase-condition .purchase-condition span {
+    font-size: 1.25rem;
+    color: #686868;
+}
+
+.largest-purchase-condition .free-shipping {
+    padding-top: 10px;
+}
+
+.largest-purchase-condition .free-shipping span {
+    color: #686868;
+    font-size: 0.8125rem;
+}
+
+.join-shopping-cart-button-heart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.join-shopping-cart-button-heart .shopping-cart-button a {
+    text-decoration: none;
+}
+
+.join-shopping-cart-button-heart .shopping-cart-button a input[type="button"] {
+    padding: 15px 80px;
+    border-radius: 30px;
+    border: none;
+    background-color: #3681FF;
+    color: white;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.join-shopping-cart-button-heart .shopping-cart-button a input[type="button"]:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+.join-shopping-cart-button-heart .collect-heart {
+    width: 30px;
+}
+
+.join-shopping-cart-button-heart .collect-heart img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* 產品資訊總攬區塊 */
+
+.product-info-shopping-faq {
+    width: 100%;
+}
+
+.product-info-shopping-faq .section-title-list-group {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.section-title-list-group svg {
+    color: #363636;
+}
+
+
+/* 產品資訊總攬標題 */
+
+.section-title-list-group h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.17rem;
+    font-weight: 500;
+}
+
+
+/* 下拉欄的項目標題 */
+
+.section-title-list-group h4 {
+    font-weight: normal;
+}
+
+
+/* 下拉欄的項目標題+箭頭符號 */
+
+.s22-list-title-1,
+.s22-list-title-2,
+.s22-list-title-3,
+.s22-list-title-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #c7c5c5;
+    border-bottom: 1px solid #c7c5c5;
+    cursor: pointer;
+}
+
+.section-title-list-group .product-all-feature,
+.product-size-demonstrate,
+.box-content,
+.shopping-faq {
+    display: none;
+    padding-left: 0;
+}
+
+
+/* 產品特色 */
+
+.product-all-feature li strong {
+    color: #000;
+}
+
+.product-all-feature li {
+    line-height: 1.5;
+    padding-bottom: 20px;
+    list-style: none;
+    color: #686868;
+}
+
+
+/* 尺寸展示 */
+
+.product-size-demonstrate li {
+    list-style: none;
+}
+
+.s22-actual-size,
+.content-in-box {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 盒內配件 */
+
+.box-content li {
+    list-style: none;
+}
+
+
+/* 購物faq */
+
+.shopping-faq .faq-item {
+    list-style: none;
+}
+
+.accont-problem,
+.payment-problem,
+.shipping-problem,
+.return-problem {
+    line-height: 1.5;
     color: #686868;
 }
