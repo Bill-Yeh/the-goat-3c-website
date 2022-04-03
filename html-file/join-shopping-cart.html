@@ -14,7 +14,7 @@
     <link rel="icon" href="../picture/the-g.o.a.t-black-version2.0.icon.png">
 </head>
 
-<body>
+<body style="background-color: #f6f6f6;">
 
     <!-- 導覽列 -->
     <header class="main-header">
@@ -58,35 +58,40 @@
         <!-- 此層寬度為滿版 -->
         <div class="in-shopping-cart-content">
             <div class="buying-product-title-color-quantity-price">
+                <!-- 此層寬度為1200px -->
                 <div class="buying-content">
                     <div class="product-picture-title-color-quantity">
                         <div class="s22-ultra-smart-phone-picture">
                             <img src="../picture/s22-ultra-cart-page.png" alt="S22 Ultra">
                         </div>
-                        <div class="storage-memory-color-info">
-                            <h2>Galaxy S22 Ultra</h2>
-                            <span>8GB/256GB/夜暮紅</span>
-                        </div>
-                        <div class="quantity-control-button">
-                            <span class="quantity-minus-control">
-                                <button type="button" class="btn-minus-ctrl">
-                                    <span class="minus-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
-                                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-                                        </svg>
-                                    </span>
-                            </button>
-                            </span>
-                            <span class="quantity-number">1</span>
-                            <span class="quantity-plus-control">
-                                <button type="button" class="btn-plus-ctrl">
-                                    <span class="plus-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                        </svg>
-                                    </span>
-                            </button>
-                            </span>
+                        <div class="title-info">
+                            <div class="storage-memory-color-info">
+                                <h2>Galaxy S22 Ultra</h2>
+                                <span>8GB/256GB/夜暮紅</span>
+                            </div>
+                            <div class="quantity-control-button">
+                                <span class="quantity-minus-control">
+                                    <button type="button" class="btn-minus-ctrl">
+                                        <span class="minus-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                                            </svg>
+                                        </span>
+                                </button>
+                                </span>
+                                <span class="quantity-number">
+                                    <input type="text" name="quantity" id="select-order-quantity" class="number">
+                                </span>
+                                <span class="quantity-plus-control">
+                                    <button type="button" class="btn-plus-ctrl">
+                                        <span class="plus-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                            </svg>
+                                        </span>
+                                </button>
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div class="order-final-price-cancel-icon">
@@ -102,6 +107,7 @@
                     </div>
                 </div>
             </div>
+            <!-- 優惠券和結帳計算 -->
             <div class="using-coupon-count-shipping-fee-final-price">
                 <div class="using-coupon">
                     <div class="coupon-code">
@@ -109,13 +115,13 @@
                     </div>
                     <div class="input-coupon-code-activate">
                         <input type="text" name="coupon" placeholder="請輸入代碼" id="coupon-code">
-                        <input type="submit" value="啟用">
+                        <input type="submit" value="啟用" class="activate" id="submit">
                     </div>
                 </div>
                 <div class="count-shipping-fee-final-price">
                     <div class="subtotal-plus-shipping-fee">
                         <div class="subtotal">
-                            <span class="subtotal">小計</span>
+                            <span class="subtotal-text">小計</span>
                             <span class="subtotal-price">NT$38,900</span>
                         </div>
                         <div class="shipping-fee">
@@ -132,7 +138,9 @@
                             <span>消費滿500即可享免運服務</span>
                         </div>
                         <div class="checkout-button">
-                            <input type="submit" value="結帳" class="checkout-btn">
+                            <a href="#">
+                                <input type="submit" value="結帳" class="checkout-btn">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -142,6 +150,281 @@
 
 
 
+    <!-- 建議商品 -->
+    <section class="recommend-commodity">
+        <div class="container commodity-group">
+            <h2>建議商品</h2>
+            <div class="row commodity-row-1">
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/rog-protective-case.png" alt="ROG 手機保護殼">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ROG 手機保護殼-火焰橘</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/rog-protective-case-black.png" alt="ROG 手機保護殼">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ROG 手機保護殼-經典黑</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/rog-protective-case-grey.png" alt="ROG 手機保護殼">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ROG 手機保護殼-鋼鐵灰</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/zenpower.png" alt="ZenPower Pro (PD)">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ZenPower Pro (PD)</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row commodity-row-2">
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/rog-protective-case.png" alt="ROG 手機保護殼">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ROG 手機保護殼-火焰橘</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/rog-protective-case-black.png" alt="ROG 手機保護殼">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ROG 手機保護殼-經典黑</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/rog-protective-case-grey.png" alt="ROG 手機保護殼">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ROG 手機保護殼-鋼鐵灰</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/zenpower.png" alt="ZenPower Pro (PD)">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ZenPower Pro (PD)</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row commodity-row-3">
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/rog-protective-case.png" alt="ROG 手機保護殼">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ROG 手機保護殼-火焰橘</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/rog-protective-case-black.png" alt="ROG 手機保護殼">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ROG 手機保護殼-經典黑</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/rog-protective-case-grey.png" alt="ROG 手機保護殼">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ROG 手機保護殼-鋼鐵灰</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 commodity-column">
+                    <div class="most-recommend-product">
+                        <div class="recommend-product-picture">
+                            <a href="#">
+                                <img src="../picture/zenpower.png" alt="ZenPower Pro (PD)">
+                            </a>
+                        </div>
+                        <a href="#">
+                            <h3>ZenPower Pro (PD)</h3>
+                        </a>
+                        <div class="join-shopping-cart-button">
+                            <input type="button" value="加入購物車" id="extra-order" class="shopping-cart-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--footer -->
+    <section class="footer">
+        <div class="footer-content">
+            <div class="main-footer">
+                <div class="product-service">
+                    <h3>產品與服務</h3>
+                    <ul>
+                        <li><a class="footer-link" href="#">智慧手機</a></li>
+                        <li><a class="footer-link" href="#">平板電腦</a></li>
+                        <li><a class="footer-link" href="#">筆記型電腦</a></li>
+                        <li><a class="footer-link" href="#">智慧手錶</a></li>
+                        <li><a class="footer-link" href="#">主機板</a></li>
+                        <li><a class="footer-link" href="#">顯示卡</a></li>
+                        <li><a class="footer-link" href="#">散熱器</a></li>
+                    </ul>
+                </div>
+                <div class="promotion-activity">
+                    <h3>促銷活動</h3>
+                    <ul>
+                        <li><a class="footer-link" href="#">舊機換新機</a></li>
+                        <li><a class="footer-link" href="#">母親節優惠</a></li>
+                        <li><a class="footer-link" href="#">VIP會員優惠</a></li>
+                        <li><a class="footer-link" href="#">實體促銷活動</a></li>
+                    </ul>
+                </div>
+                <div class="service-info">
+                    <h3>服務資訊</h3>
+                    <ul>
+                        <li><a class="footer-link" href="#">線上維修申請</a></li>
+                        <li><a class="footer-link" href="#">線上維修查詢</a></li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <h3>關於我們</h3>
+                    <ul>
+                        <li><a class="footer-link" href="#">關於THE G.O.A.T</a></li>
+                        <li><a class="footer-link" href="#">新聞資訊</a></li>
+                        <li><a class="footer-link" href="#">門市據點</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <h3>社群</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../picture/facebook.png" alt="The Goat官方臉書粉絲團">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../picture/instagram.png" alt="The Goat instagram官方帳號">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../picture/twitter.png" alt="The Goat 官方twitter帳號">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../picture/linkedin.png" alt="The Goat linkedin官方帳號">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../picture/youtube.png" alt="The Goat youtube官方頻道">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="privacy">
+                    <a href="#">使用條款</a>｜<a href="#">隱私權保護政策</a>｜Copyright THE G.O.A.T
+                </p>
+                <p class="solution">本平台僅供學習、展示之用。 若有侵權疑慮，您可以私訊緯育TibaMe，後續會由專人協助處理。</p>
+            </div>
+        </div>
+    </section>
 
 </body>
 

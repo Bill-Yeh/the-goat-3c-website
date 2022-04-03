@@ -594,7 +594,7 @@
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .footer .footer-content .main-footer h3 {
@@ -2331,3 +2331,328 @@ background-color: pink;
     color: #686868;
     font-size: 0.8125rem;
 }
+
+
+/* ---------------------------------------- */
+
+
+/* 加入購物車-結帳前 */
+
+.shopping-cart-prepare-checkout {
+    width: 100%;
+}
+
+.shopping-cart-prepare-checkout .in-shopping-cart-content {
+    width: 100%;
+    border-bottom: 1px solid #838383;
+}
+
+.shopping-cart-prepare-checkout .in-shopping-cart-content .buying-product-title-color-quantity-price {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #838383;
+}
+
+.buying-product-title-color-quantity-price .buying-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    /* align-items: center; */
+}
+
+.product-picture-title-color-quantity {
+    display: flex;
+}
+
+.s22-ultra-smart-phone-picture {
+    width: 30%;
+}
+
+.s22-ultra-smart-phone-picture img {
+    width: 100%;
+}
+
+.title-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+.title-info .storage-memory-color-info h2 {
+    font-size: 2rem;
+}
+
+.title-info .storage-memory-color-info span {
+    color: #686868;
+}
+
+
+/* 數量按鈕 */
+
+.quantity-control-button {
+    margin-bottom: 70px;
+    display: flex;
+}
+
+
+/* minus */
+
+.quantity-control-button .quantity-minus-control .btn-minus-ctrl {
+    border-radius: 100px 0 0 100px;
+    outline: none;
+    border: 1px solid #838383;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 3px 3px 3px 8px;
+}
+
+.btn-minus-ctrl .minus-icon {
+    display: flex;
+    align-items: center;
+}
+
+.btn-minus-ctrl .minus-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* 顯示的數量 */
+
+.quantity-number {
+    display: inline-block;
+}
+
+.quantity-number input {
+    width: 48px;
+    height: 26px;
+    padding: 0;
+    font-size: 0.9375rem;
+    text-align: center;
+    border-top: 1px solid #838383;
+    border-bottom: 1px solid #838383;
+    border-left: none;
+    border-right: none;
+    background-color: #fff;
+    outline: none;
+}
+
+
+/* plus */
+
+.quantity-control-button .quantity-plus-control .btn-plus-ctrl {
+    border-radius: 0 100px 100px 0;
+    outline: none;
+    border: 1px solid #838383;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 3px 8px 3px 3px;
+}
+
+.btn-plus-ctrl .plus-icon {
+    display: flex;
+    align-items: center;
+}
+
+.btn-plus-ctrl .plus-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* 價格和取消icon */
+
+.order-final-price-cancel-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-final-price {
+    padding-top: 1.5625rem;
+}
+
+.order-final-price-cancel-icon .order-final-price span {
+    font-size: 1.25rem;
+}
+
+.order-final-price-cancel-icon .cancel-icon {
+    margin-bottom: 70px;
+}
+
+.order-final-price-cancel-icon .cancel-icon svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+/* 優惠券和結帳計算區塊 */
+
+.using-coupon-count-shipping-fee-final-price {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 優惠代碼區塊 */
+
+.using-coupon {
+    width: 60%;
+}
+
+.count-shipping-fee-final-price {
+    width: 40%;
+}
+
+.using-coupon .coupon-code {
+    padding-bottom: 20px;
+}
+
+.input-coupon-code-activate {
+    display: flex;
+}
+
+.input-coupon-code-activate #coupon-code {
+    width: 120px;
+    outline: none;
+    border-left: 1px solid #838383;
+    border-top: 1px solid #838383;
+    border-bottom: 1px solid #838383;
+    border-right: none;
+    border-radius: 30px 0 0 30px;
+    padding: 5px 20px;
+    font-size: 0.8125rem;
+}
+
+.input-coupon-code-activate .activate {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    background-color: #3681FF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.input-coupon-code-activate .activate:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+
+/* 小計、運費、總計 */
+
+.subtotal,
+.shipping-fee,
+.total,
+.free-shipping-requirement {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    color: #686868;
+}
+
+.shipping-fee {
+    border-bottom: 1px solid #838383;
+    ;
+}
+
+.total {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.total .cost {
+    font-size: 1.5625rem;
+    color: red;
+    font-weight: 500;
+}
+
+.checkout-button .checkout-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #3681FF;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.checkout-button .checkout-btn:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+
+/* 建議商品 */
+
+.recommend-commodity {
+    padding-bottom: 50px;
+}
+
+.commodity-group {
+    padding-top: 30px;
+}
+
+.commodity-group h2 {
+    text-align: center;
+    font-size: 1.5625rem;
+    font-weight: 500;
+}
+
+.commodity-row-1,
+.commodity-row-2 {
+    border-bottom: 1px solid #838383;
+    padding: 50px 0;
+}
+
+.commodity-row-3 {
+    padding-top: 50px;
+}
+
+.most-recommend-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommend-product-picture {
+    width: 100%;
+}
+
+.recommend-product-picture img {
+    width: 100%;
+}
+
+.most-recommend-product a {
+    text-decoration: none;
+}
+
+.most-recommend-product h3 {
+    font-weight: normal;
+}
+
+.join-shopping-cart-button .shopping-cart-btn {
+    border: none;
+    background-color: #3681FF;
+    color: #fff;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.join-shopping-cart-button .shopping-cart-btn:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+
+/* ----------------------------------------------- */
