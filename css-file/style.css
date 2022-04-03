@@ -1788,13 +1788,14 @@ input[type="checkbox"] {
     height: 100%;
     position: fixed;
     left: 0;
-    top: 30px;
-    z-index: 10;
+    top: 0;
+    z-index: 1000;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     display: none;
+    overflow-y: auto;
 }
 
 .look-for-store-full-screen.show {
@@ -1811,6 +1812,8 @@ input[type="checkbox"] {
     border-radius: 30px;
     padding: 30px 0 30px 30px;
     position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 
@@ -1883,8 +1886,9 @@ input[type="checkbox"] {
 
 /* 門市地點及公里數 */
 
-.display-store-quantity-distance-address {
-    margin-top: 60px;
+.display-store-quantity-distance-address .display-store {
+    display: block;
+    padding-top: 50px;
 }
 
 .display-store-quantity-distance-address .store-quantity {
@@ -1915,7 +1919,7 @@ input[type="checkbox"] {
 }
 
 .address-txt-part p {
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -1924,6 +1928,8 @@ input[type="checkbox"] {
 
 .google-map-tool iframe {
     position: absolute;
+    width: 50%;
+    height: 86%;
     top: 75px;
     right: 2px;
     border-radius: 0px 0px 30px 0;
@@ -2652,3 +2658,188 @@ input[type="checkbox"] {
 
 
 /* ----------------------------------------------- */
+
+
+/* 線上預約維修申請 */
+
+
+/* 線上預約維修申請---預約進度條 */
+
+.online-repair-application {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.online-application-stage-part {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.online-application-stage-part h1 {
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+
+.application-progress-stage .stage-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 50px;
+    position: relative;
+}
+
+.application-progress-stage .stage-line::before {
+    content: "";
+    width: 95%;
+    height: 5px;
+    background: #ccc;
+    z-index: 0;
+    position: absolute;
+    top: 70px;
+    left: 28px;
+}
+
+.application-progress-stage .stage-line li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.application-progress-stage .stage-line li .stage-circle-icon svg {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 8px;
+}
+
+.application-progress-stage .stage-line span {
+    color: #686868;
+}
+
+
+/* 線上預約維修申請---客戶個人資料填寫區 */
+
+.info-column .info-text-part .input-item {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-item span {
+    padding-bottom: 10px;
+}
+
+.input-item input {
+    outline: none;
+    border: 1px solid #838383;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 0.9375rem;
+}
+
+.input-item select {
+    outline: none;
+    border: 1px solid #838383;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-size: 0.9375rem;
+    color: #686868;
+    margin-top: -2.5px;
+}
+
+.next-step-button {
+    text-align: center;
+}
+
+.next-step-button a {
+    text-decoration: none;
+}
+
+.next-step-button button {
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #3681FF;
+    color: #fff;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.next-step-button button:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+
+/* ---------------------------------------------- */
+
+
+/* 線上預約維修申請---問題表單 */
+
+.choose-problem-type-section {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+.choose-problem {
+    padding-bottom: 50px;
+}
+
+.choose-problem .problem-type-title {
+    padding: 30px 0 20px 0;
+}
+
+.problem-menu #problem {
+    width: 100%;
+    outline: none;
+    border: 1px solid #838383;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-size: 0.9375rem;
+    color: #686868;
+}
+
+.description-title {
+    padding-bottom: 20px;
+}
+
+.obtacle-decription textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #838383;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-size: 0.9375rem;
+}
+
+.previous-next-button-section {
+    display: flex;
+    justify-content: center;
+}
+
+.previous,
+#obstacle-submit {
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #3681FF;
+    color: #fff;
+    font-size: 1rem;
+    transition: .3s;
+    cursor: pointer;
+    margin: 0 50px;
+}
+
+.previous:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+#obstacle-submit:hover {
+    background-color: rgb(51, 108, 254);
+}
