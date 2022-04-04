@@ -104,6 +104,14 @@
 
 /* test */
 
+.carousel-item {
+    position: relative;
+}
+
+.carousel-caption {
+    text-align: left;
+}
+
 
 /* banner Galaxy s22 Ultra */
 

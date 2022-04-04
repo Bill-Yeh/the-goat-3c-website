@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>線上預約維修申請-預約完成</title>
+    <title>登入帳號</title>
     <link rel="stylesheet" href="../css-file/normalize.css">
     <link rel="stylesheet" href="../css-file/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="../css-file/root.css">
-    <link rel="stylesheet" href="../css-file/grid.css">
     <link rel="icon" href="../picture/the-g.o.a.t-black-version2.0.icon.png">
 </head>
 
@@ -57,38 +56,77 @@
         </div>
     </header>
 
-
-
-
-    <!--維修進度查詢-->
-    <div class="repair-status-inquiry">
-        <div class="status-inquiry-input-info">
-            <form class="inquiry-input-section">
-                <div class="inquiry-title">
-                    <h1>查詢維修進度</h1>
-                </div>
-                <div class="repair-form-number-inquiry">
-                    <div class="form-number-inquiry-title">
-                        <span>以維修單號查詢</span>
+    <!-- 登入帳號 -->
+    <div class="login-page">
+        <div class="login-section">
+            <div class="main-login-content">
+                <div class="login-left">
+                    <div class="left-content">
+                        <div class="vip-gift">
+                            <img src="../picture/VIP.jpg" alt="會員好禮">
+                        </div>
+                        <h1>THE GOAT VIP 服務計畫</h1>
+                        <div class="vip-detail">
+                            <p>即日起，加入會員即可獲得折價券大禮包，註冊THE G.O.A.T產品可獲得禮享回饋點數，並兌換多項贈品升等至金卡或鑽石卡，再享點數加倍送、皇家俱樂部服務禮遇與維修折扣，多項會員權益等著您!</p>
+                        </div>
+                        <div class="vip-classify">
+                            <a href="#">立即了解各級會員福利與分級說明</a>
+                        </div>
                     </div>
-                    <div class="inquiry-input-area">
-                        <input type="text" id="form-number-inquiry" placeholder="請輸入維修單號(共10碼) 例如:S123456789">
+                </div>
+                <div class="login-right">
+                    <div class="right-content">
+                        <form action="">
+                            <p class="login-title">登入帳號</p>
+                            <div class="input-account">
+                                <label for="user-account">帳號</label>
+                                <input type="text" id="user-account">
+                                <p>請輸入電子郵件或電話號碼</p>
+                            </div>
+                            <div class="input-password">
+                                <label for="user-password">密碼</label>
+                                <input type="password" name="user-password" id="user-password">
+                                <p>密碼為8-25個字元，大小寫不同</p>
+                            </div>
+                            <div class="remember-forget">
+                                <label for="remember">
+                                    <input type="checkbox" name="remember-account" id="remember">
+                                    <span class="account-checkmark"></span>
+                                    <span>記住我</span>
+                                </label>
+                                <div class="forget-password">
+                                    <a href="#">忘記密碼?</a>
+                                </div>
+                            </div>
+                            <div class="login-button">
+                                <button type="submit" class="login-btn">登入</button>
+                            </div>
+                            <p class="register-member">
+                                <span>尚未註冊THE GOAT會員?</span>
+                                <a href="#">立即註冊</a>
+                            </p>
+                            <div class="use-other-login">
+                                <span>或選擇其他方式登入</span>
+                            </div>
+                            <div class="other-login-method">
+                                <a href="#">
+                                    <img src="../picture/facebook.png" alt="facebook" class="facebook">
+                                </a>
+                                <a href="#">
+                                    <img src="../picture/google.png" alt="google" class="google">
+                                </a>
+                                <a href="#">
+                                    <img src="../picture/line.png" alt="line" class="line">
+                                </a>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="repair-submit-button">
-                    <input type="button" value="送出" id="repair-submit-btn">
-                </div>
-                <div class="or-line">
-                    <span class="or-dashed-line">或</span>
-                </div>
-                <div class="use-product-serial-number-inquiry">
-                    <a href="#">
-                        <button type="button" class="serial-number-inquiry">以產品序號查詢</button>
-                    </a>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
+
+
     <!--footer -->
     <section class="footer">
         <div class="footer-content">
@@ -168,6 +206,8 @@
             </div>
         </div>
     </section>
+
+
 </body>
 
 </html>

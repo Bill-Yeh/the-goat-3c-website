@@ -1487,7 +1487,7 @@ a {
     font-size: 13px;
 }
 
-input[type="checkbox"] {
+.main-checkbox input[type="checkbox"] {
     appearance: none;
 }
 
@@ -2991,3 +2991,287 @@ input[type="checkbox"] {
 
 
 /* --------------------------------------------- */
+
+
+/* 登入帳號 */
+
+.login-page {
+    width: 100%;
+}
+
+.login-page .login-section {
+    max-width: 1000px;
+    margin: 30px auto 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.main-login-content {
+    margin: auto;
+    padding: 30px 30px;
+    display: flex;
+}
+
+.main-login-content .login-left {
+    width: 50%;
+    padding-right: 30px;
+    border-right: 1px solid #838383;
+}
+
+.left-content .vip-gift {
+    width: 350px;
+    margin: auto;
+}
+
+.left-content .vip-gift img {
+    width: 100%;
+}
+
+.left-content h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.left-content .vip-detail p {
+    color: #686868;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    letter-spacing: 0.05cm;
+}
+
+.vip-classify a {
+    text-decoration: none;
+    color: #3681FF;
+}
+
+
+/* 登入帳號---右半部 */
+
+.login-right {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.right-content .login-title {
+    font-size: 1.25rem;
+}
+
+
+/* 帳號 */
+
+.input-account {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-account #user-account {
+    margin-top: 8px;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #838383;
+    border-radius: 5px;
+}
+
+.input-account p {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #686868;
+    letter-spacing: 0.03cm;
+}
+
+
+/* 密碼 */
+
+.input-password {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.input-password #user-password {
+    margin-top: 8px;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #838383;
+    border-radius: 5px;
+}
+
+.input-password p {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #686868;
+    letter-spacing: 0.03cm;
+}
+
+
+/* 記住帳號密碼 */
+
+.remember-forget {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-forget label {
+    padding-left: 24px;
+    position: relative;
+    font-size: 0.9375rem;
+    cursor: pointer;
+}
+
+#remember {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+/* 勾勾的框 */
+
+.account-checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    border: 1px solid #4d4d4d;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* 勾勾 */
+
+.account-checkmark::before {
+    content: "";
+    left: 6px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    display: none;
+}
+
+
+/* 勾勾點擊後的背景色 */
+
+.remember-forget input:checked+.account-checkmark {
+    background-color: #3681FF;
+}
+
+
+/* 勾勾點擊後出現 */
+
+.remember-forget input:checked+.account-checkmark::before {
+    display: block;
+}
+
+.remember-forget .forget-password a {
+    text-decoration: none;
+    color: #3681FF;
+}
+
+
+/* 登入按鈕 */
+
+.login-button {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.login-button .login-btn {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #3681FF;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.login-button .login-btn:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+
+/* 註冊帳號 */
+
+.register-member {
+    display: flex;
+    justify-content: center;
+}
+
+.register-member span {
+    font-size: 0.9375rem;
+    color: #686868;
+}
+
+.register-member a {
+    text-decoration: none;
+    font-size: 0.9375rem;
+    padding-left: 5px;
+    color: #3681FF;
+}
+
+
+/* 使用其他方式登入 */
+
+.use-other-login {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: relative;
+}
+
+.use-other-login::before {
+    content: '';
+    width: 32%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    border-top: 1px dashed #838383;
+}
+
+.use-other-login::after {
+    content: '';
+    width: 32%;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    border-top: 1px dashed #838383;
+}
+
+
+/* facebook、google、line */
+
+.other-login-method {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.facebook,
+.google {
+    width: 30px;
+    height: 30px;
+}
+
+.line {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* ---------------------------------------------- */
