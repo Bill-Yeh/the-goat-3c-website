@@ -2768,6 +2768,7 @@ input[type="checkbox"] {
     color: #fff;
     font-size: 1rem;
     transition: .3s;
+    cursor: pointer;
 }
 
 .next-step-button button:hover {
