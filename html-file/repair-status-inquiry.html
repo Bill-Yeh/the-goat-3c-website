@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>線上預約維修-問題表單</title>
+    <title>線上預約維修申請-預約完成</title>
     <link rel="stylesheet" href="../css-file/normalize.css">
     <link rel="stylesheet" href="../css-file/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
@@ -54,79 +54,35 @@
 
 
 
-    <!-- 線上預約維修申請---問題表單 -->
-    <div class="online-repair-application">
-        <div class="online-application-stage-part">
-            <h1>線上預約維修申請 — 問題表單</h1>
-            <div class="application-progress-stage">
-                <ul class="stage-line">
-                    <li>
-                        <div class="stage-circle-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill circle-time-place" viewBox="0 0 16 16" style="color: #ccc;">
-                            <circle cx="8" cy="8" r="8"/>
-                            </svg>
-                        </div>
-                        <span>時間/地點</span>
-                    </li>
-                    <li>
-                        <div class="stage-circle-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill circle-problem" viewBox="0 0 16 16" style="color: #3681FF;">
-                            <circle cx="8" cy="8" r="8"/>
-                            </svg>
-                        </div>
-                        <span>問題表單</span>
-                    </li>
-                    <li>
-                        <div class="stage-circle-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill circle-finish" viewBox="0 0 16 16" style="color: #ccc;">
-                            <circle cx="8" cy="8" r="8"/>
-                            </svg>
-                        </div>
-                        <span>預約完成</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="choose-problem-type-section">
-            <div class="choose-problem">
-                <div class="problem-type-title">
-                    <span>選擇問題類型</span>
+    <!--維修進度查詢-->
+    <div class="repair-status-inquiry">
+        <div class="status-inquiry-input-info">
+            <form class="inquiry-input-section">
+                <div class="inquiry-title">
+                    <h1>查詢維修進度</h1>
                 </div>
-                <div class="problem-menu">
-                    <select name="problem" id="problem">
-                        <option value="problem-type" selected>請選擇問題類型</option>
-                        <option value="problem-type">電池問題</option>
-                        <option value="problem-type">硬體設備問題</option>
-                        <option value="problem-type">照相機功能問題</option>
-                        <option value="problem-type">其他</option>
-                    </select>
-                </div>
-            </div>
-            <div class="problem-description">
-                <div class="obtacle-decription">
-                    <div class="description-title">
-                        <span>詳述故障原因</span>
+                <div class="repair-form-number-inquiry">
+                    <div class="form-number-inquiry-title">
+                        <span>以維修單號查詢</span>
                     </div>
-                    <form action="">
-                        <textarea name="problem-description" id="problem-detail" placeholder="請詳述故障原因" cols="30" rows="10"></textarea>
-                    </form>
+                    <div class="inquiry-input-area">
+                        <input type="text" id="form-number-inquiry" placeholder="請輸入維修單號(共10碼) 例如:S123456789">
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="previous-next-button-section">
-            <div class="previous-step-button">
-                <a href="online-repair-application.html">
-                    <button type="button" class="previous">上一步</button>
-                </a>
-            </div>
-            <div class="submit-button">
-                <a href="#">
-                    <input type="submit" value="提交" id="obstacle-submit">
-                </a>
-            </div>
+                <div class="repair-submit-button">
+                    <input type="button" value="送出" id="repair-submit-btn">
+                </div>
+                <div class="or-line">
+                    <span class="or-dashed-line">或</span>
+                </div>
+                <div class="use-product-serial-number-inquiry">
+                    <a href="#">
+                        <button type="button" class="serial-number-inquiry">以產品序號查詢</button>
+                    </a>
+                </div>
+            </form>
         </div>
     </div>
-
     <!--footer -->
     <section class="footer">
         <div class="footer-content">

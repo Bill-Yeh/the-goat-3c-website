@@ -2809,7 +2809,7 @@ input[type="checkbox"] {
 }
 
 .obtacle-decription textarea {
-    width: 100%;
+    width: 97%;
     outline: none;
     border: 1px solid #838383;
     border-radius: 10px;
@@ -2843,3 +2843,150 @@ input[type="checkbox"] {
 #obstacle-submit:hover {
     background-color: rgb(51, 108, 254);
 }
+
+
+/* --------------------------------------------- */
+
+
+/* 線上預約維修申請---預約完成 */
+
+.client-detail-information {
+    padding-bottom: 80px;
+}
+
+.appointment-detail-title {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.detail-row {
+    border: 1px solid #838383;
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.detail-column {
+    display: flex;
+    justify-content: center;
+}
+
+.detail-item {
+    padding-top: 30px;
+    color: #686868;
+}
+
+.return-to-home {
+    text-align: center;
+}
+
+.return-to-home button {
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #3681FF;
+    color: #fff;
+    font-size: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.return-to-home button:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+
+/* ---------------------------------------------- */
+
+
+/* 查詢維修進度 */
+
+.repair-status-inquiry {
+    width: 100%;
+}
+
+.repair-status-inquiry .status-inquiry-input-info {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.inquiry-input-section .inquiry-title h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.875rem;
+}
+
+.repair-form-number-inquiry {
+    padding-bottom: 50px;
+}
+
+.repair-form-number-inquiry .form-number-inquiry-title {
+    padding-bottom: 10px;
+}
+
+.inquiry-input-area #form-number-inquiry {
+    width: 100%;
+    outline: none;
+    border: 1px solid #838383;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 0.9375rem;
+}
+
+.repair-submit-button,
+.or-line,
+.use-product-serial-number-inquiry {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#repair-submit-btn,
+.serial-number-inquiry {
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #3681FF;
+    color: #fff;
+    font-size: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.repair-submit-button #repair-submit-btn:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+.use-product-serial-number-inquiry .serial-number-inquiry:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+.or-line span {
+    color: #686868;
+    position: relative;
+    display: block;
+}
+
+.or-line span::before {
+    content: '';
+    width: 45%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    border-top: 1px dashed #838383;
+}
+
+.or-line span::after {
+    content: '';
+    width: 45%;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    border-top: 1px dashed #838383;
+}
+
+
+/* --------------------------------------------- */
