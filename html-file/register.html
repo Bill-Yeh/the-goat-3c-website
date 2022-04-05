@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>線上預約維修申請</title>
+    <title>註冊帳號</title>
     <link rel="stylesheet" href="../css-file/normalize.css">
     <link rel="stylesheet" href="../css-file/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="../css-file/root.css">
-    <link rel="stylesheet" href="../css-file/grid.css">
     <link rel="icon" href="../picture/the-g.o.a.t-black-version2.0.icon.png">
 </head>
 
@@ -57,111 +56,47 @@
         </div>
     </header>
 
-
-
-
-    <!-- 線上預約維修申請 -->
-    <div class="online-repair-application">
-        <div class="online-application-stage-part">
-            <h1>線上預約維修申請</h1>
-            <div class="application-progress-stage">
-                <ul class="stage-line">
-                    <li>
-                        <div class="stage-circle-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill circle-time-place" viewBox="0 0 16 16" style="color: #3681FF;">
-                            <circle cx="8" cy="8" r="8"/>
-                            </svg>
-                        </div>
-                        <span>時間/地點</span>
-                    </li>
-                    <li>
-                        <div class="stage-circle-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill circle-problem" viewBox="0 0 16 16" style="color: #ccc;">
-                            <circle cx="8" cy="8" r="8"/>
-                            </svg>
-                        </div>
-                        <span>問題表單</span>
-                    </li>
-                    <li>
-                        <div class="stage-circle-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill circle-finish" viewBox="0 0 16 16" style="color: #ccc;">
-                            <circle cx="8" cy="8" r="8"/>
-                            </svg>
-                        </div>
-                        <span>預約完成</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container client-input-info">
-            <div class="row info-row">
-                <div class="col-6 info-column">
-                    <div class="info-text-part">
-                        <div class="input-item client-name">
-                            <span>姓名*</span>
-                            <input type="text" name="client-name" id="customer-name" placeholder="請輸入姓名">
-                        </div>
-                        <div class="input-item client-phone">
-                            <span>電話*</span>
-                            <input type="tel" name="client-phone" id="customer-phone" placeholder="請輸入電話或手機號碼">
-                        </div>
-                        <div class="input-item client-address">
-                            <span>地址*</span>
-                            <input type="text" name="client-address" id="customer-address" placeholder="請輸入地址">
-                        </div>
-                        <div class="input-item client-email">
-                            <span>信箱*</span>
-                            <input type="text" name="client-email" id="customer-email" placeholder="請輸入電子郵件">
-                        </div>
+    <!-- 註冊帳號 -->
+    <div class="register-page">
+        <div class="register-section">
+            <div class="main-register-content">
+                <div class="user-register-input">
+                    <div class="register-title">
+                        <h1>註冊帳號</h1>
                     </div>
-                </div>
-                <div class="col-6 info-column">
-                    <div class="info-text-part">
-                        <div class="input-item product-number">
-                            <span>填寫產品序號*</span>
-                            <input type="text" name="serial-number" id="serial-number" placeholder="請輸入產品序號">
-                        </div>
-                        <div class="input-item store-location">
-                            <span>選擇門市據點*</span>
-                            <select name="store-location" id="physical-store">
-                                <option value="physical-store" selected>請選擇門市據點</option>
-                                <option value="taipei-store">台北信義店</option>
-                                <option value="zhongxiao-dunhua-store">台北忠孝敦化店</option>
-                                <option value="banqiao-store">新北板橋店</option>
-                                <option value="zhongli-store">桃園中壢店</option>
-                                <option value="pingzhen-store">桃園平鎮店</option>
-                                <option value="kameyama-store">桃園龜山店</option>
-                                <option value="fengjia-store">台中逢甲店</option>
-                                <option value="xitun-store">台中西屯店</option>
-                                <option value="nantun-store">台中南屯店</option>
-                                <option value="zuoying-store">台南左營店</option>
-                            </select>
-                        </div>
-                        <div class="input-item appoint-date">
-                            <span>預約日期*</span>
-                            <input type="date" name="appoint-date" id="appoint-date" placeholder="請輸入地址">
-                        </div>
-                        <div class="input-item select-time">
-                            <span>預約時段*</span>
-                            <select name="select-time" id="select-time">
-                                <option value="time" selected>請選擇時段</option>
-                                <option value="time">4月6日早上9:00~12:00</option>
-                                <option value="time">4月6日下午1:00~5:00</option>
-                                <option value="time">4月7日早上9:00~12:00</option>
-                                <option value="time">4月7日下午1:00~5:00</option>
-                                <option value="time">4月8日早上9:00~12:00</option>
-                            </select>
-                        </div>
+                    <div class="register-account-part">
+                        <label for="user-register">帳號</label>
+                        <input type="text" name="register-account" id="user-register">
+                        <p>請輸入電子郵件或電話號碼</p>
                     </div>
+                    <div class="register-password-part">
+                        <label for="password-register">密碼</label>
+                        <input type="password" name="register-password" id="password-register">
+                        <p>密碼為8-25個字元，大小寫不同</p>
+                    </div>
+                    <div class="password-confirm-part">
+                        <label for="password-confirm">確認密碼</label>
+                        <input type="password" name="confirm-password" id="password-confirm">
+                    </div>
+                    <div class="privacy-term">
+                        <label for="privacy">
+                            <input type="checkbox" name="privacy" id="privacy">
+                            <span class="privacy-checkmark"></span>
+                            <span>同意The Goat 隱私條款</span>
+                        </label>
+                    </div>
+                    <div class="register-button">
+                        <button type="submit" class="register-btn">送出</button>
+                    </div>
+                    <p class="switch-login">
+                        <span>已有帳號了?</span>
+                        <a href="login.html">登入</a>
+                    </p>
                 </div>
             </div>
-        </div>
-        <div class="next-step-button">
-            <a href="online-repair-problem-description.html">
-                <button type="button">下一步</button>
-            </a>
         </div>
     </div>
+
 
     <!--footer -->
     <section class="footer">
@@ -242,6 +177,8 @@
             </div>
         </div>
     </section>
+
+
 </body>
 
 </html>

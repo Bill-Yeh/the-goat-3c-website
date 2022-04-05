@@ -31,7 +31,9 @@
 }
 
 .main-header .main-header-container h1 {
-    display: none;
+    opacity: 0;
+    position: fixed;
+    left: -1000000px;
 }
 
 .main-header .main-nav {
@@ -1581,97 +1583,87 @@ a {
     justify-content: center;
 }
 
-.color-one {
-    /* margin-right: 20px; */
+.color-one,
+.color-two,
+.color-three,
+.color-four {
     margin: 0 5px;
-}
-
-.color-selector .option-selector {
     position: relative;
-    font-size: 0;
-    width: 24px;
-    height: 24px;
-    padding: 2px;
-    border-radius: 50%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 1px solid transparent;
-    display: inline-block;
-    cursor: pointer;
 }
 
-
-/* 最外層圈圈 */
-
-.color-selector .option-selector::after {
-    display: block;
-    content: '';
-    /* display: none; */
+.color-selector input[type="radio"] {
+    opacity: 0;
+    appearance: none;
     position: absolute;
-    left: -1px;
-    top: -1px;
-    right: -1px;
-    bottom: -1px;
-    border: 1px solid #000;
-    border-radius: 50%;
-}
-
-.color-selector .option-selector-background-color {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #654d57;
-}
-
-.color-selector .option-selector-background-color::before {
-    content: '';
-    position: absolute;
-    top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    border: solid 1px rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+
+.color-selector label {
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.color-selector .hidden {
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    font-size: 1px;
-    line-height: 1px;
-    clip: rect(1px, 1px, 1px, 1px);
+.color-one label {
+    background-color: #cc8c8c;
 }
 
-.color-selector .blind {
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    font-size: 1px;
-    line-height: 1px;
-    clip: rect(1px, 1px, 1px, 1px);
+.color-two label {
+    background-color: #a285eb;
+}
+
+.color-three label {
+    background-color: #f3cf75;
+}
+
+.color-four label {
+    background-color: #028644;
+}
+
+.color-selector input:checked+label {
+    border: 3px solid #3681FF;
 }
 
 
 /* 儲存空間 */
 
-.storage-gb {
+.storage-gb-type {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    position: relative;
 }
 
-.storage-selector {
+.storage-gb-type input {
+    opacity: 0;
+    appearance: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.storage-gb-type label {
+    width: 80px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.storage-gb-type input:checked+label {
+    border: 2px solid #3681FF;
+}
+
+
+/* .storage-selector {
     border: 1px solid #363636;
     border-radius: 30px;
     background-color: #fff;
@@ -1679,7 +1671,7 @@ a {
     padding: 5px 10px;
     margin: 0 5px;
     font-size: 0.8125rem;
-}
+} */
 
 
 /* 價格 */
@@ -3275,3 +3267,212 @@ a {
 
 
 /* ---------------------------------------------- */
+
+
+/* 註冊帳號 */
+
+.register-page {
+    width: 100%;
+}
+
+.register-section {
+    max-width: 700px;
+    margin: 30px auto 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.main-register-content {
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.user-register-input {
+    width: 100%;
+}
+
+.register-title h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* 註冊帳號-輸入帳號部分 */
+
+.register-account-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-account-part #user-register {
+    margin-top: 8px;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #838383;
+    border-radius: 5px;
+}
+
+.register-account-part p {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #686868;
+    letter-spacing: 0.03cm;
+}
+
+
+/* 註冊密碼 */
+
+.register-password-part {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.register-password-part #password-register {
+    margin-top: 8px;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #838383;
+    border-radius: 5px;
+}
+
+.register-password-part p {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #686868;
+    letter-spacing: 0.03cm;
+}
+
+
+/* 確認密碼 */
+
+.password-confirm-part {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+#password-confirm {
+    margin-top: 8px;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #838383;
+    border-radius: 5px;
+}
+
+
+/* 同意隱私條款 */
+
+.privacy-term {
+    padding-top: 30px;
+}
+
+.privacy-term label {
+    padding-left: 24px;
+    position: relative;
+    font-size: 0.9375rem;
+    cursor: pointer;
+}
+
+#privacy {
+    position: absolute;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+/* 勾勾的框 */
+
+.privacy-checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    border: 1px solid #4d4d4d;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* 勾勾 */
+
+.privacy-checkmark::before {
+    content: "";
+    left: 6px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    display: none;
+}
+
+
+/* 勾勾點擊後的背景色 */
+
+.privacy-term input:checked+.privacy-checkmark {
+    background-color: #3681FF;
+}
+
+
+/* 勾勾點擊後出現 */
+
+.privacy-term input:checked+.privacy-checkmark::before {
+    display: block;
+}
+
+
+/* 註冊按鈕 */
+
+.register-button {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.register-button .register-btn {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #3681FF;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.register-button .register-btn:hover {
+    background-color: rgb(51, 108, 254);
+}
+
+
+/* 已有帳號，使用帳號登入 */
+
+.switch-login {
+    display: flex;
+    justify-content: center;
+}
+
+.switch-login span {
+    font-size: 0.9375rem;
+    color: #686868;
+}
+
+.switch-login a {
+    text-decoration: none;
+    font-size: 0.9375rem;
+    padding-left: 5px;
+    color: #3681FF;
+}
+
+
+/* -------------------------------------- */
