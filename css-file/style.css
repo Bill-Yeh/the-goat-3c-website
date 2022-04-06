@@ -174,19 +174,6 @@
     color: #3c3c3c;
 }
 
-.order {
-    background-color: #3681FF;
-    border: none;
-    border-radius: 30px;
-    padding: 10px 20px;
-    transition: .3s;
-    cursor: pointer;
-}
-
-.order:hover {
-    background-color: rgb(5, 61, 216);
-}
-
 .order a {
     font-size: 16px;
     text-decoration: none;
@@ -448,11 +435,11 @@
 }
 
 .component-content img {
-    transition: .8s;
+    transition: .5s;
 }
 
 .component-content img:hover {
-    transform: scale(0.85);
+    transform: scale(0.95);
 }
 
 
@@ -687,6 +674,7 @@
     background-repeat: no-repeat;
     background-position: 50% -30px;
     background-image: url(../picture/background-imge-Ellipse-nav.png);
+    z-index: -1;
 }
 
 .main-header-product-introduction .main-header-container {
@@ -780,18 +768,14 @@
 
 .s22-ultra-product-feature .product-title-slogan h1 {
     margin: 0;
+    font-size: 3rem;
 }
 
 .s22-ultra-product-feature .product-title-slogan h2 {
     margin-top: 10px;
 }
 .product-title-slogan button{
-    color: #fff;
-    cursor: pointer;
-    background-color: #3681FF;
-}
-.product-title-slogan button:hover{
-    background-color: rgb(51, 108, 254);
+    margin-top: 30px;
 }
 
 /* -------------------------------------------- */
@@ -1739,7 +1723,7 @@ a {
 }
 
 .order-learn-btn .order-btn:hover {
-    background-color: rgb(51, 108, 254);
+    background-color: rgb(7, 68, 224);
 }
 
 .order-learn-btn .learn-btn {
@@ -1778,7 +1762,9 @@ a {
     display: flex;
     align-items: center;
 }
-
+.contrast{
+    padding-left: 3px;
+}
 
 /* 尋找門市據點視窗 */
 
@@ -2107,24 +2093,25 @@ a {
 .protective-case,
 .bluetooth-earphone {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-bottom: 50px;
 }
 
-.zenpower-duo,
-.port-charger,
-.protective-case,
-.bluetooth-earphone img {
-    width: 100%;
+.giveaway-product img {
+    width: 80%;
 }
-
+.giveaway-text{
+    width: 40%;
+}
 .giveaway a {
     text-decoration: none;
     font-size: 1.125rem;
     color: #686868;
 }
-
+.accessories-text{
+    width: 40%;
+}
 .additional-accessories a {
     text-decoration: none;
     font-size: 1.125rem;
@@ -2206,7 +2193,7 @@ a {
 }
 
 .join-shopping-cart-button-heart .shopping-cart-button a input[type="button"]:hover {
-    background-color: rgb(51, 108, 254);
+    background-color: rgb(7, 68, 224);
 }
 
 .join-shopping-cart-button-heart .collect-heart {
@@ -2226,7 +2213,7 @@ a {
 }
 
 .product-info-shopping-faq .section-title-list-group {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -2749,7 +2736,9 @@ a {
     color: #686868;
     margin-top: -2.5px;
 }
-
+.appoint-date input{
+    color: #686868;
+}
 .next-step-button {
     text-align: center;
 }
@@ -2771,7 +2760,7 @@ a {
 }
 
 .next-step-button button:hover {
-    background-color: rgb(51, 108, 254);
+    background-color: rgb(7, 68, 224);
 }
 
 
@@ -2837,11 +2826,11 @@ a {
 }
 
 .previous:hover {
-    background-color: rgb(51, 108, 254);
+    background-color: rgb(7, 68, 224);
 }
 
 #obstacle-submit:hover {
-    background-color: rgb(51, 108, 254);
+    background-color: rgb(7, 68, 224);
 }
 
 
@@ -2894,7 +2883,7 @@ a {
 }
 
 .return-to-home button:hover {
-    background-color: rgb(51, 108, 254);
+    background-color: rgb(7, 68, 224);
 }
 
 

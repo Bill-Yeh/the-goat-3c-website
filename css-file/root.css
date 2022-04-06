@@ -3,8 +3,9 @@
     --primary-button-border-radius: 30px;
     --primary-button-border: none;
     --primary-button-background: #3681FF;
-    --primary-button-hover: rgb(51, 108, 254);
+    --primary-button-hover: rgb(7, 68, 224);
     --primary-button-transition: .3s;
+    --primary-button-touch:pointer;
 }
 
 
@@ -18,7 +19,8 @@
     padding: var(--primary-button-padding);
     border-radius: var(--primary-button-border-radius);
     border: var(--primary-button-border);
-    transition: var(--primary-button-transition)
+    transition: var(--primary-button-transition);
+    cursor: var(--primary-button-touch)
 }
 
 .order:hover {
