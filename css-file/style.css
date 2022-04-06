@@ -785,7 +785,14 @@
 .s22-ultra-product-feature .product-title-slogan h2 {
     margin-top: 10px;
 }
-
+.product-title-slogan button{
+    color: #fff;
+    cursor: pointer;
+    background-color: #3681FF;
+}
+.product-title-slogan button:hover{
+    background-color: rgb(51, 108, 254);
+}
 
 /* -------------------------------------------- */
 
