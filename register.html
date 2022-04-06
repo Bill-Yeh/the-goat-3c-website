@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>線上預約維修-問題表單</title>
+    <title>註冊帳號</title>
     <link rel="stylesheet" href="../css-file/normalize.css">
     <link rel="stylesheet" href="../css-file/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="../css-file/root.css">
-    <link rel="stylesheet" href="../css-file/grid.css">
     <link rel="icon" href="../picture/the-g.o.a.t-black-version2.0.icon.png">
 </head>
 
@@ -19,7 +18,7 @@
     <!-- 導覽列 -->
     <header class="main-header">
         <div class="main-header-container">
-            <a href="Home.html" class="logo">
+            <a href="index.html" class="logo">
                 <img src="../picture/the-g.o.a.t-white-version.png" alt="THE G.O.A.T">
             </a>
             <h1>THE G.O.A.T</h1>
@@ -57,81 +56,47 @@
         </div>
     </header>
 
-
-
-
-    <!-- 線上預約維修申請---問題表單 -->
-    <div class="online-repair-application">
-        <div class="online-application-stage-part">
-            <h1>線上預約維修申請 — 問題表單</h1>
-            <div class="application-progress-stage">
-                <ul class="stage-line">
-                    <li>
-                        <div class="stage-circle-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill circle-time-place" viewBox="0 0 16 16" style="color: #ccc;">
-                            <circle cx="8" cy="8" r="8"/>
-                            </svg>
-                        </div>
-                        <span>時間/地點</span>
-                    </li>
-                    <li>
-                        <div class="stage-circle-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill circle-problem" viewBox="0 0 16 16" style="color: #3681FF;">
-                            <circle cx="8" cy="8" r="8"/>
-                            </svg>
-                        </div>
-                        <span>問題表單</span>
-                    </li>
-                    <li>
-                        <div class="stage-circle-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill circle-finish" viewBox="0 0 16 16" style="color: #ccc;">
-                            <circle cx="8" cy="8" r="8"/>
-                            </svg>
-                        </div>
-                        <span>預約完成</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="choose-problem-type-section">
-            <div class="choose-problem">
-                <div class="problem-type-title">
-                    <span>選擇問題類型</span>
-                </div>
-                <div class="problem-menu">
-                    <select name="problem" id="problem">
-                        <option value="problem-type" selected>請選擇問題類型</option>
-                        <option value="problem-type">電池問題</option>
-                        <option value="problem-type">硬體設備問題</option>
-                        <option value="problem-type">照相機功能問題</option>
-                        <option value="problem-type">其他</option>
-                    </select>
-                </div>
-            </div>
-            <div class="problem-description">
-                <div class="obtacle-decription">
-                    <div class="description-title">
-                        <span>詳述故障原因</span>
+    <!-- 註冊帳號 -->
+    <div class="register-page">
+        <div class="register-section">
+            <div class="main-register-content">
+                <div class="user-register-input">
+                    <div class="register-title">
+                        <h1>註冊帳號</h1>
                     </div>
-                    <form action="">
-                        <textarea name="problem-description" id="problem-detail" placeholder="請詳述故障原因" cols="30" rows="10"></textarea>
-                    </form>
+                    <div class="register-account-part">
+                        <label for="user-register">帳號</label>
+                        <input type="text" name="register-account" id="user-register">
+                        <p>請輸入電子郵件或電話號碼</p>
+                    </div>
+                    <div class="register-password-part">
+                        <label for="password-register">密碼</label>
+                        <input type="password" name="register-password" id="password-register">
+                        <p>密碼為8-25個字元，大小寫不同</p>
+                    </div>
+                    <div class="password-confirm-part">
+                        <label for="password-confirm">確認密碼</label>
+                        <input type="password" name="confirm-password" id="password-confirm">
+                    </div>
+                    <div class="privacy-term">
+                        <label for="privacy">
+                            <input type="checkbox" name="privacy" id="privacy">
+                            <span class="privacy-checkmark"></span>
+                            <span>同意The Goat 隱私條款</span>
+                        </label>
+                    </div>
+                    <div class="register-button">
+                        <button type="submit" class="register-btn">送出</button>
+                    </div>
+                    <p class="switch-login">
+                        <span>已有帳號了?</span>
+                        <a href="login.html">登入</a>
+                    </p>
                 </div>
-            </div>
-        </div>
-        <div class="previous-next-button-section">
-            <div class="previous-step-button">
-                <a href="online-repair-application.html">
-                    <button type="button" class="previous">上一步</button>
-                </a>
-            </div>
-            <div class="submit-button">
-                <a href="online-repair-appointment-finish.html">
-                    <input type="submit" value="提交" id="obstacle-submit">
-                </a>
             </div>
         </div>
     </div>
+
 
     <!--footer -->
     <section class="footer">
@@ -212,6 +177,8 @@
             </div>
         </div>
     </section>
+
+
 </body>
 
 </html>
