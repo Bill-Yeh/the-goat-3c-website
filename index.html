@@ -15,13 +15,24 @@
 
 <body>
     <!-- 導覽列 -->
+    <input type="checkbox" name="" id="menu-switch">
     <header class="main-header">
         <div class="main-header-container">
             <a href="index.html" class="logo">
                 <img src="picture/the-g.o.a.t-white-version.png" alt="THE G.O.A.T">
             </a>
             <h1>THE G.O.A.T 史上最強3C硬體設備</h1>
+            <label for="menu-switch" class="rwd-nav-hb">
+                <span></span>
+                <span></span>
+            </label>
             <nav class="main-nav">
+                <div class="search-function">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search rwd-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                    <input type="search" placeholder="搜尋THE G.O.A.T.com" id="user-search">
+                </div>
                 <a href="choosing-type.html">行動裝置</a>
                 <a href="#">筆電/桌電</a>
                 <a href="#">零組件</a>
@@ -32,7 +43,7 @@
             <div class="search-cart-login">
                 <div class="nav-icon search">
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search desktop-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg>
                     </a>
@@ -296,6 +307,9 @@
             </div>
         </div>
     </section>
+
+
+
 </body>
 
 </html>
