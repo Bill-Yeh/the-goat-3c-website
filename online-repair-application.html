@@ -17,13 +17,26 @@
 <body style="background-color: #f6f6f6;">
 
     <!-- 導覽列 -->
+    <input type="checkbox" name="" id="menu-switch">
     <header class="main-header">
         <div class="main-header-container">
-            <a href="index.html" class="logo">
-                <img src="picture/the-g.o.a.t-white-version.png" alt="THE G.O.A.T">
-            </a>
-            <h1>THE G.O.A.T</h1>
+            <label for="menu-switch" class="rwd-nav-hb">
+                <span></span>
+                <span></span>
+            </label>
+            <div class="logo-section">
+                <a href="index.html" class="logo">
+                    <img src="picture/the-g.o.a.t-white-version.png" alt="THE G.O.A.T">
+                </a>
+                <h1>THE G.O.A.T 史上最強3C硬體設備</h1>
+            </div>
             <nav class="main-nav">
+                <div class="search-function">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search rwd-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                    <input type="search" placeholder="搜尋THE G.O.A.T.com" id="user-search">
+                </div>
                 <a href="choosing-type.html">行動裝置</a>
                 <a href="#">筆電/桌電</a>
                 <a href="#">零組件</a>
@@ -32,13 +45,15 @@
                 <a href="#">聯絡我們</a>
             </nav>
             <div class="search-cart-login">
+                <!-- 隱藏 -->
                 <div class="nav-icon search">
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search desktop-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg>
                     </a>
                 </div>
+                <!-- 出現右邊 -->
                 <div class="nav-icon cart">
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
@@ -163,13 +178,24 @@
         </div>
     </div>
 
+    <input type="checkbox" name="" id="product-service-icon-check">
+    <input type="checkbox" name="" id="promotion-activity-icon-check">
+    <input type="checkbox" name="" id="service-info-icon-check">
+    <input type="checkbox" name="" id="about-icon-check">
     <!--footer -->
     <section class="footer">
         <div class="footer-content">
             <div class="main-footer">
-                <div class="product-service">
-                    <h3>產品與服務</h3>
-                    <ul>
+                <label for="product-service-icon-check" class="product-service-tag">
+                    <div class="product-service">
+                        <div class="footer-title">
+                            <h3>產品與服務</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <ul class="product-list">
                         <li><a class="footer-link" href="choosing-type.html">智慧手機</a></li>
                         <li><a class="footer-link" href="#">平板電腦</a></li>
                         <li><a class="footer-link" href="#">筆記型電腦</a></li>
@@ -178,31 +204,52 @@
                         <li><a class="footer-link" href="#">顯示卡</a></li>
                         <li><a class="footer-link" href="#">散熱器</a></li>
                     </ul>
-                </div>
-                <div class="promotion-activity">
-                    <h3>促銷活動</h3>
-                    <ul>
-                        <li><a class="footer-link" href="#">舊機換新機</a></li>
-                        <li><a class="footer-link" href="#">母親節優惠</a></li>
-                        <li><a class="footer-link" href="#">VIP會員優惠</a></li>
-                        <li><a class="footer-link" href="#">實體促銷活動</a></li>
-                    </ul>
-                </div>
-                <div class="service-info">
-                    <h3>服務資訊</h3>
-                    <ul>
-                        <li><a class="footer-link" href="online-repair-application.html">線上維修申請</a></li>
-                        <li><a class="footer-link" href="repair-status-inquiry.html">線上維修查詢</a></li>
-                    </ul>
-                </div>
-                <div class="about">
-                    <h3>關於我們</h3>
-                    <ul>
-                        <li><a class="footer-link" href="#">關於THE G.O.A.T</a></li>
-                        <li><a class="footer-link" href="#">新聞資訊</a></li>
-                        <li><a class="footer-link" href="#">門市據點</a></li>
-                    </ul>
-                </div>
+                </label>
+                <label for="promotion-activity-icon-check" class="promotion-activity-tag">
+                    <div class="promotion-activity">
+                        <div class="footer-title">
+                            <h3>促銷活動</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </div>
+                        <ul class="promotion-list">
+                            <li><a class="footer-link" href="#">舊機換新機</a></li>
+                            <li><a class="footer-link" href="#">母親節優惠</a></li>
+                            <li><a class="footer-link" href="#">VIP會員優惠</a></li>
+                            <li><a class="footer-link" href="#">實體促銷活動</a></li>
+                        </ul>
+                    </div>
+                </label>
+                <label for="service-info-icon-check" class="service-info-tag">
+                    <div class="service-info">
+                        <div class="footer-title">
+                            <h3>服務資訊</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </div>
+                        <ul class="service-list">
+                            <li><a class="footer-link" href="online-repair-application.html">線上維修申請</a></li>
+                            <li><a class="footer-link" href="repair-status-inquiry.html">線上維修查詢</a></li>
+                        </ul>
+                    </div>
+                </label>
+                <label for="about-icon-check" class="about-tag">
+                    <div class="about">
+                        <div class="footer-title">
+                            <h3>關於我們</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </div>
+                        <ul class="about-list">
+                            <li><a class="footer-link" href="#">關於THE G.O.A.T</a></li>
+                            <li><a class="footer-link" href="#">新聞資訊</a></li>
+                            <li><a class="footer-link" href="#">門市據點</a></li>
+                        </ul>
+                    </div>
+                </label>
                 <div class="social">
                     <h3>社群</h3>
                     <ul>
@@ -242,6 +289,11 @@
             </div>
         </div>
     </section>
+
+
+    <script src="javascript/jquery.min.js"></script>
+
+    <script src="javascript/rwd-footer.js"></script>
 </body>
 
 </html>

@@ -460,15 +460,15 @@
     background-color: #f6f6f6;
 }
 
+.activity .activity-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .activity h2 {
     margin-left: 30px;
     font-size: 36px;
     font-weight: 500;
-}
-
-.activity .activity-content {
-    max-width: 1200px;
-    margin: auto;
 }
 
 .activity .activity-content .activity-card-section {
@@ -543,7 +543,7 @@
     text-align: right;
     text-decoration: none;
     color: #3681FF;
-    font-size: 16px;
+    font-size: 1rem;
     position: relative;
 }
 
@@ -579,6 +579,13 @@
 
 /* footer*/
 
+#product-service-icon-check,
+#promotion-activity-icon-check,
+#service-info-icon-check,
+#about-icon-check {
+    display: none;
+}
+
 .footer {
     width: 100%;
     padding: 5px 0;
@@ -595,6 +602,10 @@
 .footer .footer-content .main-footer h3 {
     font-weight: 400;
     color: #f6f6f6;
+}
+
+.footer-title svg {
+    display: none;
 }
 
 .footer .footer-content .main-footer ul {
@@ -3591,7 +3602,8 @@ a {
     }
     #menu-switch {
         z-index: -1;
-        position: absolute;
+        position: fixed;
+        top: 0;
         left: -100%;
     }
     #menu-switch:checked~.main-header .rwd-nav-hb span:first-child {
@@ -3728,13 +3740,84 @@ a {
         align-items: center;
     }
     .component-content .case {
-        height: 260px;
+        padding: 30px 0;
+    }
+    /* ------------------------------- */
+    /* 活動專區 */
+    .activity .activity-content {
+        width: 95%;
+    }
+    .activity h2 {
+        text-align: center;
+        margin-left: 0;
+        font-size: 2rem;
+    }
+    .activity .activity-content .activity-card-section {
+        align-items: center;
+        overflow: hidden;
+    }
+    .activity .activity-content .right-arrow {
+        display: none;
+    }
+    .all-activity-link {
+        text-align: center;
+    }
+    .all-activity {
         padding: 0;
     }
-    .component-content .case .case-picture {
-        height: 100%;
+    /* ------------------------------------- */
+    /* footer */
+    .footer .footer-content .main-footer {
+        width: 95%;
+        flex-direction: column;
     }
-    .case-picture img {
-        height: 100%;
+    .footer-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer .footer-content .main-footer h3 {
+        font-size: 1rem;
+    }
+    .footer-title svg {
+        display: block;
+        color: #fff;
+    }
+    .footer label {
+        border-bottom: 1px solid #838383;
+    }
+    .footer .footer-content .main-footer ul {
+        margin-top: 0;
+    }
+    .product-list,
+    .promotion-list,
+    .service-list,
+    .about-list {
+        display: none;
+    }
+    #product-service-icon-check:checked~.footer .product-service-tag .bi-plus-lg {
+        transform: rotate(45deg);
+        transition: .3s;
+    }
+    #promotion-activity-icon-check:checked~.footer .promotion-activity-tag .bi-plus-lg {
+        transform: rotate(45deg);
+        transition: .3s;
+    }
+    #service-info-icon-check:checked~.footer .service-info-tag .bi-plus-lg {
+        transform: rotate(45deg);
+        transition: .3s;
+    }
+    #about-icon-check:checked~.footer .about-tag .bi-plus-lg {
+        transform: rotate(45deg);
+        transition: .3s;
+    }
+    .social h3 {
+        display: none;
+    }
+    .footer .footer-content .main-footer .social ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 20px;
     }
 }
