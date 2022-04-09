@@ -608,7 +608,12 @@
     display: none;
 }
 
-.footer .footer-content .main-footer ul {
+.product-list,
+.promotion-list,
+.service-list,
+.about-list,
+.social-list {
+    display: block;
     padding: 0;
 }
 
@@ -645,6 +650,7 @@
     display: grid;
     grid-template-columns: 35px 35px;
     gap: 5px;
+    padding-left: 0;
 }
 
 .footer .footer-content .main-footer .social img {
@@ -2709,7 +2715,7 @@ a {
     z-index: 0;
     position: absolute;
     top: 70px;
-    left: 28px;
+    left: 27px;
 }
 
 .application-progress-stage .stage-line li {
@@ -3818,6 +3824,108 @@ a {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding-top: 20px;
+        padding: 20px 0 0 0;
+    }
+    /* //////////////////////////////////////////////////// */
+    /* 線上預約維修申請 */
+    .online-application-stage-part {
+        width: 95%;
+    }
+    .online-application-stage-part h1 {
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 50px 0 0 0;
+    }
+    .application-progress-stage .stage-line {
+        padding-top: 30px;
+    }
+    .application-progress-stage .stage-line::before {
+        content: "";
+        width: 89%;
+        top: 50px;
+    }
+    .next-step-button button {
+        padding: 8px 18px;
+        font-size: 0.8125rem;
+    }
+    /* ///////////////////////////////////////////////////////// */
+    /* 線上預約維修申請---問題表單 */
+    .choose-problem-type-section {
+        width: 95%;
+    }
+    .obtacle-decription textarea {
+        width: 87%;
+    }
+    .previous-next-button-section {
+        width: 95%;
+        justify-content: space-around;
+    }
+    .previous,
+    #obstacle-submit {
+        margin: 0;
+        padding: 8px 18px;
+        font-size: 0.8125rem;
+    }
+    /* ///////////////////////////////////////////////////////// */
+    /* 線上預約維修申請---預約完成 */
+    .appointment-detail-title {
+        width: 95%;
+    }
+    .client-detail-information {
+        width: 95%;
+    }
+    .detail-row {
+        padding: 10px;
+    }
+    .detail-column {
+        justify-content: flex-start;
+    }
+    .detail-item {
+        padding-top: 15px;
+    }
+    .return-to-home button {
+        padding: 8px 18px;
+        font-size: 0.8125rem;
+    }
+    /* ///////////////////////////////////////////////////////// */
+    /* 維修進度查詢 */
+    .repair-status-inquiry .status-inquiry-input-info {
+        width: 80%;
+    }
+    .inquiry-input-section .inquiry-title h1 {
+        margin-top: 50px;
+        font-size: 1.2rem;
+    }
+    .inquiry-input-area #form-number-inquiry {
+        width: 100%;
+        padding: 10px 0 10px 20px;
+    }
+    #repair-submit-btn,
+    .serial-number-inquiry {
+        padding: 8px 18px;
+        font-size: 0.8125rem;
+    }
+    /* ///////////////////////////////////////////////////////// */
+    /* 登入頁面 */
+    .login-page .login-section {
+        width: 90%;
+        margin: 100px auto 50px;
+    }
+    .main-login-content .login-left {
+        display: none;
+    }
+    .main-login-content {
+        justify-content: center;
+        align-items: center;
+    }
+    .login-right {
+        width: 100%;
+        padding-left: 0;
+    }
+    /* ///////////////////////////////////////////////////////// */
+    /* 註冊帳號頁面 */
+    .register-section {
+        width: 90%;
+        margin: 100px auto 50px;
     }
 }
