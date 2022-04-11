@@ -3861,6 +3861,12 @@ a {
         justify-content: space-around;
         padding: 20px 0 0 0;
     }
+
+    /* //////////////////////////////////// */
+    /* 行動裝置選型頁面 */
+    .mobile-device-nav .device-nav-content {
+        width: 95%;
+    }
     /* //////////////////////////////////// */
     /* 購買S22 Ultra */
     .product-title-price-hint {
