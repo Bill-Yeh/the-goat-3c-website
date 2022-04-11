@@ -187,6 +187,15 @@
         <div class="container specification-model-select">
             <div class="row select-content">
                 <div class="col-12 col-md-3 specification-group">
+                    <div class="rwd-filter-close">
+                        <span>篩選</span>
+                        <a href="#" class="rwd-menu-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                                <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                            </svg>
+                        </a>
+                    </div>
                     <div class="filter-option">
                         <div class="option-type">
                             <a href="#">
@@ -417,6 +426,10 @@
                                     </div>
                                 </li>
                             </ul>
+                        </div>
+                        <div class="col-12 rwd-result-reset-function">
+                            <a href="#" class="rwd-reset">清除瀏覽條件</a>
+                            <a href="#" class="rwd-result">瀏覽結果</a>
                         </div>
                     </div>
                 </div>
@@ -1215,6 +1228,14 @@
 
             $(".close-icon").click(function() {
                 $(".look-for-store-full-screen").removeClass("show");
+            })
+
+            $(".filter").click(function() {
+                $(".specification-group").slideDown();
+            })
+
+            $(".rwd-menu-close").click(function() {
+                $(".specification-group").slideUp();
             })
         })
     </script>
