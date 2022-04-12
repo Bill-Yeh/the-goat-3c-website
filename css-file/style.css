@@ -1061,15 +1061,24 @@
     position: relative;
 }
 
-.s22-convenient-feature .blue-circle-background-image {
-    background-image: url(../picture/blue-circle.png);
+.blue-circle-background-image {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: -40%;
+    overflow: hidden;
+    z-index: -1;
+    /* background-image: url(../picture/blue-circle.png);
     background-repeat: no-repeat;
     width: 1400px;
     height: 130vh;
     position: absolute;
     top: 18%;
     left: -50%;
-    z-index: -1;
+    z-index: -1; */
+}
+.blue-circle-background-image img{
+    width: 100%;
 }
 
 .s22-convenient-feature .convenient-feature-content .convenient-text {
@@ -1100,27 +1109,27 @@
     font-weight: 500;
 }
 
-.s22-convenient-feature .convenient-picture .convenient-picture-content .digital-car-key .car-key-pic {
+.s22-convenient-feature .car-key-pic {
     width: 585px;
 }
 
-.s22-convenient-feature .convenient-picture .convenient-picture-content .digital-car-key .car-key-pic img {
+.s22-convenient-feature .car-key-pic img {
     width: 70%;
 }
 
-.s22-convenient-feature .convenient-picture .convenient-picture-content .map-navigation .map-navigation-pic {
+.s22-convenient-feature .map-navigation-pic {
     width: 585px;
 }
 
-.s22-convenient-feature .convenient-picture .convenient-picture-content .map-navigation .map-navigation-pic img {
+.s22-convenient-feature .map-navigation-pic img {
     width: 70%;
 }
 
-.s22-convenient-feature .convenient-picture .convenient-picture-content .google-pay .google-pay-pic {
+.s22-convenient-feature .google-pay-pic {
     width: 585px;
 }
 
-.s22-convenient-feature .convenient-picture .convenient-picture-content .google-pay .google-pay-pic img {
+.s22-convenient-feature .google-pay-pic img {
     width: 70%;
 }
 
@@ -4116,6 +4125,63 @@ a {
     /* 產品方便性 */
     .s22-convenient-feature .convenient-feature-content {
         width: 90%;;
+    }
+    .s22-convenient-feature .convenient-feature-content .convenient-text {
+        flex-direction: column;
+    }
+    .blue-circle-background-image {
+        width: 100%;
+        top: 15%;
+        left: -40%;
+    }
+    .convenient-slogan {
+        width: 100%;
+        padding: 25% 0 0 0;
+    }
+    .advantage-description {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0;
+    }
+    .convenient-slogan .advantage {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .convenient-picture{
+        width: 90%;
+        margin: auto;
+    }
+    .s22-convenient-feature .car-key-pic {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .s22-convenient-feature .car-key-pic img {
+        width: 100%;
+    }
+    .s22-convenient-feature .map-navigation-pic {
+        display: none;
+    }
+    .s22-convenient-feature .google-pay-pic {
+        display: none;
+    }
+    .car-key-txt,
+    .map-navigation-txt,
+    .google-pay-txt {
+        width: 320px;
+        padding: 25px;
+        background-color: #fff;
+        box-shadow: 4px 40px 48px 0 rgb(0 0 0 / 10%);
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    .carousel-control,.control-arrow {
+        display: none;
+    }
+    .slideshow .control-arrow i {
+        display: none;
     }
     /* //////////////////////////////////// */
 
