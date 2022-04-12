@@ -15,14 +15,30 @@
 
 <body style="scroll-behavior: smooth;">
 
+    <input type="checkbox" name="" id="menu-switch">
+    <div class="purple-ellipse">
+        <img src="picture/background-imge-Ellipse-nav.png" alt="" class="main-header-background-image">
+    </div>
     <!-- 導覽列 -->
     <header class="main-header-product-introduction" id="back-to-top">
-        <div class="main-header-background-image"></div>
         <div class="main-header-container">
-            <a href="index.html" class="logo">
-                <img src="picture/the-g.o.a.t-black-version2.0.png" alt="THE G.O.A.T">
-            </a>
+            <label for="menu-switch" class="rwd-nav-hb">
+                <span></span>
+                <span></span>
+            </label>
+            <div class="logo-section">
+                <a href="index.html" class="logo">
+                    <img src="picture/the-g.o.a.t-black-version2.0.png" alt="THE G.O.A.T">
+                </a>
+                <h1>THE G.O.A.T 史上最強3C硬體設備</h1>
+            </div>
             <nav class="main-nav">
+                <div class="search-function">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search rwd-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                    <input type="search" placeholder="搜尋THE G.O.A.T.com" id="user-search">
+                </div>
                 <a href="choosing-type.html">行動裝置</a>
                 <a href="#">筆電/桌電</a>
                 <a href="#">零組件</a>
@@ -31,21 +47,23 @@
                 <a href="#">聯絡我們</a>
             </nav>
             <div class="search-cart-login">
-                <div class="nav-icon black-icon search">
+                <!-- 隱藏 -->
+                <div class="nav-icon search">
                     <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search desktop-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg>
                     </a>
                 </div>
-                <div class="nav-icon black-icon cart">
+                <!-- 出現右邊 -->
+                <div class="nav-icon cart">
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                         </svg>
                     </a>
                 </div>
-                <div class="nav-icon black-icon login">
+                <div class="nav-icon login">
                     <a href="login.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
@@ -107,7 +125,7 @@
                 </div>
                 <div class="huge-battery">
                     <h3 class="battery">5000mAh超大電量</h3>
-                    <p>升級後的 AI 可以智慧的適應你使用手機的方式，一天消耗 5000mAh（典型值）的電量。 4簡而言之：它可以在不必要時節省電量，延長電池壽命，讓續航時間遠多於24小時。</p>
+                    <p>升級後的 AI 可以智慧的適應你使用手機的方式，一天消耗 5000mAh的電量。簡而言之：它可以在不必要時節省電量，延長電池壽命，讓續航時間遠多於24小時。</p>
                 </div>
                 <div class="ip68-water-proof">
                     <h3 class="water-proof">IP68防水功能</h3>
@@ -208,7 +226,7 @@
     </section>
 
     <!--footer -->
-    <section class="product-introduction-footer">
+    <!-- <section class="product-introduction-footer">
         <div class="footer-content">
             <div class="main-footer">
                 <div class="product-service">
@@ -285,7 +303,7 @@
                 <p class="solution">本平台僅供學習、展示之用。 若有侵權疑慮，您可以私訊緯育TibaMe，後續會由專人協助處理。</p>
             </div>
         </div>
-    </section>
+    </section> -->
 
 </body>
 

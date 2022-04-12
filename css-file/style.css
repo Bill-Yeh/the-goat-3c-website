@@ -689,15 +689,29 @@
 
 .main-header-product-introduction {
     width: 100%;
-    position: relative;
+    /* position: sticky;
+    top: 0; */
+    z-index: 20;
 }
 
-.main-header-background-image {
-    height: 320px;
+.purple-ellipse {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: 320px;
     background-repeat: no-repeat;
     background-position: 50% -30px;
     background-image: url(../picture/background-imge-Ellipse-nav.png);
-    z-index: -1;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0; */
+    /* overflow: hidden; */
 }
 
 .main-header-product-introduction .main-header-container {
@@ -710,14 +724,19 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 20;
 }
-
-.main-header-product-introduction .main-header-container .logo {
+.main-header-product-introduction h1 {
+    opacity: 0;
+    position: fixed;
+    left: -1000000px;
+}
+.main-header-product-introduction .logo-section{
     width: 80px;
     /* padding-top: 12px; */
 }
 
-.main-header-product-introduction .main-header-container .logo img {
+.main-header-product-introduction .logo-section img{
     width: 100%;
 }
 
@@ -733,7 +752,7 @@
     position: relative;
     transform: translateY(0px);
     transition: .3s;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .main-header-product-introduction .main-nav a:hover {
@@ -768,7 +787,7 @@
     cursor: pointer;
 }
 
-.black-icon svg {
+.main-header-product-introduction .nav-icon svg{
     width: 23px;
     height: 23px;
     color: #363636;
@@ -782,11 +801,11 @@
 
 .s22-ultra-product-feature {
     width: 100%;
+    padding-top: 180px;
 }
 
 .s22-ultra-product-feature .product-title-slogan {
     text-align: center;
-    margin-top: -150px;
 }
 
 .s22-ultra-product-feature .product-title-slogan h1 {
@@ -1006,8 +1025,8 @@
 }
 
 .s22-camera {
-    /* max-width: 300px; */
     max-width: 100%;
+    margin-top: -10%;
 }
 
 .s22-camera img {
@@ -1018,10 +1037,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.camera-content .camera-description .s22-camera {
-    margin-top: -10%;
 }
 
 .camera-content .camera-description .product-description {
@@ -3869,6 +3884,241 @@ a {
         padding: 20px 0 0 0;
     }
     /* //////////////////////////////////// */
+
+    /* product-introduction */
+    /* 導覽列 */
+    .main-header-product-introduction {
+        height: 62px;
+        position: fixed;
+        top: 0;
+        display: flex;
+        background-color: #f6f6f6;
+    }
+    .main-header-product-introduction .main-header-container{
+        width: 90%;
+        justify-content: space-between;
+    }
+    .main-header-product-introduction .logo-section{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main-header-product-introduction .logo-section img{
+        padding-top: 5px;
+    }
+    .main-header-product-introduction .main-nav {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #f6f6f6;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        transition: left .5s;
+    }
+    #menu-switch:checked~.main-header-product-introduction .main-nav {
+        left: 0;
+    }
+    .main-header-product-introduction .main-nav a{
+        border-bottom: 1px solid #838383;
+        padding: 15px 0;
+        margin: 0 30px;
+        display: block;
+    }
+    .main-header-product-introduction .search-function{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #838383;
+        position: relative;
+    }
+    .main-header-product-introduction .search-function #user-search {
+        width: 95%;
+        outline: none;
+        border: none;
+        color: #000;
+        background-color: #cbcbcb;
+        border-radius: 5px;
+        font-size: 0.9375rem;
+        padding: 8px 10px 8px 30px;
+        margin: 10px 0;
+    }
+    .main-header-product-introduction .search-function .rwd-search {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    /* 漢堡線 */
+    .main-header-product-introduction .main-header-container .rwd-nav-hb span {
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: #363636;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    #menu-switch:checked~.main-header-product-introduction .rwd-nav-hb span:first-child {
+        top: 20px;
+        transform: rotate(45deg);
+        transition: .3s;
+    }
+    #menu-switch:checked~.main-header-product-introduction .rwd-nav-hb span:last-child {
+        bottom: 20px;
+        transform: rotate(-45deg);
+        transition: .3s;
+    }
+
+    /* 紫色球形 */
+    .purple-ellipse{
+        width: 100%;
+    }
+    .purple-ellipse img{
+        width: 100%;
+    }
+
+    /* s22 ultra product feature */
+    .s22-ultra-product-feature .product-title-slogan h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+    .s22-ultra-device-connection .device-connection-section {
+        width: 90%;
+    }
+
+    /* 黃色圈圈 */
+    .s22-ultra-device-connection .device-connection-section .s22-ultra-device-connection-background-image {
+        width: 100%;
+        top: 0;
+        background-size: contain;
+    }
+
+    /* s22手機本體 */
+    .s22-ultra-device-picture {
+        width: 30%;
+        margin-top: 80px;
+        position: sticky;
+        top: 60px;
+    }
+    .s22-ultra-device-picture .s22-photo {
+        width: 100%;
+    }
+
+    /* 75圓圈圖片 */
+    .cooling-75 {
+        width: 25%;
+        top: 18%;
+        right: 0;
+        overflow: hidden;
+    }
+
+    /* 智慧手錶 */
+    .smart-watch {
+        width: 25%;
+        left: -8%;
+        top: 25%;
+        overflow: hidden;
+    }
+
+    /* 智慧電視 */
+    .smart-tv {
+        width: 25%;
+        top: 40%;
+        left: -5%;
+        overflow: hidden;
+    }
+
+    /* 智慧汽車 */
+    .smart-vehicle {
+        width: 25%;
+        position: absolute;
+        top: 30%;
+        right: -7%;
+    }
+
+    /* 安卓筆電 */
+    .android-laptop {
+        width: 28%;
+        right: 0;
+        top: 53%;
+    }
+
+    /* 智慧平板 */
+    .smart-tablet {
+        width: 28%;
+        top: 52%;
+        left: 0;
+    }
+
+    /* 產品主要功能特色 */
+    .primary-fuction {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .primary-fuction .function-slogan {
+        width: 95%;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .primary-fuction .function-slogan h2 {
+        font-size: 1.2rem;
+    }
+    .primary-fuction .function-slogan p {
+        font-size: 0.8125rem;
+    }
+    .primary-fuction .four-feature {
+        flex-direction: column;
+        align-items: center;
+    }
+    .green-circle-background-image {
+        background-position: top;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 35%;
+    }
+
+    /* 產品相機功能介紹 */
+    .s22-camera-introduction .camera-content {
+        width: 90%;
+    }
+    .camera-content .camera-slogan {
+        font-size: 1.8rem;
+        margin-left: 0;
+        padding-top: 70px;
+        text-align: center;
+    }
+    .model-photo {
+        max-width: 100%;
+        margin: 10% 0 0 0;
+        position: relative;
+        z-index: 5;
+    }
+    .s22-camera {
+        display: none;
+    }
+    .camera-content .camera-description {
+        width: 100%;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .camera-content .camera-description .product-description {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    /* 產品方便性 */
+    .s22-convenient-feature .convenient-feature-content {
+        width: 90%;;
+    }
+    /* //////////////////////////////////// */
+
     /* 行動裝置選型頁面 */
     .mobile-device-nav .device-nav-content {
         width: 95%;
@@ -3999,6 +4249,68 @@ a {
     .look-for-store-full-screen .look-for-store {
         width: 100%;
         height: 100%;
+        border-radius: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    .store-content{
+        width: 90%;
+        margin: auto;
+    }
+    /* 尋找門市標題和關閉icon */
+    .store-content .viewport-title-close-icon {
+        width: 100%;
+        border-bottom: 1px solid #838383;
+        padding: 15px 0;
+    }
+    .store-distance-google-map{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .store-distance-addresss{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+    /* 選擇公里數 */
+    .store-distance-google-map .store-distance-addresss .distance-km li {
+        width: 100%;
+        list-style: none;
+    }
+    .select-km {
+        width: 100%;
+        margin-right: 0;
+    }
+    .select-km label{
+        width: 70%;
+    }
+    .store-distance-google-map .store-distance-addresss .distance-km {
+        width: 100%;
+        justify-content: space-between;
+        margin: 10px 5px 0 5px;
+    }
+    /* google map區塊 */
+    .store-google-map{
+        width: 100vw;
+        height: 100vh;
+        order: 2;
+        display: flex;
+    }
+    .google-map-tool{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+    .google-map-tool iframe {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -8px;
+        left: 0;
+        right: 0;
         border-radius: 0;
     }
     /* //////////////////////////////////// */
