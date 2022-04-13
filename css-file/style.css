@@ -4065,7 +4065,7 @@ a {
 
     /* 產品主要功能特色 */
     .primary-fuction {
-        width: 100%;
+        width: 90%;
         padding-bottom: 50px;
     }
     .primary-fuction .function-slogan {
@@ -4149,7 +4149,7 @@ a {
         font-weight: 500;
     }
     .convenient-picture{
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
     .s22-convenient-feature .car-key-pic {
@@ -4169,13 +4169,11 @@ a {
     .car-key-txt,
     .map-navigation-txt,
     .google-pay-txt {
-        width: 320px;
+        width:320px;
         padding: 25px;
         background-color: #fff;
         box-shadow: 4px 40px 48px 0 rgb(0 0 0 / 10%);
         position: relative;
-        bottom: 0;
-        left: 0;
     }
     .carousel-control,.control-arrow {
         display: none;
