@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css-file/root.css">
     <link rel="icon" href="picture/the-g.o.a.t-black-version2.0.icon.png">
     <link rel="stylesheet" href="css-file/owl.carousel.min.css">
+    <link rel="stylesheet" href="css-file/owl.theme.default.min.css">
     <link rel="stylesheet" href="css-file/style.css">
 </head>
 
@@ -178,64 +179,75 @@
         </div>
         <div class="convenient-picture">
             <div class="convenient-picture-content">
-                <div class="digital-car-key">
-                    <div class="car-key-pic">
-                        <img src="picture/phone&car.png" alt="數位汽車鑰匙" class="phone-car">
+                <div class="owl-carousel owl-theme">
+                    <div class="digital-car-key">
+                        <div class="car-key-pic">
+                            <img src="picture/phone&car.png" alt="數位汽車鑰匙" class="phone-car">
+                        </div>
+                        <div class="car-key-txt">
+                            <h3>數位車鑰匙</h3>
+                            <p>使用您的 Android 手機解鎖並啟動您的兼容汽車。就像在車門上輕敲手機一樣簡單。</p>
+                            <a href="#">了解更多<i class="fa-solid fa-square-up-right"></i></a>
+                        </div>
                     </div>
-                    <div class="car-key-txt">
-                        <h3>數位車鑰匙</h3>
-                        <p>使用您的 Android 手機解鎖並啟動您的兼容汽車。就像在車門上輕敲手機一樣簡單。</p>
-                        <a href="#">了解更多<i class="fa-solid fa-square-up-right"></i></a>
+                    <div class="map-navigation">
+                        <div class="map-navigation-pic">
+                            <img src="picture/watch&wrist.png" alt="透過google map在您的手錶上開啟" class="google-map-watch">
+                        </div>
+                        <div class="map-navigation-txt">
+                            <h3>Google Map地圖嚮導</h3>
+                            <p>在您的 Android 手機上開始在 Google 地圖上的旅程。然後在您的手錶上使用它。</p>
+                            <a href="#">了解更多<i class="fa-solid fa-square-up-right"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="map-navigation">
-                    <div class="map-navigation-pic">
-                        <img src="picture/watch&wrist.png" alt="透過google map在您的手錶上開啟" class="google-map-watch">
+                    <div class="google-pay">
+                        <div class="google-pay-pic">
+                            <img src="picture/google-pay.png" alt="透過Android 手機或 Wear OS 手錶在商店輕鬆付款" class="using-google-map">
+                        </div>
+                        <div class="google-pay-txt">
+                            <h3>Google Pay</h3>
+                            <p>Google Pay 是使用保存在您Google 帳戶中的卡進行支付的一種快速、簡單的方式。</p>
+                            <a href="#">了解更多<i class="fa-solid fa-square-up-right"></i></a>
+                        </div>
                     </div>
-                    <div class="map-navigation-txt">
-                        <h3>Google Map地圖嚮導</h3>
-                        <p>在您的 Android 手機上開始在 Google 地圖上的旅程。然後在您的手錶上使用它。</p>
-                        <a href="#">了解更多<i class="fa-solid fa-square-up-right"></i></a>
-                    </div>
-                </div>
-                <div class="google-pay">
-                    <div class="google-pay-pic">
-                        <img src="picture/google-pay.png" alt="透過Android 手機或 Wear OS 手錶在商店輕鬆付款" class="using-google-map">
-                    </div>
-                    <div class="google-pay-txt">
-                        <h3>Google Pay</h3>
-                        <p>Google Pay 是使用保存在您Google 帳戶中的卡進行支付的一種快速、簡單的方式。您可以輕觸您的 Android 手機或 Wear OS 手錶在商店輕鬆付款。</p>
-                        <a href="#">了解更多<i class="fa-solid fa-square-up-right"></i></a>
+                    <div class="map-navigation">
+                        <div class="map-navigation-pic">
+                            <img src="picture/watch&wrist.png" alt="透過google map在您的手錶上開啟" class="google-map-watch">
+                        </div>
+                        <div class="map-navigation-txt">
+                            <h3>Google Map地圖嚮導</h3>
+                            <p>在您的 Android 手機上開始在 Google 地圖上的旅程。然後在您的手錶上使用它。</p>
+                            <a href="#">了解更多<i class="fa-solid fa-square-up-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="slideshow">
-                <div class="carousel-control">
-                    <span class="control-icon-1"></span>
-                    <span class="control-icon-2"></span>
-                    <span class="control-icon-3"></span>
-                </div>
-                <div class="control-arrow">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-                <div class="return-top">
-                    <button class="top">
-                        <a href="#back-to-top">回到頁首</a>
-                    </button>
-                </div>
+            <div class="return-top-function">
+                <button class="top">
+                    <a href="#back-to-top">回到頁首</a>
+                </button>
             </div>
         </div>
     </section>
 
-
+    <input type="checkbox" name="" id="product-service-icon-check">
+    <input type="checkbox" name="" id="promotion-activity-icon-check">
+    <input type="checkbox" name="" id="service-info-icon-check">
+    <input type="checkbox" name="" id="about-icon-check">
     <!--footer -->
     <section class="product-introduction-footer">
         <div class="footer-content">
             <div class="main-footer">
-                <div class="product-service">
-                    <h3>產品與服務</h3>
-                    <ul>
+                <label for="product-service-icon-check" class="product-service-tag">
+                    <div class="product-service">
+                        <div class="footer-title">
+                            <h3>產品與服務</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <ul class="product-list">
                         <li><a class="footer-link" href="choosing-type.html">智慧手機</a></li>
                         <li><a class="footer-link" href="#">平板電腦</a></li>
                         <li><a class="footer-link" href="#">筆記型電腦</a></li>
@@ -244,31 +256,52 @@
                         <li><a class="footer-link" href="#">顯示卡</a></li>
                         <li><a class="footer-link" href="#">散熱器</a></li>
                     </ul>
-                </div>
-                <div class="promotion-activity">
-                    <h3>促銷活動</h3>
-                    <ul>
-                        <li><a class="footer-link" href="#">舊機換新機</a></li>
-                        <li><a class="footer-link" href="#">母親節優惠</a></li>
-                        <li><a class="footer-link" href="#">VIP會員優惠</a></li>
-                        <li><a class="footer-link" href="#">實體促銷活動</a></li>
-                    </ul>
-                </div>
-                <div class="service-info">
-                    <h3>服務資訊</h3>
-                    <ul>
-                        <li><a class="footer-link" href="online-repair-application.html">線上維修申請</a></li>
-                        <li><a class="footer-link" href="repair-status-inquiry.html">線上維修查詢</a></li>
-                    </ul>
-                </div>
-                <div class="about">
-                    <h3>關於我們</h3>
-                    <ul>
-                        <li><a class="footer-link" href="#">關於THE G.O.A.T</a></li>
-                        <li><a class="footer-link" href="#">新聞資訊</a></li>
-                        <li><a class="footer-link" href="#">門市據點</a></li>
-                    </ul>
-                </div>
+                </label>
+                <label for="promotion-activity-icon-check" class="promotion-activity-tag">
+                    <div class="promotion-activity">
+                        <div class="footer-title">
+                            <h3>促銷活動</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </div>
+                        <ul class="promotion-list">
+                            <li><a class="footer-link" href="#">舊機換新機</a></li>
+                            <li><a class="footer-link" href="#">母親節優惠</a></li>
+                            <li><a class="footer-link" href="#">VIP會員優惠</a></li>
+                            <li><a class="footer-link" href="#">實體促銷活動</a></li>
+                        </ul>
+                    </div>
+                </label>
+                <label for="service-info-icon-check" class="service-info-tag">
+                    <div class="service-info">
+                        <div class="footer-title">
+                            <h3>服務資訊</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </div>
+                        <ul class="service-list">
+                            <li><a class="footer-link" href="online-repair-application.html">線上維修申請</a></li>
+                            <li><a class="footer-link" href="repair-status-inquiry.html">線上維修查詢</a></li>
+                        </ul>
+                    </div>
+                </label>
+                <label for="about-icon-check" class="about-tag">
+                    <div class="about">
+                        <div class="footer-title">
+                            <h3>關於我們</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                        </div>
+                        <ul class="about-list">
+                            <li><a class="footer-link" href="#">關於THE G.O.A.T</a></li>
+                            <li><a class="footer-link" href="#">新聞資訊</a></li>
+                            <li><a class="footer-link" href="#">門市據點</a></li>
+                        </ul>
+                    </div>
+                </label>
                 <div class="social">
                     <h3>社群</h3>
                     <ul>
@@ -289,7 +322,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="../picture/linkedin.png" alt="The Goat linkedin官方帳號">
+                                <img src="picture/linkedin.png" alt="The Goat linkedin官方帳號">
                             </a>
                         </li>
                         <li>
@@ -308,13 +341,39 @@
             </div>
         </div>
     </section>
+
+
     <script src="javascript/jquery.min.js"></script>
     <script src="javascript/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel();
-          });
+    <script src="javascript/rwd-footer.js"></script>
 
+    <script>
+        // $(document).ready(function() {
+        //     $(".owl-carousel").owlCarousel();
+        // });
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1.5,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            })
+        })
     </script>
 
 </body>

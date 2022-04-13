@@ -1,0 +1,211 @@
+/* 產品方便性 */
+
+.s22-convenient-feature {
+    width: 100%;
+}
+
+.s22-convenient-feature .convenient-feature-content {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.blue-circle-background-image {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: -40%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.blue-circle-background-image img {
+    width: 100%;
+}
+
+.s22-convenient-feature .convenient-feature-content .convenient-text {
+    display: flex;
+}
+
+.convenient-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20% 0 0 7%;
+    width: 60%;
+}
+
+.advantage-description {
+    width: 40%;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 25% 3% 0 0;
+}
+
+.convenient-slogan .in-trip {
+    font-size: 1.125rem;
+}
+
+.convenient-slogan .advantage {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.s22-convenient-feature .car-key-pic {
+    width: 585px;
+}
+
+.s22-convenient-feature .car-key-pic img {
+    width: 70%;
+}
+
+.s22-convenient-feature .map-navigation-pic {
+    width: 585px;
+}
+
+.s22-convenient-feature .map-navigation-pic img {
+    width: 70%;
+}
+
+.s22-convenient-feature .google-pay-pic {
+    width: 585px;
+}
+
+.s22-convenient-feature .google-pay-pic img {
+    width: 70%;
+}
+
+.convenient-picture {
+    width: 100%;
+    margin-top: 8%;
+    /* overflow: hidden; */
+}
+
+.convenient-picture .convenient-picture-content {
+    display: flex;
+    margin-left: 30%;
+}
+
+.owl-carousel {
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.owl-nav span {
+    display: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 30px;
+    height: 10px;
+    border-radius: 0;
+    background-color: #3c3c3c;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #838383;
+}
+
+.digital-car-key,
+.map-navigation,
+.google-pay {
+    width: 100%;
+}
+
+.car-key-txt,
+.map-navigation-txt,
+.google-pay-txt {
+    width: 320px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 10px 40px 48px 0 rgb(0 0 0 / 10%);
+    /* position: absolute;
+    bottom: -20%;
+    left: 40%; */
+}
+
+.convenient-picture-content h3 {
+    font-size: 1.875rem;
+    margin: 0;
+}
+
+.convenient-picture-content p {
+    line-height: 2;
+    margin-top: 5px;
+}
+
+.convenient-picture-content a {
+    text-decoration: none;
+    color: #3681FF;
+    display: block;
+}
+
+.convenient-picture-content i {
+    margin-left: 5px;
+    transition: .3s;
+}
+
+.convenient-picture-content a:hover i {
+    transform: translate(20%, -20%);
+}
+
+.slideshow {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10%;
+}
+
+.carousel-control {
+    display: flex;
+    justify-content: center;
+}
+
+.slideshow .carousel-control span {
+    width: 40px;
+    height: 10px;
+    margin: 10% 1% 0 1%;
+}
+
+.control-icon-1 {
+    background-color: #3c3c3c;
+}
+
+.control-icon-2,
+.control-icon-3 {
+    background-color: #f6f6f6;
+}
+
+.slideshow .control-arrow {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    padding-top: 3%;
+}
+
+.slideshow .control-arrow i {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.slideshow .control-arrow .fa-arrow-left {
+    color: #d3d3d3;
+}
+
+.return-top {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.return-top .top {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #3c3c3c;
+}
+
+.return-top a {
+    text-decoration: none;
+    color: #f6f6f6;
+    font-size: 15px;
+}
