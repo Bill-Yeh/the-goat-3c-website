@@ -1113,7 +1113,7 @@
 }
 
 .car-key-pic {
-    width: 585px;
+    width: 80%;
 }
 
 .car-key-pic img {
@@ -1121,7 +1121,7 @@
 }
 
 .map-navigation-pic {
-    width: 585px;
+    width: 80%;
 }
 
 .map-navigation-pic img {
@@ -1129,7 +1129,7 @@
 }
 
 .google-pay-pic {
-    width: 585px;
+    width: 80%;
 }
 
 .google-pay-pic img {
@@ -1500,7 +1500,6 @@ a {
 
 
 /* 類型規格選型 左 */
-
 .rwd-filter-close {
     display: none;
 }
@@ -1603,7 +1602,12 @@ a {
 
 
 /* 產品卡片 */
-
+.model-col{
+    transition: .3s;
+}
+.model-col:hover{
+    transform: scale(1.03);
+}
 .model-col .mobile-choose {
     margin-top: 30px;
     padding: 20px 0;
@@ -4217,7 +4221,7 @@ a {
     .product-introduction-footer .footer-content .main-footer h3 {
         font-size: 1rem;
     }
-    .footer-title svg {
+    .product-introduction-footer .footer-title svg {
         display: block;
         color: #363636;
     }
