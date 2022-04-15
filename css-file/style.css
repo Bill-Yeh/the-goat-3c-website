@@ -107,7 +107,18 @@
 
 
 /* Home page */
-
+.galaxy-s22-ad{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    /* aspect-ratio: 3/2;
+    overflow: hidden; */
+}
+video{
+    width: 95%;
+    /* object-fit: cover; */
+}
 
 /* banner Galaxy s22 Ultra */
 
