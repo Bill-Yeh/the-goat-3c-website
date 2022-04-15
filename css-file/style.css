@@ -107,18 +107,71 @@
 
 
 /* Home page */
-.galaxy-s22-ad{
+
+.galaxy-s22-ad {
+    overflow: hidden;
+}
+
+.video-section {
+    max-width: 1520px;
+    margin: auto;
+    position: relative;
+}
+
+video {
     width: 100%;
+    object-fit: cover;
+}
+
+.s22-order-info {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    /* box-shadow: 0 0 15px rgb(156, 156, 156); */
+    border-radius: 30px;
+    color: rgb(195, 195, 195);
+    padding: 30px;
+    transition: .3s;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: #000;
-    /* aspect-ratio: 3/2;
-    overflow: hidden; */
 }
-video{
-    width: 95%;
-    /* object-fit: cover; */
+
+.s22-order-info:hover {
+    box-shadow: 0 0 20px 10px rgb(245, 182, 182);
 }
+
+.galaxy-s22-ad h2 {
+    font-size: 3rem;
+    transition: .3s;
+}
+
+.galaxy-s22-ad .s22-order-info:hover h2 {
+    color: rgb(245, 182, 182);
+}
+
+.galaxy-s22-ad .order-learn .learn-s22 {
+    color: rgb(195, 195, 195);
+}
+
+.galaxy-s22-ad .order-learn .learn-s22::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    width: 0;
+    height: 1px;
+    transition: .3s;
+}
+
+.galaxy-s22-ad .order-learn .learn-s22 i {
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    color: rgb(195, 195, 195);
+}
+
 
 /* banner Galaxy s22 Ultra */
 
@@ -1158,18 +1211,16 @@ video{
     margin-left: 30%;
 }
 
-.owl-carousel {
+.convenient-picture .owl-carousel {
     max-width: 1200px;
     overflow: hidden;
-    display: flex;
-    align-items: center;
 }
 
-.owl-nav span {
+.convenient-picture .owl-nav span {
     display: none;
 }
 
-.owl-theme .owl-dots .owl-dot span {
+.convenient-picture .owl-theme .owl-dots .owl-dot span {
     width: 30px;
     height: 10px;
     border-radius: 30px;
@@ -1511,6 +1562,7 @@ a {
 
 
 /* 類型規格選型 左 */
+
 .rwd-filter-close {
     display: none;
 }
@@ -1613,12 +1665,15 @@ a {
 
 
 /* 產品卡片 */
-.model-col{
+
+.model-col {
     transition: .3s;
 }
-.model-col:hover{
+
+.model-col:hover {
     transform: scale(1.03);
 }
+
 .model-col .mobile-choose {
     margin-top: 30px;
     padding: 20px 0;
@@ -3602,12 +3657,277 @@ a {
 /* -------------------------------------------- */
 
 
-/* 手機版 */
+/* 平版 ---------992*/
+
+@media screen and (max-width:992px) {
+    .main-header {
+        /* height: 60px; */
+        position: fixed;
+        top: 0;
+        display: flex;
+    }
+    .main-header .main-header-container {
+        width: 95%;
+        justify-content: space-between;
+    }
+    .main-header-container .logo-section {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main-header .main-header-container .logo img {
+        width: 100%;
+        padding-top: 5px;
+    }
+    .main-header .main-nav {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #363636;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        transition: left .5s;
+    }
+    #menu-switch:checked~.main-header .main-nav {
+        left: 0;
+    }
+    .main-header .main-nav a {
+        border-bottom: 1px solid #838383;
+        padding: 15px 0;
+        margin: 0 30px;
+        display: block;
+    }
+    .search-function {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #838383;
+        position: relative;
+    }
+    .search-function #user-search {
+        width: 95%;
+        outline: none;
+        border: none;
+        color: #ffffff;
+        background-color: #4a4a4a;
+        border-radius: 5px;
+        font-size: 0.9375rem;
+        padding: 8px 10px 8px 30px;
+        margin: 10px 0;
+    }
+    /* rwd放大鏡 */
+    .search-function .rwd-search {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 20px;
+        left: 28px;
+    }
+    .search-cart-login .desktop-search {
+        display: none;
+    }
+    /* 漢堡外層 */
+    .main-header-container .rwd-nav-hb {
+        width: 42px;
+        height: 42px;
+        display: block;
+        position: relative;
+    }
+    /* 漢堡的白線 */
+    .main-header-container .rwd-nav-hb span {
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: #FFFFFF;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    /* 第一條白線 */
+    .rwd-nav-hb span:first-child {
+        top: 15px;
+    }
+    /* 第二條白線 */
+    .rwd-nav-hb span:last-child {
+        bottom: 15px;
+    }
+    #menu-switch {
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: -100%;
+    }
+    #menu-switch:checked~.main-header .rwd-nav-hb span:first-child {
+        top: 20px;
+        transform: rotate(45deg);
+        transition: .3s;
+    }
+    #menu-switch:checked~.main-header .rwd-nav-hb span:last-child {
+        bottom: 20px;
+        transform: rotate(-45deg);
+        transition: .3s;
+    }
+    /* ---------------------------------- */
+    /* Home page --------992*/
+    /* galaxy-s22 宣傳影片 --------992*/
+    .video-section {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .galaxy-s22-ad h2 {
+        font-size: 2rem;
+        transition: .3s;
+    }
+    /* ---------------------------------- */
+    /* banner Galaxy s22 Ultra ----------992*/
+    .s22-content {
+        width: 95%;
+        flex-direction: column;
+    }
+    .s22-content-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .s22-content-product {
+        width: 100%;
+    }
+    .s22-content-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .s22-content-text p {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    .order-learn {
+        padding-bottom: 20px;
+    }
+    .order-learn .learn-s22 {
+        font-size: 0.8125rem;
+    }
+    .order-learn .order {
+        padding: 8px 18px;
+    }
+    .order a {
+        font-size: 0.8125rem;
+    }
+    .banner-s22-right-arrow {
+        display: none;
+    }
+    .s22-content-product {
+        width: 100%;
+        margin: auto;
+    }
+    .s22-content-product img {
+        width: 100%;
+    }
+    .s22-product-1 {
+        position: relative;
+        top: 0;
+        margin-left: 30px;
+    }
+    .s22-product-2 {
+        position: relative;
+        top: 0;
+    }
+    .s22-product-3 {
+        position: relative;
+    }
+    /* ------------------------------ */
+    /* banner iPad air------992*/
+    .ipad-air-content {
+        width: 95%;
+    }
+    .ipad-air-content .ipad-air-text {
+        text-align: center;
+    }
+    .ipad-air-content .ipad-air-text h2 {
+        font-size: 2rem;
+    }
+    .ipad-air-content .ipad-air-text p {
+        font-size: 1.5rem;
+    }
+    .order-learn .learn-ipad {
+        font-size: 0.8125rem;
+    }
+    /* ------------------------------ */
+    /* ProArt------992*/
+    .proart-content {
+        width: 95%;
+    }
+    .proart-content .proart-text h2 {
+        font-size: 2rem;
+    }
+    .order-learn .learn-proart {
+        font-size: 0.8125rem;
+    }
+    .proart-picture-group1,
+    .proart-picture-group2 {
+        width: 100%;
+        flex-direction: column;
+    }
+    .proart-picture-group1 .proart-application01 {
+        display: none;
+    }
+    .proart-picture-group2 .proart-application02 {
+        display: none;
+    }
+    .proart-picture-group1 img {
+        width: 90%;
+    }
+    .proart-picture-group2 img {
+        width: 90%;
+        margin: 0;
+    }
+    /* ------------------------------ */
+    /* banner 零組件專區------992*/
+    .component .component-content {
+        width: 95%;
+    }
+    .component h2 {
+        text-align: center;
+        margin-left: 0;
+        font-size: 2rem;
+    }
+    .component .component-content .product-type {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .motherboard-graphics-card,
+    .radiator-edge {
+        display: flex;
+        justify-content: space-around;
+    }
+    .component-content .case {
+        /* padding: 10px 0;
+        transform: rotate(90deg); */
+        display: none;
+    }
+    .motherboard,
+    .graphics-card,
+    .radiator,
+    .edge {
+        margin: 0 10px;
+    }
+}
+
+
+/* -------------------------------------------- */
+
+
+/* 手機版 ----------767*/
 
 @media screen and (max-width:767px) {
     /* ////////////////////////////////////// */
-    /* 首頁 */
-    /* 導覽列 */
+    /* 首頁 -----767*/
+    /* 導覽列----767 */
     .main-header {
         height: 60px;
         position: fixed;
@@ -3679,7 +3999,6 @@ a {
     }
     /* 漢堡外層 */
     .main-header-container .rwd-nav-hb {
-        /* border: 2px solid #000; */
         width: 42px;
         height: 42px;
         display: block;
@@ -3720,7 +4039,19 @@ a {
         transition: .3s;
     }
     /* -------------------------------------- */
-    /* banner 行動裝置區塊 */
+    /* galaxy-s22 宣傳影片------767 */
+    .galaxy-s22-ad {
+        margin-top: 60px;
+    }
+    .video-section {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .s22-order-info {
+        display: none;
+    }
+    /* -------------------------------------- */
+    /* banner 行動裝置區塊-----767 */
     .s22-content {
         width: 95%;
         flex-direction: column;
@@ -3778,7 +4109,7 @@ a {
         position: relative;
     }
     /* -------------------------------------- */
-    /* banner 平板 */
+    /* banner 平板------767 */
     .ipad-air-content {
         width: 95%;
         flex-direction: column;
@@ -3800,7 +4131,7 @@ a {
         font-size: 0.8125rem;
     }
     /* -------------------------------------- */
-    /* banner 筆電 */
+    /* banner 筆電 -----767*/
     .proart-content {
         width: 95%;
     }
@@ -3829,7 +4160,7 @@ a {
         margin: 0;
     }
     /* -------------------------------------- */
-    /* banner 零組件專區 */
+    /* banner 零組件專區-----767 */
     .component .component-content {
         width: 95%;
     }
@@ -3842,8 +4173,19 @@ a {
         flex-direction: column;
         align-items: center;
     }
-    .component-content .case {
-        padding: 30px 0;
+    .motherboard-graphics-card,
+    .radiator-edge {
+        flex-direction: column;
+    }
+    .motherboard,
+    .graphics-card,
+    .radiator,
+    .edge {
+        margin: 0 0 15px 0;
+    }
+    .component-content .motherboard,
+    .radiator {
+        padding-bottom: 0;
     }
     /* ------------------------------- */
     /* 活動專區 */
@@ -3858,9 +4200,6 @@ a {
     .activity .activity-content .activity-card-section {
         align-items: center;
         overflow: hidden;
-    }
-    .activity .activity-content .right-arrow {
-        display: none;
     }
     .all-activity-link {
         text-align: center;
@@ -4204,11 +4543,11 @@ a {
         padding: 20px;
     }
     /* 輪播大框 */
-    .owl-carousel {
+    .convenient-picture .owl-carousel {
         width: 100%;
     }
     /* 輪播控制點點 */
-    .owl-dots {
+    .convenient-picture .owl-dots {
         margin-right: 50px;
         padding-bottom: 30px;
     }
