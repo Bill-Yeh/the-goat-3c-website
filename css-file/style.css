@@ -2044,6 +2044,322 @@ a {
 }
 
 
+/* 比較功能下方欄 */
+
+.compare-bar-section {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 100;
+    display: none;
+}
+
+.compare-bar-section .compare-bar-wrap {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 30px;
+}
+
+.compare-bar-section .compare-bar-box {
+    display: flex;
+}
+
+.compare-bar-section .compare-bar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #e3f6ff;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.product-1 {
+    display: none;
+}
+
+.product-2 {
+    display: none;
+}
+
+.product-3 {
+    display: none;
+}
+
+.compare-bar-section .compare-bar-product {
+    width: 50%;
+}
+
+.compare-bar-section img {
+    width: 100%;
+}
+
+.compare-bar-section p {
+    font-size: 0.8125rem;
+}
+
+.compare-bar-section .compare-bar-close {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.compare-bar-section svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+/* 執行比較功能 */
+
+.compare-bar-implement-btn a {
+    text-decoration: none;
+    font-size: 0.8125rem;
+    margin-right: 20px;
+    position: relative;
+}
+
+.compare-bar-implement-btn .clear-btn::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    border-bottom: 1px solid #363636;
+    transition: .3s;
+}
+
+.compare-bar-implement-btn .clear-btn:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.compare-bar-implement-btn .compare-btn {
+    background-color: #3681FF;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.compare-bar-implement-btn .compare-btn:hover {
+    background-color: rgb(7, 68, 224);
+}
+
+
+/* 比較功能燈箱 */
+
+
+/* 比較視窗 */
+
+.compare-viewport {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+
+/* 比較內容 */
+
+.compare-viewport .compare-viewport-inner {
+    width: 90%;
+    max-width: 1200px;
+    height: 80%;
+    overflow-y: auto;
+    border-radius: 30px 0 0 30px;
+    background: #fff;
+    vertical-align: top;
+    padding: 50px 20px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.compare-viewport .compare-viewport-content {
+    position: relative;
+}
+
+
+/* 視窗關閉按鈕 */
+
+.compare-viewport .viewport-close-btn {
+    position: absolute;
+    top: -50px;
+    right: 5px;
+    border: none;
+    background-color: #fff;
+}
+
+
+/* 視窗關閉按鈕icon */
+
+.compare-viewport .viewport-close-btn svg {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/* 視窗標題 */
+
+.compare-viewport-title h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+/* 產品列 */
+
+.compare-viewport .compare-product-list {
+    display: table;
+    position: relative;
+    width: 100%;
+    table-layout: fixed;
+    padding-left: 200px;
+    box-sizing: border-box;
+}
+
+.compare-viewport .compare-product-item {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 16px;
+}
+
+
+/* 產品型號 */
+
+.compare-viewport .compare-product-item h3 {
+    position: absolute;
+    top: -5px;
+    left: -180px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px 21.28px 0;
+    border-bottom: 1px solid #838383;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* 產品型號h4外層 */
+
+.compare-viewport .compare-product-menu {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #838383;
+}
+
+
+/* 產品直排內容 */
+
+.compare-viewport .compare-product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compare-viewport .compare-product-img {
+    width: 80%;
+    padding-top: 20px;
+}
+
+.compare-viewport .compare-product-img img {
+    width: 100%;
+}
+
+.compare-product-price {
+    padding: 20px 0 30px 0;
+}
+
+.compare-product-price span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.compare-product-order a {
+    text-decoration: none;
+    font-size: 0.8125rem;
+    background-color: #3681FF;
+    color: #fff;
+    border-radius: 30px;
+    padding: 7px 15px;
+    transition: .3s;
+}
+
+.compare-product-order a:hover {
+    background-color: rgb(7, 68, 224);
+}
+
+.compare-viewport .compare-product-spec-table {
+    background-color: #f6f6f6;
+    margin-top: 40px;
+    padding: 20px 10px;
+}
+
+
+/* 規格表格 */
+
+.spec-table-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.compare-viewport .spec-table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #838383;
+    box-sizing: border-box;
+}
+
+
+/* 表格項目標題 */
+
+.spec-col-title {
+    flex-grow: 1;
+}
+
+.spec-col-title,
+.spec-col-content {
+    margin: 20px 0;
+}
+
+
+/* 表格內容儲存格 */
+
+.compare-viewport .spec-col-content {
+    width: 300px;
+    font-size: 0.8125rem;
+}
+
+.compare-viewport mark {
+    background-color: #d2eeff;
+}
+
+
 /* ----------------------------------------- */
 
 
