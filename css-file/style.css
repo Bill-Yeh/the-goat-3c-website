@@ -1878,10 +1878,27 @@ a {
     margin: 10px;
 }
 
-.location-compare a {
-    text-decoration: none;
+.location-compare {
     display: flex;
     align-items: center;
+}
+
+.map {
+    border: none;
+    background-color: #fff;
+    font-size: 0.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.comparison {
+    border: none;
+    background-color: #fff;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .contrast {
@@ -2352,7 +2369,7 @@ a {
 
 .compare-viewport .spec-col-content {
     width: 300px;
-    font-size: 0.8125rem;
+    font-size: 1rem;
 }
 
 .compare-viewport mark {
@@ -4022,7 +4039,7 @@ a {
     }
     /* ************************************************* */
     /* 比較功能燈箱------1024 */
-    .compare-viewport .compare-viewport-inner{
+    .compare-viewport .compare-viewport-inner {
         border-radius: 30px;
     }
     .compare-viewport .spec-col-content {
@@ -4599,29 +4616,28 @@ a {
     .display-store-quantity-distance-address .display-store {
         padding-top: 30px;
     }
-
     /* ------------------------------------------- */
     /* 比較功能下方欄----992 */
-    .compare-viewport .compare-viewport-inner{
+    .compare-viewport .compare-viewport-inner {
         border-radius: 30px;
     }
     .compare-bar-section .compare-bar-wrap {
         width: 95%;
         padding: 20px 20px;
     }
-    .compare-bar-implement-btn{
+    .compare-bar-implement-btn {
         width: 30%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
-    .compare-bar-implement-btn a{
+    .compare-bar-implement-btn a {
         margin-right: 0;
     }
     /* ------------------------------------------- */
     /* 比較功能燈箱----992 */
     /* 表格項目標題----992 */
-    .compare-viewport .spec-col-content{
+    .compare-viewport .spec-col-content {
         width: 150px;
     }
     /* ************************************************* */
@@ -5536,7 +5552,7 @@ a {
         border-radius: 30px;
         padding: 10px 35px;
     }
-    /* 尋找門市據點-------764 */
+    /* 尋找門市據點-------767 */
     .look-for-store-full-screen .look-for-store {
         width: 100%;
         height: 100%;
@@ -5605,22 +5621,70 @@ a {
         border-radius: 0;
     }
     /* 比較功能下方顯示欄------767 */
-    .compare-bar-section .compare-bar-wrap{
+    .compare-bar-section .compare-bar-wrap {
         width: 95%;
         justify-content: center;
     }
-    .compare-bar-section .compare-bar-item{
+    .compare-bar-section .compare-bar-item {
         display: none;
     }
-    .compare-bar-implement-btn{
+    .compare-bar-implement-btn {
         width: 300px;
     }
     /* 比較功能燈箱-------767 */
-    .compare-viewport .compare-viewport-inner{
+    .compare-viewport .compare-viewport-inner {
         width: 100%;
         height: 100%;
+        padding: 0;
+        border-radius: 0;
     }
-
+    .compare-viewport .compare-viewport-content {
+        width: 90%;
+        margin: auto;
+        padding: 20px 0;
+    }
+    /* 關閉叉叉----767 */
+    .compare-viewport .viewport-close-btn {
+        top: 20px;
+    }
+    .compare-viewport .compare-product-item h3 {
+        display: none;
+    }
+    .compare-viewport .compare-product-list {
+        padding-left: 0;
+    }
+    .compare-viewport .item-3 {
+        display: none;
+    }
+    /* 規格儲存格內容最後一欄----767 */
+    .spec-col-content:last-child {
+        display: none;
+    }
+    /* 規格列----767 */
+    .compare-viewport .spec-table-row {
+        flex-wrap: wrap;
+        border-top: 0 none;
+    }
+    /* 規格項目標題----767 */
+    .spec-col-title {
+        width: 100%;
+        position: relative;
+        font-weight: 500;
+    }
+    .spec-col-title::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 2.22222222vw;
+        right: 2.22222222vw;
+        bottom: -10px;
+        border-bottom: 1px solid #838383;
+    }
+    /* 規格儲存格內容----767 */
+    .compare-viewport .spec-col-content {
+        width: 50%;
+        font-size: 1rem;
+    }
     /* //////////////////////////////////// */
     /* 購買S22 Ultra */
     .product-title-price-hint {
