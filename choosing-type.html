@@ -1420,18 +1420,25 @@
             $(".close-icon").click(function() {
                 $(".look-for-store-full-screen").removeClass("show");
             })
+            
 
             // -----------------功能比較燈箱----------------------------
+            $(".product-1").hide();
+            $(".product-2").hide();
+            $(".product-3").hide();
+
             $(".comparison-1").click(function() {
                 $(".compare-bar-section").show();
                 $(".product-1").show();
-                $(".product-2").hide();
-                $(".product-3").hide();
+                // $(".product-2").hide();
+                // $(".product-3").hide();
             })
 
             $(".comparison-2").click(function() {
                 $(".compare-bar-section").show();
                 $(".product-2").show();
+                // $(".product-1").hide();
+                // $(".product-3").hide();
             })
 
             $(".comparison-3").click(function() {
@@ -1443,6 +1450,9 @@
 
             $(".clear-btn").click(function() {
                 $(".compare-bar-section").hide();
+                $(".product-1").hide();
+                $(".product-2").hide();
+                $(".product-3").hide();
             })
             $(".compare-btn").click(function() {
                 $(".compare-viewport").show();
@@ -1452,6 +1462,9 @@
             })
             $(".viewport-close-btn").click(function() {
                 $(".compare-viewport").hide();
+                $(".product-1").hide();
+                $(".product-2").hide();
+                $(".product-3").hide();
             })
             $(".close-1").click(function() {
                 $(".product-1").hide();

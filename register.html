@@ -75,23 +75,24 @@
     <div class="register-page">
         <div class="register-section">
             <div class="main-register-content">
-                <div class="user-register-input">
+                <form action="javascript:void(0)" id="memRegister" class="user-register-input">
                     <div class="register-title">
                         <h1>註冊帳號</h1>
                     </div>
                     <div class="register-account-part">
                         <label for="user-register">帳號</label>
                         <input type="text" name="register-account" id="user-register">
-                        <p>請輸入電子郵件或電話號碼</p>
+                        <p id="register-account-tips">請輸入電子郵件或電話號碼</p>
                     </div>
                     <div class="register-password-part">
                         <label for="password-register">密碼</label>
-                        <input type="password" name="register-password" id="password-register">
-                        <p>密碼為8-25個字元，大小寫不同</p>
+                        <input type="password" name="register-password" id="password-register" maxlength="25" minlength="8">
+                        <p id="register-password-tips">密碼為8-25個字元，大小寫不同</p>
                     </div>
                     <div class="password-confirm-part">
                         <label for="password-confirm">確認密碼</label>
-                        <input type="password" name="confirm-password" id="password-confirm">
+                        <input type="password" name="confirm-password" id="password-confirm" maxlength="25" minlength="8">
+                        <span id="confirm-id"></span>
                     </div>
                     <div class="privacy-term">
                         <label for="privacy">
@@ -107,7 +108,7 @@
                         <span>已有帳號了?</span>
                         <a href="login.html">登入</a>
                     </p>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -229,6 +230,8 @@
 
 
     <script src="javascript/jquery.min.js"></script>
+
+    <script src="javascript/register.js"></script>
 
     <script src="javascript/rwd-footer.js"></script>
 </body>

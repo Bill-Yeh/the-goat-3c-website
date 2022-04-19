@@ -123,11 +123,10 @@ video {
     object-fit: cover;
 }
 
-.s22-order-info {
+/* .s22-order-info {
     position: absolute;
     top: 25%;
     left: 5%;
-    /* box-shadow: 0 0 15px rgb(156, 156, 156); */
     border-radius: 30px;
     color: rgb(195, 195, 195);
     padding: 30px;
@@ -135,6 +134,7 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #8383839a;
 }
 
 .s22-order-info:hover {
@@ -142,7 +142,7 @@ video {
 }
 
 .galaxy-s22-ad h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     transition: .3s;
 }
 
@@ -170,7 +170,7 @@ video {
     height: 25px;
     font-weight: 600;
     color: rgb(195, 195, 195);
-}
+} */
 
 
 /* banner Galaxy s22 Ultra */
@@ -3841,6 +3841,10 @@ a {
     border-radius: 5px;
 }
 
+#confirm-id{
+    font-size: 0.75rem;
+    padding-top: 5px;
+}
 
 /* 同意隱私條款 */
 

@@ -91,17 +91,20 @@
                 </div>
                 <div class="login-right">
                     <div class="right-content">
-                        <form action="">
+                        <form action="javascript:void(0)" id="memLogin">
                             <p class="login-title">登入帳號</p>
                             <div class="input-account">
                                 <label for="user-account">帳號</label>
                                 <input type="text" id="user-account">
-                                <p>請輸入電子郵件或電話號碼</p>
+                                <p id="accountTips">請輸入電子郵件或電話號碼</p>
+                                <!-- <input type="text" id="user-account" pattern="(^09\d{8}$)|(^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$)" title="帳號格式錯誤" required>
+                                <p>請輸入電子郵件或電話號碼</p> -->
                             </div>
                             <div class="input-password">
                                 <label for="user-password">密碼</label>
                                 <input type="password" name="user-password" id="user-password" maxlength="25" minlength="8">
-                                <p>密碼為8-25個字元，大小寫不同</p>
+                                <!-- <input type="password" name="user-password" id="user-password" maxlength="25" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="密碼需包含英文大小寫與數字"> -->
+                                <p id="passwordTips">密碼為8-25個字元，大小寫不同</p>
                             </div>
                             <div class="remember-forget">
                                 <label for="remember">
@@ -257,6 +260,8 @@
 
 
     <script src="javascript/jquery.min.js"></script>
+
+    <script src="javascript/login.js"></script>
 
     <script src="javascript/rwd-footer.js"></script>
 
