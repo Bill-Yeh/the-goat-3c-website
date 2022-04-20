@@ -76,7 +76,7 @@
 
 
     <!-- 線上預約維修申請 -->
-    <div class="online-repair-application">
+    <form action="javascript:void(0)" id="application" class="online-repair-application">
         <div class="online-application-stage-part">
             <h1>線上預約維修申請</h1>
             <div class="application-progress-stage">
@@ -114,7 +114,7 @@
                     <div class="info-text-part">
                         <div class="input-item product-number">
                             <span>填寫產品序號*</span>
-                            <input type="text" name="serial-number" id="serial-number" placeholder="請輸入產品序號">
+                            <input type="text" name="serial-number" id="serial-number" placeholder="請輸入產品序號，一共6碼，首字為大寫英文(例:A12345)">
                         </div>
                         <div class="input-item store-location">
                             <span>選擇門市據點*</span>
@@ -134,17 +134,17 @@
                         </div>
                         <div class="input-item appoint-date">
                             <span>預約日期*</span>
-                            <input type="date" name="appoint-date" id="appoint-date" placeholder="請輸入地址">
+                            <input type="date" name="appoint-date" id="appoint-date" placeholder="請輸入地址" min="2020-04-27" max="2022-04-29" value="2022-04-27">
                         </div>
                         <div class="input-item select-time">
                             <span>預約時段*</span>
                             <select name="select-time" id="select-time">
                                 <option value="time" selected>請選擇時段</option>
-                                <option value="time">4月6日早上9:00~12:00</option>
-                                <option value="time">4月6日下午1:00~5:00</option>
-                                <option value="time">4月7日早上9:00~12:00</option>
-                                <option value="time">4月7日下午1:00~5:00</option>
-                                <option value="time">4月8日早上9:00~12:00</option>
+                                <option value="time">4月27日早上9:00~12:00</option>
+                                <option value="time">4月27日下午1:00~5:00</option>
+                                <option value="time">4月28日早上9:00~12:00</option>
+                                <option value="time">4月28日下午1:00~5:00</option>
+                                <option value="time">4月29日早上9:00~12:00</option>
                             </select>
                         </div>
                     </div>
@@ -152,11 +152,11 @@
             </div>
         </div>
         <div class="next-step-button">
-            <a href="online-repair-problem-description.html">
-                <button type="button">下一步</button>
+            <a href="javascript:void(0)">
+                <button type="button" id="applicationSend">下一步</button>
             </a>
         </div>
-    </div>
+    </form>
 
     <input type="checkbox" name="" id="product-service-icon-check">
     <input type="checkbox" name="" id="promotion-activity-icon-check">
@@ -272,7 +272,7 @@
 
 
     <script src="javascript/jquery.min.js"></script>
-
+    <script src="javascript/repair-application.js"></script>
     <script src="javascript/rwd-footer.js"></script>
 </body>
 

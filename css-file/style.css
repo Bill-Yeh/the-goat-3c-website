@@ -5780,9 +5780,9 @@ a {
         margin-top: 30px;
     }
     /* //////////////////////////////////////////////////// */
-    /* 線上預約維修申請 */
+    /* 線上預約維修申請-----767 */
     .online-application-stage-part {
-        width: 95%;
+        width: 90%;
     }
     .online-application-stage-part h1 {
         text-align: center;
@@ -5794,23 +5794,40 @@ a {
     }
     .application-progress-stage .stage-line::before {
         content: "";
-        width: 89%;
+        width: 88%;
         top: 50px;
+    }
+    .input-item select {
+        padding: 8px 18px;
+        background-color: #fff;
+    }
+    #appoint-date{
+        width: 90%;
+        background-color: #fff;
     }
     .next-step-button button {
         padding: 8px 18px;
         font-size: 0.8125rem;
     }
     /* ///////////////////////////////////////////////////////// */
-    /* 線上預約維修申請---問題表單 */
+    /* 線上預約維修申請---問題表單-----767 */
     .choose-problem-type-section {
-        width: 95%;
+        width: 90%;
+    }
+    .online-application-stage-part {
+        width: 90%;
+        padding-top: 0;
+    }
+    .problem-menu #problem {
+        padding: 8px 18px;
+        background-color: #fff;
     }
     .obtacle-decription textarea {
         width: 87%;
+        padding: 10px 18px;
     }
     .previous-next-button-section {
-        width: 95%;
+        /* width: 95%; */
         justify-content: space-around;
     }
     .previous,
@@ -5822,10 +5839,10 @@ a {
     /* ///////////////////////////////////////////////////////// */
     /* 線上預約維修申請---預約完成 */
     .appointment-detail-title {
-        width: 95%;
+        width: 90%;
     }
     .client-detail-information {
-        width: 95%;
+        width: 90%;
     }
     .detail-row {
         padding: 10px;
