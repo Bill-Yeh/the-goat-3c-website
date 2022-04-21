@@ -19,6 +19,8 @@ function applicationForm(e){
 
     if(serialNum.value.search(serialCheck) == -1){
         alert("產品序號格式錯誤");
+        serialNum.value = "";
+        serialNum.focus();
         e.preventDefault();
         return;
     }
@@ -31,10 +33,19 @@ function applicationForm(e){
         return;
     }
 
-    // 確認預約日期是否選擇
+    // 確認預約時段是否選擇
+    let appointTime = $id("select-time");
+    if(appointTime.selectedIndex == 0){
+        alert("請選擇預約時段");
+        e.preventDefault();
+        return;
+    }
+
+    // 如果申請資料都驗證通過，就跳轉到首頁
+    if (serialValid && store.selectedIndex != 0 && appointTime.selectedIndex != 0) return window.location.replace('/online-repair-problem-description.html');
 
 }
 
 window.addEventListener( "load" , function (){
-    document.getElementById("applicationSend").onclick = applicationForm;
+    document.getElementById("application").onsubmit = applicationForm;
 });

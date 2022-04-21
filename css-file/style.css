@@ -5631,9 +5631,14 @@ a {
     }
     .compare-bar-section .compare-bar-item {
         display: none;
+        position: absolute;
+        left: -1000px;
     }
     .compare-bar-implement-btn {
-        width: 300px;
+        width: 100%;
+    }
+    .compare-bar-implement-btn a{
+        margin: 10px 0;
     }
     /* 比較功能燈箱-------767 */
     .compare-viewport .compare-viewport-inner {
