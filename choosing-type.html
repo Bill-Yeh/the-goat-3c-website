@@ -443,9 +443,26 @@
                                 <div class="mobile-choose">
                                     <div class="s22-pic-title">
                                         <div class="s22-pic">
-                                            <a href="order-page.html" class="s22-ultra">
-                                                <img src="picture/galaxy-s22-ultra.png" alt="">
-                                            </a>
+                                            <div class="s22-red">
+                                                <a href="order-page.html" class="s22-ultra">
+                                                    <img src="picture/galaxy-s22-ultra.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="s22-black">
+                                                <a href="order-page.html" class="s22-ultra">
+                                                    <img src="picture/tw-galaxy-s22-ultra-black.webp" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="s22-green">
+                                                <a href="order-page.html" class="s22-ultra">
+                                                    <img src="picture/tw-galaxy-s22-ultra-green.webp" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="s22-white">
+                                                <a href="order-page.html" class="s22-ultra">
+                                                    <img src="picture/tw-galaxy-s22-ultra-white.webp" alt="">
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="s22-title">
                                             <a href="order-page.html">Galaxy S22 Ultra</a>
@@ -455,7 +472,10 @@
                                         <div class="color-part">
                                             <div class="color-name">
                                                 顏色:
-                                                <span>夜暮紅</span>
+                                                <span id="red-txt">夜暮紅</span>
+                                                <span id="black-txt">星際黑</span>
+                                                <span id="green-txt">極光綠</span>
+                                                <span id="white-txt">皎月白</span>
                                             </div>
                                             <div class="color-selector">
                                                 <div class="color-one">
@@ -1412,6 +1432,63 @@
 
     <script>
         $(document).ready(function() {
+            // -----------------產品圖片變換----------------------------
+            $(".color-one").click(function() {
+                //產品圖片
+                $(".s22-red").show();
+                $(".s22-black").hide();
+                $(".s22-green").hide();
+                $(".s22-white").hide();
+
+                // 顏色文字
+                $("#red-txt").show();
+                $("#black-txt").hide();
+                $("#green-txt").hide();
+                $("#white-txt").hide();
+            })
+
+            $(".color-two").click(function() {
+                //產品圖片
+                $(".s22-black").show();
+                $(".s22-red").hide();
+                $(".s22-green").hide();
+                $(".s22-white").hide();
+
+                // 顏色文字
+                $("#black-txt").show();
+                $("#red-txt").hide();
+                $("#green-txt").hide();
+                $("#white-txt").hide();
+            })
+
+            $(".color-three").click(function() {
+                //產品圖片
+                $(".s22-green").show();
+                $(".s22-red").hide();
+                $(".s22-black").hide();
+                $(".s22-white").hide();
+
+                // 顏色文字
+                $("#green-txt").show();
+                $("#red-txt").hide();
+                $("#black-txt").hide();
+                $("#white-txt").hide();
+            })
+
+            $(".color-four").click(function() {
+                //產品圖片
+                $(".s22-white").show();
+                $(".s22-red").hide();
+                $(".s22-black").hide();
+                $(".s22-green").hide();
+
+                // 顏色文字
+                $("#white-txt").show();
+                $("#red-txt").hide();
+                $("#black-txt").hide();
+                $("#green-txt").hide();
+            })
+
             // -----------------購買地點燈箱----------------------------
             $(".purchase-location").click(function() {
                 $(".look-for-store-full-screen").addClass("show");
@@ -1420,10 +1497,10 @@
             $(".close-icon").click(function() {
                 $(".look-for-store-full-screen").removeClass("show");
             })
-            
+
 
             // -----------------功能比較燈箱----------------------------
-            
+
             $(".product-1").hide();
             $(".product-2").hide();
             $(".product-3").hide();
@@ -1447,7 +1524,7 @@
                 $(".product-3").show();
             })
 
-        
+
 
             // ----------------------比較功能下方欄位-----------------------------
 

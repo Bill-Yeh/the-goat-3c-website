@@ -108,44 +108,44 @@
                 </ul>
             </div>
         </div>
-        <div class="choose-problem-type-section">
-            <div class="choose-problem">
-                <div class="problem-type-title">
-                    <span>選擇問題類型*</span>
-                </div>
-                <div class="problem-menu">
-                    <select name="problem" id="problem">
-                        <option value="problem-type" selected>請選擇問題類型</option>
-                        <option value="problem-type">電池問題</option>
-                        <option value="problem-type">硬體設備問題</option>
-                        <option value="problem-type">照相機功能問題</option>
-                        <option value="problem-type">其他</option>
-                    </select>
-                </div>
-            </div>
-            <div class="problem-description">
-                <div class="obtacle-decription">
-                    <div class="description-title">
-                        <span>詳述故障原因</span>
+        <form action="javascript:void(0)" id="problem-submit">
+            <div class="choose-problem-type-section">
+                <div class="choose-problem">
+                    <div class="problem-type-title">
+                        <span>選擇問題類型*</span>
                     </div>
-                    <form action="">
-                        <textarea name="problem-description" id="problem-detail" placeholder="請詳述故障原因" cols="30" rows="10"></textarea>
-                    </form>
+                    <div class="problem-menu">
+                        <select name="problem" id="problem">
+                            <option value="problem-type" selected>請選擇問題類型</option>
+                            <option value="problem-type">耗電量過大</option>
+                            <option value="problem-type">應用程式問題</option>
+                            <option value="problem-type">照相機功能</option>
+                            <option value="problem-type">其他</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="problem-description">
+                    <div class="obtacle-decription">
+                        <div class="description-title">
+                            <span>詳述故障原因</span>
+                        </div>
+                        <div class="problem-input">
+                            <textarea name="problem-description" id="problem-detail" placeholder="請詳述故障原因" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="previous-next-button-section">
-            <div class="previous-step-button">
-                <a href="online-repair-application.html">
-                    <button type="button" class="previous">上一步</button>
-                </a>
-            </div>
-            <div class="submit-button">
-                <a href="online-repair-appointment-finish.html">
+            <div class="previous-next-button-section">
+                <div class="previous-step-button">
+                    <a href="online-repair-application.html">
+                        <button type="button" class="previous">上一步</button>
+                    </a>
+                </div>
+                <div class="submit-button">
                     <input type="submit" value="提交" id="obstacle-submit">
-                </a>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 
     <input type="checkbox" name="" id="product-service-icon-check">
@@ -262,7 +262,7 @@
 
 
     <script src="javascript/jquery.min.js"></script>
-
+    <script src="javascript/detailed-problem.js"></script>
     <script src="javascript/rwd-footer.js"></script>
 </body>
 
