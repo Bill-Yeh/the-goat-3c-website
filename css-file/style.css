@@ -1679,20 +1679,15 @@ a {
 
 /* 圖片 */
 
-.s22-black,
+
+/* .s22-black,
 .s22-green,
-.s22-white {
+.s22-white,
+.s22-plus-black,
+.s22-plus-green,
+.s22-plus-pink {
     display: none;
-}
-
-
-/* 顏色名稱 */
-
-#black-txt,
-#green-txt,
-#white-txt {
-    display: none;
-}
+} */
 
 .s22-pic-title {
     display: flex;
@@ -1764,21 +1759,122 @@ a {
     display: none;
 }
 
-.color-one label {
+
+/* ---------圖卡1----------------- */
+
+.item1-red {
     background-color: #cc8c8c;
 }
 
-.color-two label {
+.item1-black {
     background-color: #282828;
 }
 
-.color-three label {
+.item1-green {
     background-color: #1f4d2b;
 }
 
-.color-four label {
+.item1-white {
     background-color: #b9b9b9;
 }
+
+
+/* ---------圖卡2----------------- */
+
+.item2-white {
+    background-color: #b9b9b9;
+}
+
+.item2-black {
+    background-color: #282828;
+}
+
+.item2-green {
+    background-color: #1f4d2b;
+}
+
+.item2-pink {
+    background-color: #ffadad;
+}
+
+
+/* ---------圖卡3----------------- */
+
+.item3-red {
+    background-color: #cc8c8c;
+}
+
+.item3-black {
+    background-color: #282828;
+}
+
+.item3-green {
+    background-color: #1f4d2b;
+}
+
+.item3-white {
+    background-color: #b9b9b9;
+}
+
+
+/* ---------圖卡4----------------- */
+
+.item4-red {
+    background-color: #cc8c8c;
+}
+
+.item4-black {
+    background-color: #282828;
+}
+
+.item4-green {
+    background-color: #1f4d2b;
+}
+
+.item4-white {
+    background-color: #b9b9b9;
+}
+
+
+/* ---------圖卡5----------------- */
+
+.item5-white {
+    background-color: #b9b9b9;
+}
+
+.item5-black {
+    background-color: #282828;
+}
+
+.item5-green {
+    background-color: #1f4d2b;
+}
+
+.item5-pink {
+    background-color: #ffadad;
+}
+
+
+/* ---------圖卡6----------------- */
+
+.item6-red {
+    background-color: #cc8c8c;
+}
+
+.item6-black {
+    background-color: #282828;
+}
+
+.item6-green {
+    background-color: #1f4d2b;
+}
+
+.item6-white {
+    background-color: #b9b9b9;
+}
+
+
+/* -------------------------------- */
 
 .color-selector input:checked+label::after {
     content: '';
