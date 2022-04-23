@@ -90,8 +90,24 @@
     <div class="container join-shopping-cart-section">
         <div class="row shopping-cart-content">
             <div class="col-12 col-md-6 product-real-photo-part">
-                <div class="s22-ultra-product-real-photo">
-                    <img src="picture/s22-ultra-cart-page.png">
+                <div class="picGroup">
+                    <div class="product-large">
+                        <img id="large" src="picture/S22_Ultra_red_order.png" alt="">
+                    </div>
+                    <div class="s22-ultra-product-real-photo">
+                        <div class="goodsItem" id="first">
+                            <img class="goods" src="picture/S22_Ultra_red_order.png" alt="">
+                        </div>
+                        <div class="goodsItem" id="second">
+                            <img class="goods" src="picture/S22_Ultra_green_order.png" alt="">
+                        </div>
+                        <div class="goodsItem" id="third">
+                            <img class="goods" src="picture/S22_Ultra_Black_order.png" alt="">
+                        </div>
+                        <div class="goodsItem" id="fourth">
+                            <img class="goods" src="picture/S22_Ultra_white_order.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 product-shopping-cart-puchase-infomation">
@@ -152,7 +168,7 @@
                         </div>
                         <div class="select-product-color">
                             <span>顏色</span>
-                            <div class="color-pink-purple-yellow">
+                            <div class="color-pink-green-black-white">
                                 <div class="color-pink control">
                                     <input type="radio" name="color" id="pink" class="select-pink" checked>
                                     <label for="pink">
@@ -162,22 +178,31 @@
                                         <span>夜暮紅</span>
                                     </label>
                                 </div>
-                                <div class="color-purple control">
-                                    <input type="radio" name="color" id="purple" class="select-purple">
-                                    <label for="purple">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill purple-icon" viewBox="0 0 16 16">
+                                <div class="color-green control">
+                                    <input type="radio" name="color" id="green" class="select-green">
+                                    <label for="green">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill green-icon" viewBox="0 0 16 16">
                                             <circle cx="8" cy="8" r="8"/>
                                           </svg>
-                                        <span>紫藕色</span>
+                                        <span>極光綠</span>
                                     </label>
                                 </div>
-                                <div class="color-yellow control">
-                                    <input type="radio" name="color" id="yellow" class="select-yellow">
-                                    <label for="yellow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill yellow-icon" viewBox="0 0 16 16">
+                                <div class="color-black control">
+                                    <input type="radio" name="color" id="black" class="select-black">
+                                    <label for="black">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill black-icon" viewBox="0 0 16 16">
                                             <circle cx="8" cy="8" r="8"/>
                                           </svg>
-                                        <span>橘黃色</span>
+                                        <span>星際黑</span>
+                                    </label>
+                                </div>
+                                <div class="color-white control">
+                                    <input type="radio" name="color" id="white" class="select-white">
+                                    <label for="white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill white-icon" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"/>
+                                          </svg>
+                                        <span>皎月白</span>
                                     </label>
                                 </div>
                             </div>
@@ -508,52 +533,9 @@
     </section>
 
 
-
-    <script>
-        function switchHeart() {
-            let heart = document.getElementById("white");
-            if (heart.title == "加入收藏") {
-                heart.src = "../picture/heart-white.png";
-                heart.title = "取消收藏";
-            } else {
-                heart.src = "../picture/heart-red.png";
-                heart.title = "加入收藏";
-            }
-        }
-
-
-        function init() {
-            document.getElementById("white").onclick = switchHeart;
-        }
-
-        window.addEventListener("load", init, false);
-    </script>
-
     <script src="javascript/jquery.min.js"></script>
-
+    <script src="javascript/order_page.js"></script>
     <script src="javascript/rwd-footer.js"></script>
-
-
-    <script>
-        $(document).ready(function() {
-
-            $(".s22-list-title-1").click(function() {
-                $(".product-all-feature").slideToggle();
-            })
-
-            $(".s22-list-title-2").click(function() {
-                $(".product-size-demonstrate").slideToggle();
-            })
-
-            $(".s22-list-title-3").click(function() {
-                $(".box-content").slideToggle();
-            })
-
-            $(".s22-list-title-4").click(function() {
-                $(".shopping-faq").slideToggle();
-            })
-        })
-    </script>
 
 </body>
 
