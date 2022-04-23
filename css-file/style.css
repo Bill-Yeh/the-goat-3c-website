@@ -5964,6 +5964,9 @@ a {
         width: 90%;
     }
     /* 購買S22 Ultra_圖片+文字區塊 */
+    .join-shopping-cart-section .shopping-cart-content {
+        padding-top: 0;
+    }
     .s22-ultra-product-focus-description {
         width: 95%;
         margin: auto;
