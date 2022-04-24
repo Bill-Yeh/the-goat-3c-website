@@ -2,10 +2,10 @@
 function switchHeart() {
     let heart = document.getElementById("white_like_img");
     if (heart.title == "加入收藏") {
-        heart.src = "../picture/heart-red.png";
+        heart.src = "./picture/heart-red.png";
         heart.title = "取消收藏";
     } else {
-        heart.src = "../picture/heart-white.png";
+        heart.src = "./picture/heart-white.png";
         heart.title = "加入收藏";
     }
 }
@@ -15,28 +15,6 @@ function switchHeart() {
 function showLarge(e) {
     document.getElementById("large").src = e.target.src;
 }
-
-// function sameSize(e) {
-//     document.getElementById("large").src = e.target.src;
-// }
-
-// 圖片加邊框線
-// function highlight(e) {
-//     // let goodsPic = document.getElementById("first");
-//     // let goodsIn = window.getComputedStyle(goodsPic, "::after");
-//     // console.log(goodsIn.border);
-//     let goodsPic = e.target;
-//     goodsPic.style.border = "1px solid #3681FF";
-//     return;
-// }
-// // 圖片移除邊框線
-// function normal(e) {
-//     let goodsOut = e.target;
-//     goodsOut.style.border = "none";
-//     return;
-// }
-
-
 
 
 function init() {
@@ -60,6 +38,25 @@ function init() {
 window.addEventListener("load", init, false);
 
 
+// function sameSize(e) {
+//     document.getElementById("large").src = e.target.src;
+// }
+
+// 圖片加邊框線
+// function highlight(e) {
+//     // let goodsPic = document.getElementById("first");
+//     // let goodsIn = window.getComputedStyle(goodsPic, "::after");
+//     // console.log(goodsIn.border);
+//     let goodsPic = e.target;
+//     goodsPic.style.border = "1px solid #3681FF";
+//     return;
+// }
+// // 圖片移除邊框線
+// function normal(e) {
+//     let goodsOut = e.target;
+//     goodsOut.style.border = "none";
+//     return;
+// }
 
 
 $(document).ready(function() {
