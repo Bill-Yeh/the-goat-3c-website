@@ -10,7 +10,6 @@ function switchHeart() {
     }
 }
 
-
 // 圖片變大
 function showLarge(e) {
     document.getElementById("large").src = e.target.src;
