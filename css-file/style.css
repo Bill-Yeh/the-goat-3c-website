@@ -103,6 +103,175 @@
 }
 
 
+/* ////////////////次選單----桌機//////////////////// */
+
+.rwd-dropDown-menu-column-type {
+    display: none;
+}
+
+
+/* 次選單最外層容器 */
+
+.mobile-dropDown-menu-wrap {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    padding: 24px 12px;
+    background-color: #363636;
+    display: none;
+}
+
+
+/* 次選單內容 */
+
+.mobile-dropDown-menu-wrap .mobile-dropDown-menu-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+
+/* 次選單標題 */
+
+.mobile-dropDown-menu-wrap h2 {
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/* 次選單內部詳細內容 */
+
+.mobile-dropDown-menu-wrap .mobile-dropDown-menu-inner-content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* 次選單關閉icon */
+
+.mobile-dropDown-menu-wrap .dropdown-menu-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* rwd返回左箭頭 */
+
+.bi-arrow-left {
+    display: none;
+}
+
+.mobile-dropDown-menu-wrap .dropdown-menu-close svg {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* 欄位1 */
+
+.dropDown-menu-column-type li {
+    cursor: pointer;
+}
+
+.itemType {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow2,
+.arrow3,
+.arrow4 {
+    display: none;
+}
+
+
+/* 欄位1 2 */
+
+.dropDown-menu-column-type,
+.dropDown-menu-column-series {
+    border-right: 1px solid #838383;
+    padding-right: 10%;
+}
+
+
+/* 次選單所有ul和li */
+
+.mobile-dropDown-menu-wrap ul {
+    padding-left: 0;
+    width: 25%;
+}
+
+.mobile-dropDown-menu-wrap li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+
+
+/* 欄位2 連結 */
+
+.mobile-dropDown-menu-wrap .dropDown-menu-column-series li a {
+    font-size: 1.1rem;
+}
+
+
+/* 欄位3---熱門商品連結 */
+
+.dropDown-menu-column-hot {
+    margin-left: 30px;
+}
+
+.mobile-dropDown-menu-wrap .itemHot .hotProduct {
+    padding: 15px 10px;
+    font-size: 1.1rem;
+    position: relative;
+    transform: translateY(0px);
+    transition: 0;
+}
+
+.mobile-dropDown-menu-wrap .itemHot .hotProduct:hover {
+    transform: translateY(0px);
+}
+
+.mobile-dropDown-menu-wrap .itemHot .hotProduct::after {
+    display: none;
+}
+
+.hotProduct {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #838383;
+    margin-bottom: 10px;
+}
+
+.hotProduct img {
+    width: 100%;
+}
+
+
+/* 欄位2、3----平板電腦+智慧手表+配件 */
+
+.tabletSeries,
+.watchSeries,
+.accessorySeries,
+.hotTablet,
+.hotWatch,
+.hotAccessory {
+    display: none;
+}
+
+
 /* ------------------------------------------------------- */
 
 
@@ -4210,6 +4379,12 @@ a {
     .footer .footer-content .main-footer {
         width: 95%;
     }
+    /* ////////////////次選單----ipad pro 1024//////////////////// */
+    .mobile-dropDown-menu-wrap .mobile-dropDown-menu-content {
+        width: 95%;
+        margin: auto;
+        position: relative;
+    }
     /* ******************************* */
     /* product introduction------1024 */
     .s22-ultra-device-connection .device-connection-section {
@@ -4447,6 +4622,79 @@ a {
         bottom: 20px;
         transform: rotate(-45deg);
         transition: .3s;
+    }
+    /* ////////////////次選單----992//////////////////// */
+    /* 次選單最外層-----992 */
+    .mobile-dropDown-menu-wrap {
+        height: 100%;
+        display: block;
+        background-color: #363636;
+        top: -1px;
+        left: 2000px;
+        z-index: 2;
+    }
+    /* 欄位1-----992 */
+    .dropDown-menu-column-type {
+        display: none;
+    }
+    .mobile-dropDown-menu-wrap .mobile-dropDown-menu-inner-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-dropDown-menu-wrap ul {
+        padding-left: 0;
+        width: 100%;
+    }
+    .mobile-dropDown-menu-wrap li {
+        padding: 0;
+    }
+    .dropDown-menu-column-type,
+    .dropDown-menu-column-series {
+        border: none;
+        padding-right: 0;
+    }
+    .dropDown-menu-column-hot {
+        margin: 0;
+    }
+    .dropDown-menu-column-hot .itemHot {
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .hotProduct {
+        width: 60%;
+    }
+    .hotProduct span {
+        display: block;
+        text-align: center;
+    }
+    .bi-x {
+        display: none;
+    }
+    /* rwd返回左箭頭 */
+    .bi-arrow-left {
+        display: block;
+    }
+    .rwd-dropDown-menu-column-type {
+        display: none;
+        border-bottom: 1px solid #838383;
+        width: 90%;
+        padding-left: 0;
+        margin: 0 30px;
+        list-style: none;
+    }
+    .rwd-dropDown-menu-column-type li {
+        padding: 15px 0;
+        color: #fff;
+    }
+    .rwd_itemType {
+        display: flex;
+        justify-content: space-between;
+    }
+    .arrow2,
+    .arrow3,
+    .arrow4 {
+        display: block;
     }
     /* ---------------------------------- */
     /* Home page --------992*/
@@ -5091,6 +5339,68 @@ a {
         bottom: 20px;
         transform: rotate(-45deg);
         transition: .3s;
+    }
+    /* ////////////////次選單----767//////////////////// */
+    .mobile-dropDown-menu-wrap {
+        height: 100%;
+        display: block;
+        background-color: #363636;
+        top: -1px;
+        left: 2000px;
+        z-index: 2;
+    }
+    /* 欄位1----767 */
+    .dropDown-menu-column-type {
+        display: none;
+    }
+    .mobile-dropDown-menu-wrap .mobile-dropDown-menu-inner-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-dropDown-menu-wrap ul {
+        padding-left: 0;
+        width: 100%;
+    }
+    .mobile-dropDown-menu-wrap li {
+        padding: 0;
+    }
+    .dropDown-menu-column-type,
+    .dropDown-menu-column-series {
+        border: none;
+        padding-right: 0;
+    }
+    .dropDown-menu-column-hot {
+        margin: 0;
+    }
+    .dropDown-menu-column-hot .itemHot {
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .hotProduct {
+        width: 60%;
+    }
+    .hotProduct span {
+        display: block;
+        text-align: center;
+    }
+    /* rwd次選單關閉叉叉 */
+    .bi-x {
+        display: none;
+    }
+    /* rwd返回左箭頭 */
+    .bi-arrow-left {
+        display: block;
+    }
+    /* rwd次選單第一層的下拉式選單 */
+    .rwd-dropDown-menu-column-type {
+        display: none;
+        width: 85%;
+        padding: 0;
+        border-bottom: 1px solid #838383;
+    }
+    .rwd-dropDown-menu-column-type li {
+        color: #fff;
     }
     /* -------------------------------------- */
     /* galaxy-s22 宣傳影片------767 */

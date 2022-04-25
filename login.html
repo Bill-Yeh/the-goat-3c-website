@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登入帳號</title>
     <link rel="stylesheet" href="css-file/normalize.css">
-    <link rel="stylesheet" href="css-file/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="css-file/root.css">
     <link rel="icon" href="picture/the-g.o.a.t-black-version2.0.icon.png">
+    <link rel="stylesheet" href="css-file/style.css">
 </head>
 
 <body style="background-color: #f6f6f6;">
@@ -36,12 +36,222 @@
                     </svg>
                     <input type="search" placeholder="搜尋THE G.O.A.T.com" id="user-search">
                 </div>
-                <a href="choosing-type.html">行動裝置</a>
-                <a href="#">筆電/桌電</a>
-                <a href="#">零組件</a>
-                <a href="#">活動專區</a>
+                <a class="main-menu main_mobile" href="javascript:void(0)">行動裝置</a>
+                <ul class="rwd-dropDown-menu-column-type rwd_phone">
+                    <li class="rwd_itemType">
+                        <div class="cellPhone">智慧手機</div>
+                        <div class="rwd-sub-menu-arrow arrow1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="rwd_itemType">
+                        <div class="tablet">平板電腦</div>
+                        <div class="rwd-sub-menu-arrow arrow2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="rwd_itemType">
+                        <div class="smartWatch">智慧手錶</div>
+                        <div class="rwd-sub-menu-arrow arrow3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="rwd_itemType">
+                        <div class="mobile_accessory">手機配件</div>
+                        <div class="rwd-sub-menu-arrow arrow4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 行動裝置下拉式選單 -->
+                <div class="mobile-dropDown-menu-wrap">
+                    <div class="mobile-dropDown-menu-content">
+                        <h2>行動裝置</h2>
+                        <div class="mobile-dropDown-menu-inner-content">
+                            <!-- 欄位1 -->
+                            <ul class="dropDown-menu-column-type">
+                                <li id="itemPhone" class="itemType">
+                                    <div class="cellPhone">智慧手機</div>
+                                    <div class="sub-menu-arrow arrow1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li id="itemTablet" class="itemType">
+                                    <div class="tablet">平板電腦</div>
+                                    <div class="sub-menu-arrow arrow2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li id="itemWatch" class="itemType">
+                                    <div class="smartWatch">智慧手錶</div>
+                                    <div class="sub-menu-arrow arrow3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li id="itemAccessory" class="itemType">
+                                    <div class="mobile_accessory">手機配件</div>
+                                    <div class="sub-menu-arrow arrow4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- 欄位2 -->
+                            <!-- 行動裝置 -->
+                            <ul class="dropDown-menu-column-series mobileSeries">
+                                <li id="galaxy_S" class="itemSeries">
+                                    <a href="choosing-type.html" class="seriesLink">Galaxy S</a>
+                                </li>
+                                <li id="galaxy_Z" class="itemSeries">
+                                    <a href="choosing-type.html" class="seriesLink">Galaxy Z</a>
+                                </li>
+                                <li id="zenFone" class="itemSeries">
+                                    <a href="choosing-type.html" class="seriesLink">Zenfone</a>
+                                </li>
+                            </ul>
+                            <!-- 平板電腦 -->
+                            <ul class="dropDown-menu-column-series tabletSeries">
+                                <li id="iPad_Air" class="itemSeries">
+                                    <a href="choosing-type.html" class="seriesLink">iPad Air</a>
+                                </li>
+                                <li id="iPad_Pro" class="itemSeries">
+                                    <a href="choosing-type.html" class="seriesLink">iPad Pro</a>
+                                </li>
+                                <li id="galaxy_Tab_S" class="itemSeries">
+                                    <a href="choosing-type.html" class="seriesLink">Galaxy Tab S</a>
+                                </li>
+                            </ul>
+                            <!-- 智慧手錶 -->
+                            <ul class="dropDown-menu-column-series watchSeries">
+                                <li id="apple_watch" class="itemSeries">
+                                    <a href="choosing-type.html" class="seriesLink">Apple Watch</a>
+                                </li>
+                                <li id="galaxy_watch" class="itemSeries">
+                                    <a href="choosing-type.html" class="seriesLink">Galaxy Watch</a>
+                                </li>
+                            </ul>
+                            <!-- 手機配件 -->
+                            <ul class="dropDown-menu-column-series accessorySeries">
+                                <li id="powerBank" class="itemSeries">
+                                    <a href="choosing-type.html" class="seriesLink">行動電源</a>
+                                </li>
+                                <li id="protectiveCase" class="itemSeries">
+                                    <a href="choosing-type.html" class="seriesLink">防摔手機殼</a>
+                                </li>
+                            </ul>
+                            <!-- 欄位3 -->
+                            <!-- 熱門手機 -->
+                            <ul class="dropDown-menu-column-hot hotPhone">
+                                <li class="itemHot">
+                                    <a href="product-introduction.html" class="hotProduct">
+                                        <picture>
+                                            <img src="./picture/zenfone 8 flip.png" alt="Zenfone 8 Flip">
+                                        </picture>
+                                        <span>Zenfone 8 Flip</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- 熱門平板 -->
+                            <ul class="dropDown-menu-column-hot hotTablet">
+                                <li class="itemHot">
+                                    <a href="product-introduction.html" class="hotProduct">
+                                        <picture>
+                                            <img src="./picture/apple-ipad-air.png" alt="ipad air">
+                                        </picture>
+                                        <span>ipad air</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- 熱門手錶 -->
+                            <ul class="dropDown-menu-column-hot hotWatch">
+                                <li class="itemHot">
+                                    <a href="product-introduction.html" class="hotProduct">
+                                        <picture>
+                                            <img src="./picture/apple_watch-se.png" alt="Apple Watch SE">
+                                        </picture>
+                                        <span>Apple Watch SE</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- 熱門配件 -->
+                            <ul class="dropDown-menu-column-hot hotAccessory">
+                                <li class="itemHot">
+                                    <a href="product-introduction.html" class="hotProduct">
+                                        <picture>
+                                            <img src="./picture/rhino_protective_case.png" alt="">
+                                        </picture>
+                                        <span>軍規防摔手機殼</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 關閉叉叉 -->
+                        <div class="dropdown-menu-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                              </svg>
+                        </div>
+                    </div>
+                </div>
+                <a class="main-menu main_pc" href="javascript:void(0)">筆電/桌電</a>
+                <ul class="rwd-dropDown-menu-column-type rwd_pc">
+                    <li class="rwd_itemType">
+                        <div class="noteBook">筆記型電腦</div>
+                        <div class="rwd-sub-menu-arrow arrow1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="rwd_itemType">
+                        <div class="PC">桌上型電腦</div>
+                        <div class="rwd-sub-menu-arrow arrow2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+                <a class="main-menu main_component" href="javascript:void(0)">零組件</a>
+                <ul class="rwd-dropDown-menu-column-type rwd_component">
+                    <li class="rwd_itemType">
+                        <div class="heat">散熱器</div>
+                        <div class="rwd-sub-menu-arrow arrow1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="rwd_itemType">
+                        <div class="card">顯示卡</div>
+                        <div class="rwd-sub-menu-arrow arrow2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <a href="choosing-type.html">活動專區</a> -->
                 <a href="online-repair-application.html">支援服務</a>
-                <a href="#">聯絡我們</a>
+                <a href="javascript:void(0)">聯絡我們</a>
             </nav>
             <div class="search-cart-login">
                 <!-- 隱藏 -->
@@ -260,9 +470,8 @@
 
 
     <script src="javascript/jquery.min.js"></script>
-
     <script src="javascript/login.js"></script>
-
+    <script src="javascript/sub_menu.js"></script>
     <script src="javascript/rwd-footer.js"></script>
 
 </body>
