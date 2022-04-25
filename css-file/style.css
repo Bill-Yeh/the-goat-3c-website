@@ -2562,6 +2562,7 @@ a {
 .compare-viewport .viewport-close-btn svg {
     width: 40px;
     height: 40px;
+    color: #000;
     cursor: pointer;
 }
 
@@ -4668,7 +4669,7 @@ a {
         display: block;
         text-align: center;
     }
-    .bi-x {
+    .dropdown-menu-close .bi-x {
         display: none;
     }
     /* rwd返回左箭頭 */
@@ -5385,7 +5386,7 @@ a {
         text-align: center;
     }
     /* rwd次選單關閉叉叉 */
-    .bi-x {
+    .dropdown-menu-close .bi-x {
         display: none;
     }
     /* rwd返回左箭頭 */
@@ -6225,7 +6226,7 @@ a {
     }
     /* 關閉叉叉----767 */
     .compare-viewport .viewport-close-btn {
-        top: 20px;
+        top: 15px;
     }
     .compare-viewport .compare-product-item h3 {
         display: none;

@@ -3,7 +3,7 @@ $(function() {
     console.log("解析度:", screenWidth);
 
     // 桌機板
-    if (screenWidth > 1400) {
+    if (screenWidth > 1200) {
         // 次選單容器
         $('.main-menu').hover(function() {
             $('.mobile-dropDown-menu-wrap').slideDown();
@@ -14,7 +14,7 @@ $(function() {
     }
 
     // ipad Pro 1024
-    if (screenWidth > 992 && screenWidth < 1400) {
+    if (screenWidth > 992 && screenWidth < 1200) {
         // 次選單容器
         $('.main-menu').click(function() {
             $('.mobile-dropDown-menu-wrap').slideDown();
@@ -78,7 +78,7 @@ window.addEventListener("load", function() {
     let deviceWidth = screen.width;
 
     // 桌機
-    if (deviceWidth > 1400) {
+    if (deviceWidth > 1200) {
         for (let i = 0; i < col1.length; i++) {
             col1[0].style.backgroundColor = "grey";
             col1[0].style.borderRadius = "30px";
@@ -107,7 +107,7 @@ window.addEventListener("load", function() {
         }
     }
 
-    if (deviceWidth > 992 && deviceWidth < 1400) {
+    if (deviceWidth > 992 && deviceWidth < 1200) {
         for (let i = 0; i < col1.length; i++) {
             col1Arrow[0].style.display = "block";
             col2[i].style.display = "none";

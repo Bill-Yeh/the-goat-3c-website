@@ -10,7 +10,7 @@ function problemForm(e) {
         return;
     }
 
-    if (problemType.selectedIndex != 0) return window.location.replace('/online-repair-appointment-finish.html');
+    if (problemType.selectedIndex != 0) return window.location.replace('online-repair-appointment-finish.html');
 }
 
 window.addEventListener("load", function() {

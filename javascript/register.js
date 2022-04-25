@@ -71,7 +71,7 @@ function registerForm(e) {
     // 如果帳號、密碼、確認密碼和隱私條款都驗證通過，就跳轉到首頁
     if (AccountValid && PasswordValid && confirmPassword.value == newPassword.value && privacyTick.checked == true) {
         alert("恭喜註冊成功!!!");
-        return window.location.replace('/index.html');
+        return window.location.replace('index.html');
     };
 }
 
