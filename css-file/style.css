@@ -2441,6 +2441,7 @@ a {
 
 .compare-bar-section .compare-bar-product {
     width: 50%;
+    margin: auto;
 }
 
 .compare-bar-section img {
@@ -2449,6 +2450,7 @@ a {
 
 .compare-bar-section p {
     font-size: 0.8125rem;
+    text-align: center;
 }
 
 .compare-bar-section .compare-bar-close {
@@ -2749,10 +2751,10 @@ a {
     position: relative;
 }
 
-.picGroup {
+/* .picGroup {
     position: sticky;
     top: 50px;
-}
+} */
 
 .product-large {
     width: 80%;
