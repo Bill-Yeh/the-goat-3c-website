@@ -6495,19 +6495,22 @@ a {
         box-sizing: border-box;
     }
     .input-account #user-account{
-        width: 80%;
+        width: 85%;
     }
     .input-password{
         box-sizing: border-box;
     }
     .input-password #user-password{
-        width: 80%;
+        width: 85%;
     }
     .login-button{
         box-sizing: border-box;
     }
     .login-button .login-btn{
-        width: 80%;
+        width: 85%;
+    }
+    #remember{
+        appearance: none;
     }
     /* ///////////////////////////////////////////////////////// */
     /* 註冊帳號頁面 */
@@ -6526,15 +6529,18 @@ a {
         box-sizing: border-box;
     }
     .register-account-part #user-register{
-        width: 80%;
+        width: 85%;
     }
     .register-password-part #password-register{
-        width: 80%;
+        width: 85%;
     }
     #password-confirm{
-        width: 80%;
+        width: 85%;
     }
     .register-button .register-btn{
-        width: 80%;
+        width: 85%;
+    }
+    #privacy{
+        appearance: none;
     }
 }
