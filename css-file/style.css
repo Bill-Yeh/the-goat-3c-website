@@ -6486,6 +6486,28 @@ a {
     .login-right {
         width: 100%;
         padding-left: 0;
+        box-sizing: border-box;
+    }
+    #memLogin{
+        box-sizing: border-box;
+    }
+    .input-account{
+        box-sizing: border-box;
+    }
+    .input-account #user-account{
+        width: 80%;
+    }
+    .input-password{
+        box-sizing: border-box;
+    }
+    .input-password #user-password{
+        width: 80%;
+    }
+    .login-button{
+        box-sizing: border-box;
+    }
+    .login-button .login-btn{
+        width: 80%;
     }
     /* ///////////////////////////////////////////////////////// */
     /* 註冊帳號頁面 */
@@ -6493,5 +6515,26 @@ a {
         width: 85%;
         margin: 100px auto 50px;
         box-sizing: border-box;
+    }
+    .main-register-content{
+        box-sizing: border-box;
+    }
+    .user-register-input{
+        box-sizing: border-box;
+    }
+    .register-account-part, .register-password-part, .password-confirm-part, .register-button{
+        box-sizing: border-box;
+    }
+    .register-account-part #user-register{
+        width: 80%;
+    }
+    .register-password-part #password-register{
+        width: 80%;
+    }
+    #password-confirm{
+        width: 80%;
+    }
+    .register-button .register-btn{
+        width: 80%;
     }
 }
